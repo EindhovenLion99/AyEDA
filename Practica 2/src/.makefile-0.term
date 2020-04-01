@@ -1,0 +1,150 @@
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ make
+g++ -g -c -Wall main.cpp -std=c++17
+g++ -g -c -Wall celula.cpp -std=c++17
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::setEstado(int)[m[K’:
+[01m[Kcelula.cpp:16:53:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+ int celula::setEstado(int value) { estado_ = value; [01;35m[K}[m[K
+                                                     [01;35m[K^[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::setVecinas(int)[m[K’:
+[01m[Kcelula.cpp:22:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::updateEstado()[m[K’:
+[01m[Kcelula.cpp:41:22:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K-Wparentheses[m[K]
+   if ([01;35m[K(estado_ == 1) && (vecinas == 2)[m[K || (vecinas== 3)) {
+       [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kstd::ostream& celula::WriteCel(std::ostream&) const[m[K’:
+[01m[Kcelula.cpp:58:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+g++ -g -c -Wall tablero.cpp -std=c++17
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear[1Pmake./a.out [4Pmake
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+[0m[01;32mLife[0m  [01;32ma.out[0m  celula.cpp  celula.o  main.cpp  main.o  makefile  tablero.cpp  tablero.o
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ make clean
+rm -f main.o celula.o tablero.o Life
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+[0m[01;32ma.out[0m  celula.cpp  main.cpp  makefile  tablero.cpp
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ rm a.out 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+celula.cpp  main.cpp  makefile  tablero.cpp
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ make
+g++ -g -c main.cpp -std=c++17
+g++ -g -c celula.cpp -std=c++17
+g++ -g -c tablero.cpp -std=c++17
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ./a.[K[KLife 
+Introduce el numero de filas: 5
+Introduce el numero de columnas: 5
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 7
+
+| X  ·  ·  ·  · |
+| ·  X  ·  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  X  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear./Life [3Pmake./Life 
+Introduce el numero de filas: 20
+Introduce el numero de columnas: 20
+
+Introduce el numero de celulas vivas: 8
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 5
+Introduce la coordenada y: 6
+
+Introduce la coordenada x: 7
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 6
+
+Introduce la coordenada x: 8
+Introduce la coordenada y: 4
+
+Introduce la coordenada x: 16
+Introduce la coordenada y: 12
+
+Introduce la coordenada x: 12
+Introduce la coordenada y: 17
+
+Introduce la coordenada x: 14
+Introduce la coordenada y: 17
+
+Introduzca el numero de turnos: 7
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  X  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ 

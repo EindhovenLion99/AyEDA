@@ -1,0 +1,424 @@
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls+[K
+celula.cpp  main.cpp  tablero.cpp
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ c++ tablero.cpp 
+[01m[Ktablero.cpp:2:10:[m[K [01;31m[Kfatal error: [m[K/include/tablero.h: No such file or directory
+ #include [01;31m[K"/include/tablero.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ c++ main.cpp 
+[01m[Kmain.cpp:2:10:[m[K [01;31m[Kfatal error: [m[K/include/celula.h: No such file or directory
+ #include [01;31m[K"/include/celula.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear++ main.cpp 
+[01m[Kmain.cpp:2:10:[m[K [01;31m[Kfatal error: [m[K/include/celula.h: No such file or directory
+ #include [01;31m[K"/include/celula.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ c++ main.cpp [8Plear++ main.cpp [8Plear++ tablero.cpp 
+[01m[Ktablero.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kinclude/tablero.h: No such file or directory
+ #include [01;31m[K"include/tablero.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+celula.cpp  main.cpp  tablero.cpp
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ cd ..
+]0;~/Practica 2[01;34m~/Practica 2[00m$ ls
+[0m[01;34minclude[0m  [01;34mlib[0m  [01;34msrc[0m
+]0;~/Practica 2[01;34m~/Practica 2[00m$ cd include/
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ls
+celula.h  celula.h.gch  tablero.h
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear[3Plscd include/ls[Kcd ..[3Plsc++ tablero.cpp 
+[01m[Kc++:[m[K [01;31m[Kerror: [m[Ktablero.cpp: No such file or directory
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ cd ..
+]0;~/Practica 2[01;34m~/Practica 2[00m$ ls
+[0m[01;34minclude[0m  [01;34mlib[0m  [01;34msrc[0m
+]0;~/Practica 2[01;34m~/Practica 2[00m$ cd src/
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ cleard src/ls[Kcd ..++ tablero.cpp ç[K[K
+[01m[Ktablero.cpp:2:10:[m[K [01;31m[Kfatal error: [m[K/Practica \2/include/tablero.h: No such file or directory
+ #include [01;31m[K"/Practica \2/include/tablero.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+[0m[01;32mLife[0m  celula.cpp  celula.o  main.cpp  main.o  makefile  tablero.cpp  tablero.o
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ make clean
+rm -f main.o celula.o tablero.o Life
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ make
+g++ -g -c main.cpp -std=c++17
+g++ -g -c celula.cpp -std=c++17
+g++ -g -c tablero.cpp -std=c++17
+[01m[Ktablero.cpp:47:25:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kint tablero::MaxVecinas()[m[K’ member function declared in class ‘[01m[Ktablero[m[K’
+ int tablero::MaxVecinas([01;31m[K)[m[K {
+                         [01;31m[K^[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:76:65:[m[K [01;31m[Kerror: [m[K‘[01m[KMaxVecinas[m[K’ was not declared in this scope
+     cout << "El numero maximo de vecinas en este turno es: " << [01;31m[KMaxVecinas[m[K() << endl;
+                                                                 [01;31m[K^~~~~~~~~~[m[K
+makefile:19: recipe for target 'tablero.o' failed
+make: *** [tablero.o] Error 1
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear[1Pmakeclear[1Pmake
+g++ -g -c tablero.cpp -std=c++17
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ cler[Kar
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ./Life
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+
+Introduce el numero de celulas vivas: 4
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 5
+
+| ·  X  X  · |
+| ·  X  ·  · |
+| ·  ·  X  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 1
+| ·  X  X  · |
+| ·  X  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 0
+| ·  X  X  · |
+| ·  X  X  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 0
+| ·  X  X  · |
+| ·  X  X  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 0
+| ·  X  X  · |
+| ·  X  X  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 0
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear./Life[1Pclear[1Pmakeclear[1Pmake
+g++ -g -c tablero.cpp -std=c++17
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ makeclear./Life
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+
+Introduce el numero de celulas vivas: 1
+
+Introduce la coordenada x: 1 11 
+Introduce la coordenada y: 1
+
+Introduzca el numero de turnos: 4
+
+| X  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 1
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear./Life
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 5
+
+| X  X  X  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 3
+| ·  X  ·  · |
+| ·  X  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 2
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear./Life[1Pclear./Life[2Pmake
+g++ -g -c tablero.cpp -std=c++17
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ makeclear./Life[1Pclear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear[1Pmakeclear./Life
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 3
+
+| X  X  · |
+| ·  ·  · |
+| ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 2
+
+| ·  ·  · |
+| ·  ·  · |
+| ·  ·  · |
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ cla[Kear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear./Life[1Pclear[1Pmake
+g++ -g -c tablero.cpp -std=c++17
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ makeclear./Life
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 3
+
+| X  X  · |
+| ·  ·  · |
+| ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 1
+1
+1
+2
+2
+1
+0
+0
+0
+2
+
+| ·  ·  · |
+| ·  ·  · |
+| ·  ·  · |
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear./Life[2Pmake
+g++ -g -c tablero.cpp -std=c++17
+g++ -g main.o celula.o tablero.o -o Life 
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ makeclear./Life
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 4
+
+| X  ·  · |
+| ·  X  · |
+| ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 2
+
+| ·  ·  · |
+| ·  ·  · |
+| ·  ·  · |
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ [K]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+[0m[01;32mLife[0m  celula.cpp  celula.o  main.cpp  main.o  makefile  tablero.cpp  tablero.o
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear[3Plsclear./Life
+Introduce el numero de filas: 20
+Introduce el numero de columnas: 25
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 9
+Introduce la coordenada y: 12
+
+Introduce la coordenada x: 9
+Introduce la coordenada y: 13
+
+Introduce la coordenada x: 10
+Introduce la coordenada y: 13
+
+Introduce la coordenada x: 10
+Introduce la coordenada y: 14
+
+Introduce la coordenada x: 11
+Introduce la coordenada y: 13
+
+Introduzca el numero de turnos: 5
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 4
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 6
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 5
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 6
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+El numero maximo de vecinas en este turno es: 4
+
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ [K]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ [K]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ make clean
+rm -f main.o celula.o tablero.o Life
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ck[Klear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ 
