@@ -1,0 +1,1997 @@
+]0;~/Practica 1[01;34m~/Practica 1[00m$ g++ main_TDato.cpp [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kasignatura.cpp 
+[01m[Kasignatura.cpp:14:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+ }
+  [01;31m[K^[m[K
+  [32m[K;[m[K
+[01m[Kasignatura.cpp:24:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+ }
+  [01;31m[K^[m[K
+  [32m[K;[m[K
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kvoid ver_Profesorado(vector_t<asignatura>, std::__cxx11::string)[m[K’:
+[01m[Kasignatura.cpp:30:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kv[m[K’ was not declared in this scope
+       sll_node_t<profesor> aux = [01;31m[Kv[m[K[i].profes.head();
+                                  [01;31m[K^[m[K
+[01m[Kasignatura.cpp:31:17:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Ksll_node_t<profesor>[m[K’ and ‘[01m[Klong int[m[K’)
+       while(aux [01;31m[K![m[K= NULL) {
+                 [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/iosfwd:40:0[m[K,
+                 from [01m[K/usr/include/c++/7/ios:38[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     [01;36m[Koperator[m[K!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:64:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_pair.h:461:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     [01;36m[Koperator[m[K!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_pair.h:461:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:314:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     [01;36m[Koperator[m[K!=(const reverse_iterator<_Iterator>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:314:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:352:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     [01;36m[Koperator[m[K!=(const reverse_iterator<_IteratorL>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:352:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1133:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     [01;36m[Koperator[m[K!=(const move_iterator<_IteratorL>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1133:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1139:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Iterator> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     [01;36m[Koperator[m[K!=(const move_iterator<_Iterator>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1139:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/allocator.h:158:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     [01;36m[Koperator[m[K!=(const allocator<_T1>&, const allocator<_T2>&)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/allocator.h:158:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/allocator.h:164:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     [01;36m[Koperator[m[K!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/allocator.h:164:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6056:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6056:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6069:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     [01;36m[Koperator[m[K!=(const _CharT* __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Ksll_node_t<profesor>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6081:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6081:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/ios_base.h:46:0[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/system_error:319:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_code&, const std::error_code&)
+   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_code& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:319:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[01m[K/usr/include/c++/7/system_error:323:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_code&, const std::error_condition&)
+   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:323:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[01m[K/usr/include/c++/7/system_error:327:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_condition&, const std::error_code&)
+   [01;36m[Koperator[m[K!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:327:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+[01m[K/usr/include/c++/7/system_error:331:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_condition&, const std::error_condition&)
+   [01;36m[Koperator[m[K!=(const error_condition& __lhs,
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:331:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+In file included from [01m[K/usr/include/c++/7/bits/locale_facets.h:48:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/7/ios:44[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     [01;36m[Koperator[m[K!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/tuple:39:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/array:257:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     [01;36m[Koperator[m[K!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/array:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/unique_ptr.h:37:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/tuple:1423:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)
+     [01;36m[Koperator[m[K!=(const tuple<_TElements...>& __t,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/tuple:1423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:700:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:700:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:706:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:706:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:711:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     [01;36m[Koperator[m[K!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:711:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Klong int[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+[01m[Kasignatura.cpp:32:20:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         cout << aux[01;31m[K->[m[Kdata().name_ << aux->data().DNI_;
+                    [01;31m[K^~[m[K
+[01m[Kasignatura.cpp:32:41:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         cout << aux->data().name_ << aux[01;31m[K->[m[Kdata().DNI_;
+                                         [01;31m[K^~[m[K
+[01m[Kasignatura.cpp:33:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         aux = aux[01;31m[K->[m[Knext;
+                  [01;31m[K^~[m[K
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:43:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kvoid ver_Profesorado(vector_t<asignatura>, std::__cxx11::string)[m[K’:
+[01m[Kasignatura.cpp:30:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kv[m[K’ was not declared in this scope
+       sll_node_t<profesor> aux = [01;31m[Kv[m[K[i].profes.head();
+                                  [01;31m[K^[m[K
+[01m[Kasignatura.cpp:31:17:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Ksll_node_t<profesor>[m[K’ and ‘[01m[Klong int[m[K’)
+       while(aux [01;31m[K![m[K= NULL) {
+                 [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/iosfwd:40:0[m[K,
+                 from [01m[K/usr/include/c++/7/ios:38[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     [01;36m[Koperator[m[K!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:64:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_pair.h:461:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     [01;36m[Koperator[m[K!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_pair.h:461:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:314:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     [01;36m[Koperator[m[K!=(const reverse_iterator<_Iterator>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:314:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:352:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     [01;36m[Koperator[m[K!=(const reverse_iterator<_IteratorL>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:352:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1133:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     [01;36m[Koperator[m[K!=(const move_iterator<_IteratorL>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1133:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1139:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Iterator> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     [01;36m[Koperator[m[K!=(const move_iterator<_Iterator>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1139:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/allocator.h:158:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     [01;36m[Koperator[m[K!=(const allocator<_T1>&, const allocator<_T2>&)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/allocator.h:158:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/allocator.h:164:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     [01;36m[Koperator[m[K!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/allocator.h:164:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6056:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6056:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6069:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     [01;36m[Koperator[m[K!=(const _CharT* __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Ksll_node_t<profesor>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6081:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6081:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/ios_base.h:46:0[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/system_error:319:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_code&, const std::error_code&)
+   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_code& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:319:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[01m[K/usr/include/c++/7/system_error:323:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_code&, const std::error_condition&)
+   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:323:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[01m[K/usr/include/c++/7/system_error:327:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_condition&, const std::error_code&)
+   [01;36m[Koperator[m[K!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:327:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+[01m[K/usr/include/c++/7/system_error:331:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_condition&, const std::error_condition&)
+   [01;36m[Koperator[m[K!=(const error_condition& __lhs,
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:331:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+In file included from [01m[K/usr/include/c++/7/bits/locale_facets.h:48:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/7/ios:44[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     [01;36m[Koperator[m[K!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/tuple:39:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/array:257:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     [01;36m[Koperator[m[K!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/array:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/unique_ptr.h:37:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/tuple:1423:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)
+     [01;36m[Koperator[m[K!=(const tuple<_TElements...>& __t,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/tuple:1423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:700:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:700:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:706:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:706:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:711:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     [01;36m[Koperator[m[K!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:711:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Klong int[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+[01m[Kasignatura.cpp:32:20:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         cout << aux[01;31m[K->[m[Kdata().name_ << aux->data().DNI_;
+                    [01;31m[K^~[m[K
+[01m[Kasignatura.cpp:32:41:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         cout << aux->data().name_ << aux[01;31m[K->[m[Kdata().DNI_;
+                                         [01;31m[K^~[m[K
+[01m[Kasignatura.cpp:33:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         aux = aux[01;31m[K->[m[Knext;
+                  [01;31m[K^~[m[K
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:43:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kvoid ver_Profesorado(vector_t<asignatura>, std::__cxx11::string)[m[K’:
+[01m[Kasignatura.cpp:30:50:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Ksll_node_t<profesor>*[m[K’ to non-scalar type ‘[01m[Ksll_node_t<profesor>[m[K’ requested
+       sll_node_t<profesor> aux = [01;31m[Ka[i].profes.head()[m[K;
+                                  [01;31m[K~~~~~~~~~~~~~~~~^~[m[K
+[01m[Kasignatura.cpp:31:17:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Ksll_node_t<profesor>[m[K’ and ‘[01m[Klong int[m[K’)
+       while(aux [01;31m[K![m[K= NULL) {
+                 [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/iosfwd:40:0[m[K,
+                 from [01m[K/usr/include/c++/7/ios:38[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     [01;36m[Koperator[m[K!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:64:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_pair.h:461:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     [01;36m[Koperator[m[K!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_pair.h:461:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:314:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     [01;36m[Koperator[m[K!=(const reverse_iterator<_Iterator>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:314:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:352:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     [01;36m[Koperator[m[K!=(const reverse_iterator<_IteratorL>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:352:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1133:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     [01;36m[Koperator[m[K!=(const move_iterator<_IteratorL>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1133:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/7/ios:40[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1139:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Iterator> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     [01;36m[Koperator[m[K!=(const move_iterator<_Iterator>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:1139:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/allocator.h:158:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     [01;36m[Koperator[m[K!=(const allocator<_T1>&, const allocator<_T2>&)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/allocator.h:158:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/allocator.h:164:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     [01;36m[Koperator[m[K!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/allocator.h:164:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6056:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6056:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6069:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     [01;36m[Koperator[m[K!=(const _CharT* __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Ksll_node_t<profesor>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/basic_string.h:6081:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/basic_string.h:6081:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/ios_base.h:46:0[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/system_error:319:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_code&, const std::error_code&)
+   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_code& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:319:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[01m[K/usr/include/c++/7/system_error:323:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_code&, const std::error_condition&)
+   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:323:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[01m[K/usr/include/c++/7/system_error:327:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_condition&, const std::error_code&)
+   [01;36m[Koperator[m[K!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:327:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+[01m[K/usr/include/c++/7/system_error:331:3:[m[K [01;36m[Knote: [m[Kcandidate: bool std::operator!=(const std::error_condition&, const std::error_condition&)
+   [01;36m[Koperator[m[K!=(const error_condition& __lhs,
+   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/system_error:331:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+In file included from [01m[K/usr/include/c++/7/bits/locale_facets.h:48:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/7/ios:44[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     [01;36m[Koperator[m[K!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/tuple:39:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/array:257:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     [01;36m[Koperator[m[K!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/array:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/unique_ptr.h:37:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/tuple:1423:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)
+     [01;36m[Koperator[m[K!=(const tuple<_TElements...>& __t,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/tuple:1423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:700:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:700:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:706:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:706:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksll_node_t<profesor>[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/c++/7/iomanip:43[m[K,
+                 from [01m[Kvector_t.h:3[m[K,
+                 from [01m[Kasignatura.cpp:3[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:711:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     [01;36m[Koperator[m[K!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:711:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/_G_config.h:19:0[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/bits/libio.h:35[m[K,
+                 from [01m[K/usr/include/stdio.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/7/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/usr/include/c++/7/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/7/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/7/ios:42[m[K,
+                 from [01m[K/usr/include/c++/7/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/7/iostream:39[m[K,
+                 from [01m[Kasignatura.cpp:1[m[K:
+[01m[Kasignatura.cpp:31:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Klong int[m[K’
+       while(aux != [01;36m[KN[m[KULL) {
+                    [01;36m[K^[m[K
+[01m[Kasignatura.cpp:32:20:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         cout << aux[01;31m[K->[m[Kdata().name_ << aux->data().DNI_;
+                    [01;31m[K^~[m[K
+[01m[Kasignatura.cpp:32:41:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         cout << aux->data().name_ << aux[01;31m[K->[m[Kdata().DNI_;
+                                         [01;31m[K^~[m[K
+[01m[Kasignatura.cpp:33:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksll_node_t<profesor>[m[K’
+         aux = aux[01;31m[K->[m[Knext;
+                  [01;31m[K^~[m[K
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:43:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kvoid ver_Profesorado(vector_t<asignatura>, std::__cxx11::string)[m[K’:
+[01m[Kasignatura.cpp:32:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sll_node_t<profesor>[m[K’ has no member named ‘[01m[Kdata[m[K’; did you mean ‘[01m[Kdata_[m[K’?
+         cout << aux->[01;31m[Kdata[m[K().name_ << aux->data().DNI_;
+                      [01;31m[K^~~~[m[K
+                      [32m[Kdata_[m[K
+[01m[Kasignatura.cpp:32:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sll_node_t<profesor>[m[K’ has no member named ‘[01m[Kdata[m[K’; did you mean ‘[01m[Kdata_[m[K’?
+         cout << aux->data().name_ << aux->[01;31m[Kdata[m[K().DNI_;
+                                           [01;31m[K^~~~[m[K
+                                           [32m[Kdata_[m[K
+[01m[Kasignatura.cpp:33:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sll_node_t<profesor>[m[K’ has no member named ‘[01m[Knext[m[K’; did you mean ‘[01m[Knext_[m[K’?
+         aux = aux->[01;31m[Knext[m[K;
+                    [01;31m[K^~~~[m[K
+                    [32m[Knext_[m[K
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:43:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kvoid ver_Profesorado(vector_t<asignatura>, std::__cxx11::string)[m[K’:
+[01m[Kasignatura.cpp:32:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kprofesor sll_node_t<profesor>::data_[m[K’ is private within this context
+         cout << aux->[01;31m[Kdata_[m[K().name_ << aux->data_().DNI_;
+                      [01;31m[K^~~~~[m[K
+In file included from [01m[Ksll_t.h:6:0[m[K,
+                 from [01m[Kasignatura.cpp:2[m[K:
+[01m[Ksll_node_t.h:10:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+   TDato [01;36m[Kdata_[m[K;                // Dato del nodo
+         [01;36m[K^~~~~[m[K
+[01m[Kasignatura.cpp:32:28:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(profesor) ()[m[K’
+         cout << aux->data_([01;31m[K)[m[K.name_ << aux->data_().DNI_;
+                            [01;31m[K^[m[K
+[01m[Kasignatura.cpp:32:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kprofesor sll_node_t<profesor>::data_[m[K’ is private within this context
+         cout << aux->data_().name_ << aux->[01;31m[Kdata_[m[K().DNI_;
+                                            [01;31m[K^~~~~[m[K
+In file included from [01m[Ksll_t.h:6:0[m[K,
+                 from [01m[Kasignatura.cpp:2[m[K:
+[01m[Ksll_node_t.h:10:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+   TDato [01;36m[Kdata_[m[K;                // Dato del nodo
+         [01;36m[K^~~~~[m[K
+[01m[Kasignatura.cpp:32:50:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(profesor) ()[m[K’
+         cout << aux->data_().name_ << aux->data_([01;31m[K)[m[K.DNI_;
+                                                  [01;31m[K^[m[K
+[01m[Kasignatura.cpp:33:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksll_node_t<profesor>* sll_node_t<profesor>::next_[m[K’ is private within this context
+         aux = aux->[01;31m[Knext_[m[K;
+                    [01;31m[K^~~~~[m[K
+In file included from [01m[Ksll_t.h:6:0[m[K,
+                 from [01m[Kasignatura.cpp:2[m[K:
+[01m[Ksll_node_t.h:9:22:[m[K [01;36m[Knote: [m[Kdeclared private here
+   sll_node_t<TDato>* [01;36m[Knext_[m[K;   // Siguiente nodo
+                      [01;36m[K^~~~~[m[K
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:43:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:43:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kasignatura.cpp:43:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct asignatura[m[K’ has no member named ‘[01m[Kprofesores[m[K’; did you mean ‘[01m[Kprofes[m[K’?
+   AYEDA.[01;31m[Kprofesores[m[K.add(Alberto);
+         [01;31m[K^~~~~~~~~~[m[K
+         [32m[Kprofes[m[K
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:44:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kasignatura.cpp:43:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sll_t<profesor>[m[K’ has no member named ‘[01m[Kadd[m[K’
+   AYEDA.profes.[01;31m[Kadd[m[K(Alberto);
+                [01;31m[K^~~[m[K
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:44:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ cñ[Klear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kasignatura.cpp:43:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<profesor>::insert_after(profesor&)[m[K’
+   AYEDA.profes.insert_after(Alberto[01;31m[K)[m[K;
+                                    [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:33:8:[m[K [01;36m[Knote: [m[Kcandidate: void sll_t<TDato>::insert_after(sll_node_t<TDato>*, sll_node_t<TDato>*) [with TDato = profesor]
+   void [01;36m[Kinsert_after[m[K(sll_node_t<TDato>* prev, sll_node_t<TDato>* n) {
+        [01;36m[K^~~~~~~~~~~~[m[K
+[01m[Ksll_t.h:33:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:44:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:43:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kasignatura.cpp:42:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<profesor>::insert_head(profesor&)[m[K’
+   CDYAL.profes.insert_head(Alberto[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[Kcandidate: void sll_t<TDato>::insert_head(sll_node_t<TDato>*) [with TDato = profesor]
+   void [01;36m[Kinsert_head[m[K(sll_node_t<TDato>* n) {
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kprofesor[m[K’ to ‘[01m[Ksll_node_t<profesor>*[m[K’
+[01m[Kasignatura.cpp:43:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<profesor>::insert_head(profesor&)[m[K’
+   CDYAL.profes.insert_head(Vanessa[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[Kcandidate: void sll_t<TDato>::insert_head(sll_node_t<TDato>*) [with TDato = profesor]
+   void [01;36m[Kinsert_head[m[K(sll_node_t<TDato>* n) {
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kprofesor[m[K’ to ‘[01m[Ksll_node_t<profesor>*[m[K’
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:45:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(const vector_t<T>&) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:50:37:[m[K   required from here
+[01m[Kvector_t.h:21:10:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+     v_ = [01;31m[Knew T[sz_][m[K;
+          [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kasignatura.cpp:40:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_node_t<profesor>::sll_node_t(const char [8], const char [9])[m[K’
+   sll_node_t<profesor> Alberto("Alberto", "4327233F"[01;31m[K)[m[K, Vanessa("Vanessa", "84728472F");
+                                                     [01;31m[K^[m[K
+In file included from [01m[Ksll_t.h:6:0[m[K,
+                 from [01m[Kasignatura.cpp:2[m[K:
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t(TDato) [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(TDato data){     // Constructor por parametro
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t() [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(void);           // Constructor Vacio
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<profesor>::sll_node_t(const sll_node_t<profesor>&)
+ class [01;36m[Ksll_node_t[m[K {     // Clase nodo de la lista
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kasignatura.cpp:40:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_node_t<profesor>::sll_node_t(const char [8], const char [10])[m[K’
+   sll_node_t<profesor> Alberto("Alberto", "4327233F"), Vanessa("Vanessa", "84728472F"[01;31m[K)[m[K;
+                                                                                      [01;31m[K^[m[K
+In file included from [01m[Ksll_t.h:6:0[m[K,
+                 from [01m[Kasignatura.cpp:2[m[K:
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t(TDato) [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(TDato data){     // Constructor por parametro
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t() [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(void);           // Constructor Vacio
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<profesor>::sll_node_t(const sll_node_t<profesor>&)
+ class [01;36m[Ksll_node_t[m[K {     // Clase nodo de la lista
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kasignatura.cpp:42:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<profesor>::insert_head(sll_node_t<profesor>&)[m[K’
+   CDYAL.profes.insert_head(Alberto[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[Kcandidate: void sll_t<TDato>::insert_head(sll_node_t<TDato>*) [with TDato = profesor]
+   void [01;36m[Kinsert_head[m[K(sll_node_t<TDato>* n) {
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Ksll_node_t<profesor>*[m[K’
+[01m[Kasignatura.cpp:43:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<profesor>::insert_head(sll_node_t<profesor>&)[m[K’
+   CDYAL.profes.insert_head(Vanessa[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[Kcandidate: void sll_t<TDato>::insert_head(sll_node_t<TDato>*) [with TDato = profesor]
+   void [01;36m[Kinsert_head[m[K(sll_node_t<TDato>* n) {
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_node_t<profesor>[m[K’ to ‘[01m[Ksll_node_t<profesor>*[m[K’
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:45:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(const vector_t<T>&) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:50:37:[m[K   required from here
+[01m[Kvector_t.h:21:10:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+     v_ = [01;31m[Knew T[sz_][m[K;
+          [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kasignatura.cpp:40:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_node_t<profesor>::sll_node_t(const char [8], const char [9])[m[K’
+   sll_node_t<profesor> Alberto("Alberto", "4327233F"[01;31m[K)[m[K, Vanessa("Vanessa", "84728472F");
+                                                     [01;31m[K^[m[K
+In file included from [01m[Ksll_t.h:6:0[m[K,
+                 from [01m[Kasignatura.cpp:2[m[K:
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t(TDato) [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(TDato data){     // Constructor por parametro
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t() [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(void);           // Constructor Vacio
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<profesor>::sll_node_t(const sll_node_t<profesor>&)
+ class [01;36m[Ksll_node_t[m[K {     // Clase nodo de la lista
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kasignatura.cpp:40:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_node_t<profesor>::sll_node_t(const char [8], const char [10])[m[K’
+   sll_node_t<profesor> Alberto("Alberto", "4327233F"), Vanessa("Vanessa", "84728472F"[01;31m[K)[m[K;
+                                                                                      [01;31m[K^[m[K
+In file included from [01m[Ksll_t.h:6:0[m[K,
+                 from [01m[Kasignatura.cpp:2[m[K:
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t(TDato) [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(TDato data){     // Constructor por parametro
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:14:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<TDato>::sll_node_t() [with TDato = profesor]
+   [01;36m[Ksll_node_t[m[K(void);           // Constructor Vacio
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:13:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: sll_node_t<profesor>::sll_node_t(const sll_node_t<profesor>&)
+ class [01;36m[Ksll_node_t[m[K {     // Clase nodo de la lista
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[Ksll_node_t.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kasignatura.cpp:41:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<asignatura>::sll_t(const char [6], const char [7])[m[K’
+   sll_t<asignatura> CDYAL("CDYAL", "345212"[01;31m[K)[m[K, AYEDA("AYEDA", "43323243");
+                                            [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:14:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_t<TDato>::sll_t() [with TDato = asignatura]
+   [01;36m[Ksll_t[m[K(void) { head_ = NULL; }  // Constructor por defecto
+   [01;36m[K^~~~~[m[K
+[01m[Ksll_t.h:14:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Ksll_t.h:9:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr sll_t<asignatura>::sll_t(const sll_t<asignatura>&)
+ class [01;36m[Ksll_t[m[K {   // Clase lista
+       [01;36m[K^~~~~[m[K
+[01m[Ksll_t.h:9:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kasignatura.cpp:41:72:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<asignatura>::sll_t(const char [6], const char [9])[m[K’
+   sll_t<asignatura> CDYAL("CDYAL", "345212"), AYEDA("AYEDA", "43323243"[01;31m[K)[m[K;
+                                                                        [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:14:3:[m[K [01;36m[Knote: [m[Kcandidate: sll_t<TDato>::sll_t() [with TDato = asignatura]
+   [01;36m[Ksll_t[m[K(void) { head_ = NULL; }  // Constructor por defecto
+   [01;36m[K^~~~~[m[K
+[01m[Ksll_t.h:14:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Ksll_t.h:9:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr sll_t<asignatura>::sll_t(const sll_t<asignatura>&)
+ class [01;36m[Ksll_t[m[K {   // Clase lista
+       [01;36m[K^~~~~[m[K
+[01m[Ksll_t.h:9:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kasignatura.cpp:42:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sll_t<asignatura>[m[K’ has no member named ‘[01m[Kprofes[m[K’
+   CDYAL.[01;31m[Kprofes[m[K.insert_head(Alberto);
+         [01;31m[K^~~~~~[m[K
+[01m[Kasignatura.cpp:43:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sll_t<asignatura>[m[K’ has no member named ‘[01m[Kprofes[m[K’
+   CDYAL.[01;31m[Kprofes[m[K.insert_head(Vanessa);
+         [01;31m[K^~~~~~[m[K
+[01m[Kasignatura.cpp:47:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kasignatura[m[K’ and ‘[01m[Ksll_t<asignatura>[m[K’)
+   Vector[0] = [01;31m[KCDYAL[m[K;
+               [01;31m[K^~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura& asignatura::operator=(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_t<asignatura>[m[K’ to ‘[01m[Kconst asignatura&[m[K’
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura& asignatura::operator=(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_t<asignatura>[m[K’ to ‘[01m[Kasignatura&&[m[K’
+[01m[Kasignatura.cpp:48:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kasignatura[m[K’ and ‘[01m[Ksll_t<asignatura>[m[K’)
+   Vector[1] = [01;31m[KAYEDA[m[K;
+               [01;31m[K^~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura& asignatura::operator=(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_t<asignatura>[m[K’ to ‘[01m[Kconst asignatura&[m[K’
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura& asignatura::operator=(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksll_t<asignatura>[m[K’ to ‘[01m[Kasignatura&&[m[K’
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:45:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(const vector_t<T>&) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:50:37:[m[K   required from here
+[01m[Kvector_t.h:21:10:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+     v_ = [01;31m[Knew T[sz_][m[K;
+          [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ clear
+[3J[H[2J]0;~/Practica 1[01;34m~/Practica 1[00m$ clearg++ asignatura.cpp 
+[01m[Kasignatura.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kasignatura.cpp:42:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<profesor>::insert_head(profesor&)[m[K’
+   AYEDA.profes.insert_head(Alberto[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[Kcandidate: void sll_t<TDato>::insert_head(sll_node_t<TDato>*) [with TDato = profesor]
+   void [01;36m[Kinsert_head[m[K(sll_node_t<TDato>* n) {
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kprofesor[m[K’ to ‘[01m[Ksll_node_t<profesor>*[m[K’
+[01m[Kasignatura.cpp:43:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksll_t<profesor>::insert_head(profesor&)[m[K’
+   AYEDA.profes.insert_head(Vanessa[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+In file included from [01m[Kasignatura.cpp:2:0[m[K:
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[Kcandidate: void sll_t<TDato>::insert_head(sll_node_t<TDato>*) [with TDato = profesor]
+   void [01;36m[Kinsert_head[m[K(sll_node_t<TDato>* n) {
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[Ksll_t.h:23:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kprofesor[m[K’ to ‘[01m[Ksll_node_t<profesor>*[m[K’
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(int) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:45:32:[m[K   required from here
+[01m[Kvector_t.h:18:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+   vector_t(int sz) : v_(NULL), sz_(sz) { v_ = [01;31m[Knew T[sz_][m[K; }
+                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[Kasignatura.cpp:3:0[m[K:
+vector_t.h: In instantiation of ‘[01m[Kvector_t<T>::vector_t(const vector_t<T>&) [with T = asignatura][m[K’:
+[01m[Kasignatura.cpp:50:37:[m[K   required from here
+[01m[Kvector_t.h:21:10:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kasignatura::asignatura()[m[K’
+     v_ = [01;31m[Knew T[sz_][m[K;
+          [01;31m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(std::__cxx11::string, std::__cxx11::string)
+   [01;36m[Kasignatura[m[K(string name, string code){
+   [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(const asignatura&)
+ struct [01;36m[Kasignatura[m[K{
+        [01;36m[K^~~~~~~~~~[m[K
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[Kcandidate: asignatura::asignatura(asignatura&&)
+[01m[Kasignatura.cpp:16:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 1[01;34m~/Practica 1[00m$ 
