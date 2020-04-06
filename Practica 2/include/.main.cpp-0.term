@@ -1,0 +1,1237 @@
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp 
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado_[m[K’ was not declared in this scope
+   [01;31m[Kestado_[m[K = value;
+   [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado_[m[K = value;
+   [01;36m[K^~~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado_[m[K’ was not declared in this scope
+   return [01;31m[Kestado_[m[K;
+          [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado_[m[K;
+          [01;36m[K^~~~~~~[m[K
+          [32m[KgetEstado[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp 
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado_[m[K’ was not declared in this scope
+   [01;31m[Kestado_[m[K = value;
+   [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado_[m[K = value;
+   [01;36m[K^~~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado_[m[K’ was not declared in this scope
+   return [01;31m[Kestado_[m[K;
+          [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado_[m[K;
+          [01;36m[K^~~~~~~[m[K
+          [32m[KgetEstado[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp 
+/tmp/ccIVAMZo.o: In function `main':
+main.cpp:(.text+0x92): undefined reference to `tablero::~tablero()'
+main.cpp:(.text+0xb7): undefined reference to `tablero::~tablero()'
+/tmp/cccFl5rK.o: In function `tablero::tablero(int, int)':
+tablero.cpp:(.text+0x192): undefined reference to `celula::~celula()'
+tablero.cpp:(.text+0x1d2): undefined reference to `celula::~celula()'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp 
+/tmp/cc2cMGjJ.o: In function `tablero::tablero(int, int)':
+tablero.cpp:(.text+0x192): undefined reference to `celula::~celula()'
+tablero.cpp:(.text+0x1d2): undefined reference to `celula::~celula()'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp 
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+ ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp 
+[01m[Ktablero.cpp:[m[K In function ‘[01m[Kvoid give_life(int, int)[m[K’:
+[01m[Ktablero.cpp:22:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTab[m[K’ was not declared in this scope
+   [01;31m[KTab[m[K[x][y].setEstado(1);
+   [01;31m[K^~~[m[K
+[01m[Ktablero.cpp:22:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klabs[m[K’
+   [01;36m[KTab[m[K[x][y].setEstado(1);
+   [01;36m[K^~~[m[K
+   [32m[Klabs[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp 
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+Introduce el numero de celulas vivas: 4
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+Introduce la coordenada x: 4
+Introduce la coordenada y: 5
+Introduce la coordenada x: 3
+Introduce la coordenada y: 2
+Introduce la coordenada x: 3
+Introduce la coordenada y: 1
+| ·  ·  ·  · |
+| ·  ·  X  · |
+| X  X  ·  · |
+| ·  ·  ·  · |
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [28@g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out [K[28@g++ main.cpp tablero.cpp celula.cpp[C
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+Introduce el numero de celulas vivas: 2
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+Introduce la coordenada x: 0
+Introduce la coordenada y: 0
+| X  ·  · |
+| ·  ·  · |
+| ·  ·  · |
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+Introduce el numero de celulas vivas: 2
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+Introduce la coordenada x: 4 4
+Introduce la coordenada y: 4
+| X  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  X |
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [28@g++ main.cpp tablero.cpp celula.cpp[C
+[01m[Kmain.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kmain.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tablero[m[K’ has no member named ‘[01m[KActualizarTablero[m[K’
+   T.[01;31m[KActualizarTablero[m[K();
+     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Ktablero.cpp:23:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kce[m[K’ does not name a type
+ [01;31m[Kce[m[K
+ [01;31m[K^~[m[K
+^[[A[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:27:31:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst tablero[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+   celula **mapa = Tab.get_tab([01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+In file included from [01m[Kcelula.cpp:3:0[m[K:
+[01m[Ktablero.h:18:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcelula tablero::get_tab()[m[K’
+   celula [01;36m[Kget_tab[m[K();
+          [01;36m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:27:31:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcelula[m[K’ to ‘[01m[Kcelula**[m[K’ in initialization
+   celula **mapa = Tab.get_tab([01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp clear
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Kclear: No such file or directory
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp clear
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Kclear: No such file or directory
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ls
+[0m[01;32ma.out[0m  celula.cpp  celula.h  celula.h.gch  main.cpp  tablero.cpp  tablero.h
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ [K[K[K[Klsclearg++ main.cpp tablero.cpp celula.cpp clear[K[K[K[K[K[K
+[01m[Ktablero.cpp:[m[K In function ‘[01m[Kvoid ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Knturnos[m[K’ was not declared in this scope
+   [01;31m[Knturnos[m[K;
+   [01;31m[K^~~~~~~[m[K
+[01m[Ktablero.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWriteTablero[m[K’ was not declared in this scope
+     [01;31m[KWriteTablero[m[K();
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[Ktablero.cpp:33:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktablero[m[K’
+     [01;36m[KWriteTablero[m[K();
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Ktablero[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Ktablero.cpp:[m[K In function ‘[01m[Kvoid ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWriteTablero[m[K’ was not declared in this scope
+     [01;31m[KWriteTablero[m[K();
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[Ktablero.cpp:33:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktablero[m[K’
+     [01;36m[KWriteTablero[m[K();
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Ktablero[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Ktablero.cpp:[m[K In function ‘[01m[Kvoid ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[KTab[m[K’ was not declared in this scope
+     [01;31m[KTab[m[K.WriteTablero();
+     [01;31m[K^~~[m[K
+[01m[Ktablero.cpp:33:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klabs[m[K’
+     [01;36m[KTab[m[K.WriteTablero();
+     [01;36m[K^~~[m[K
+     [32m[Klabs[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Ktablero.cpp:[m[K In function ‘[01m[Kvoid ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWriteTablero[m[K’ was not declared in this scope
+     [01;31m[KWriteTablero[m[K();
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[Ktablero.cpp:33:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktablero[m[K’
+     [01;36m[KWriteTablero[m[K();
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Ktablero[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Ktablero.cpp:[m[K In function ‘[01m[Kvoid ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWriteTablero[m[K’ was not declared in this scope
+     [01;31m[KWriteTablero[m[K();
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[Ktablero.cpp:43:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktablero[m[K’
+     [01;36m[KWriteTablero[m[K();
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Ktablero[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Ktablero.cpp:[m[K In function ‘[01m[Kvoid ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWriteTablero[m[K’ was not declared in this scope
+     [01;31m[KWriteTablero[m[K();
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[Ktablero.cpp:41:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktablero[m[K’
+     [01;36m[KWriteTablero[m[K();
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Ktablero[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:31:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j <= posY; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j <= posY[01;31m[K;[m[K j++){
+                                    [01;31m[K^[m[K
+[01m[Kcelula.cpp:31:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j <= posY; [01;31m[Kj[m[K++){
+                                      [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 1
+Introduce la coordenada x: 4
+Introduce la coordenada y: 2
+Introduce la coordenada x: 3
+Introduce la coordenada y: 1
+Introduzca el numero de turnos: 5
+| ·  ·  ·  · |
+| X  ·  ·  · |
+| X  ·  ·  · |
+| ·  X  ·  · |
+| ·  ·  ·  · |
+| X  ·  ·  · |
+| X  ·  ·  · |
+| ·  X  ·  · |
+| ·  ·  ·  · |
+| X  ·  ·  · |
+| X  ·  ·  · |
+| ·  X  ·  · |
+| ·  ·  ·  · |
+| X  ·  ·  · |
+| X  ·  ·  · |
+| ·  X  ·  · |
+| ·  ·  ·  · |
+| X  ·  ·  · |
+| X  ·  ·  · |
+| ·  X  ·  · |
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 1 2
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 4
+| ·  X  · |
+| ·  ·  X |
+| ·  X  · |
+
+| ·  X  · |
+| ·  ·  X |
+| ·  X  · |
+
+| ·  X  · |
+| ·  ·  X |
+| ·  X  · |
+
+| ·  X  · |
+| ·  ·  X |
+| ·  X  · |
+
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear[K[K[K[K[Kclear./a.out g++ main.cpp tablero.cpp celula.cpp
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcontarVecinas[m[K’ was not declared in this scope
+     [01;31m[KcontarVecinas[m[K(*this);
+     [01;31m[K^~~~~~~~~~~~~[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kg++ main.cpp tablero.cpp celula.cpp
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::updateEstado()[m[K’:
+[01m[Kcelula.cpp:37:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kvecinos[m[K’ was not declared in this scope
+   if ((estado_ == 1) && (vecinas == 2) || ([01;31m[Kvecinos[m[K == 3)) {
+                                            [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:37:44:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kvecinas[m[K’
+   if ((estado_ == 1) && (vecinas == 2) || ([01;36m[Kvecinos[m[K == 3)) {
+                                            [01;36m[K^~~~~~~[m[K
+                                            [32m[Kvecinas[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::updateEstado()[m[K’:
+[01m[Kcelula.cpp:37:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kvecina[m[K’ was not declared in this scope
+   if ((estado_ == 1) && (vecinas == 2) || ([01;31m[Kvecina[m[K == 3)) {
+                                            [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:37:44:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kvecinas[m[K’
+   if ((estado_ == 1) && (vecinas == 2) || ([01;36m[Kvecina[m[K == 3)) {
+                                            [01;36m[K^~~~~~[m[K
+                                            [32m[Kvecinas[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+/tmp/cceZgp3B.o: In function `tablero::ActualizarTablero()':
+tablero.cpp:(.text+0x471): undefined reference to `celula::setVecinas(int)'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setVecinas(int)[m[K’:
+[01m[Kcelula.cpp:21:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvecinas[m[K’ was not declared in this scope
+   [01;31m[Kvecinas[m[K = x;
+   [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:21:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetVecinas[m[K’
+   [01;36m[Kvecinas[m[K = x;
+   [01;36m[K^~~~~~~[m[K
+   [32m[KsetVecinas[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 1
+
+Introduzca el numero de turnos: 4
+
+| X  ·  ·  · |
+| X  ·  ·  · |
+| ·  X  ·  · |
+| ·  ·  ·  · |
+
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 4
+
+| ·  ·  · |
+| X  X  · |
+| ·  X  · |
+
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 4
+
+| ·  X  · |
+| ·  X  · |
+| X  ·  · |
+
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 12 
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 4
+
+| ·  X  · |
+| ·  ·  · |
+| ·  ·  · |
+
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 4
+
+| ·  X  · |
+| ·  X  · |
+| X  ·  · |
+
+Momento pana 1
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 4
+
+| ·  X  · |
+| ·  X  · |
+| ·  X  · |
+
+Momento pana 1
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: ^C
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 3 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 1
+
+Introduzca el numero de turnos: 4
+
+| ·  ·  · |
+| X  X  · |
+| X  ·  · |
+
+Momento pana 1
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 3
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 1
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 1
+
+Introduzca el numero de turnos: 4
+
+| ·  ·  · |
+| X  X  · |
+| X  ·  · |
+
+Momento pana 1
+Segmentation fault (core dumped)
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out [K
+Introduce el numero de filas: 3
+Introduce el numero de columnas: 3
+
+Introduce el numero de celulas vivas: 2
+
+Introduce la coordenada x: 1
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 2
+
+Introduzca el numero de turnos: 4
+
+| ·  ·  X |
+| ·  ·  · |
+| ·  X  · |
+
+Momento pana 1
+Momento pana 2
+| ·  ·  · |
+| ·  ·  · |
+| ·  ·  · |
+
+Momento pana 1
+Momento pana 2
+| ·  ·  · |
+| ·  ·  · |
+| ·  ·  · |
+
+Momento pana 1
+Momento pana 2
+| ·  ·  · |
+| ·  ·  · |
+| ·  ·  · |
+
+Momento pana 1
+Momento pana 2
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 5
+Introduce el numero de columnas: 5
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 4
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 5 4
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 5
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  ·  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  X  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ .&[K/a.out 
+Introduce el numero de filas: 5
+Introduce el numero de columnas: 5
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 4
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 5
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  ·  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  X  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear[K[K[K[Klear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 5
+Introduce el numero de columnas: 5
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 
+3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 4
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 5
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  X  ·  X  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out 
+Introduce el numero de filas: 13
+Introduce el numero de columnas: 13
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 7
+Introduce la coordenada y: 7
+
+Introduce la coordenada x: 8
+Introduce la coordenada y: 8
+
+Introduce la coordenada x: 7
+Introduce la coordenada y: 8
+
+Introduce la coordenada x: 8
+Introduce la coordenada y: 9
+
+Introduce la coordenada x: 9
+Introduce la coordenada y: 8
+
+Introduzca el numero de turnos: 20
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  X  X  ·  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  X  X  ·  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  X  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  X  X  ·  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  X  ·  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  X  X  ·  ·  X  X  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  · |
+| ·  ·  ·  ·  ·  X  ·  ·  ·  ·  X  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  X  X  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  X  ·  · |
+| ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  X  X  X |
+| ·  ·  ·  ·  ·  ·  X  ·  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  X  ·  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  X  X  X  X  X  X |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  X  · |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  X  X |
+| ·  ·  ·  ·  ·  ·  X  ·  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  X  X |
+| ·  ·  ·  ·  ·  ·  X  ·  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  X  ·  X |
+| ·  ·  ·  ·  ·  ·  X  X  ·  X  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  X  X  X  X |
+| ·  ·  ·  ·  ·  ·  X  ·  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  X  X  X  ·  X |
+| ·  ·  ·  ·  ·  ·  X  X  ·  X  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  X  X  ·  X  ·  ·  X |
+| ·  ·  ·  ·  ·  X  X  ·  ·  ·  ·  X  X |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  X  · |
+| ·  ·  ·  ·  ·  ·  ·  X  X  X  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  X  X  X  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  X  ·  ·  ·  ·  ·  X |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  X  ·  X |
+| ·  ·  ·  ·  ·  X  ·  ·  ·  ·  X  X  X |
+| ·  ·  ·  ·  ·  X  X  ·  X  ·  X  X  X |
+| ·  ·  ·  ·  ·  ·  ·  X  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  X  ·  ·  ·  · |
+| ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · |
+
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [3Pclear./a.out [3Pclear./a.out [3Pclear./a.out g++ main.cpp tablero.cpp celula.cpp
+[01m[Ktablero.cpp:25:5:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kint tablero::NumCelVivas()[m[K’ does not match any in class ‘[01m[Ktablero[m[K’
+ int [01;31m[Ktablero[m[K::NumCelVivas() {
+     [01;31m[K^~~~~~~[m[K
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:16:8:[m[K [01;31m[Kerror: [m[Kcandidate is: void tablero::NumCelVivas()
+   void [01;31m[KNumCelVivas[m[K();
+        [01;31m[K^~~~~~~~~~~[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::ActualizarTablero()[m[K’:
+[01m[Ktablero.cpp:68:8:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid tablero::NumCelVivas()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+     if([01;31m[KNumCelVivas[m[K == 0){
+        [01;31m[K^~~~~~~~~~~[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out [3Pclearg++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kg++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out [3Pclear./a.out [3Pclear./a.out [3Pclear./a.out 
+Introduce el numero de filas: 5
+Introduce el numero de columnas: 5
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 4
+
+Introduce la coordenada x: 2
+3
+Introduce la coordenada y: 
+Introduce la coordenada x: c ^C
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out 
+Introduce el numero de filas: 5
+Introduce el numero de columnas: 5
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 4
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 6
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  X  ·  X  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [3Pclear./a.out g++ main.cpp tablero.cpp celula.cpp
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp tablero.cpp celula.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 5
+Introduce el numero de columnas: 5
+
+Introduce el numero de celulas vivas: 5
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 2
+
+Introduce la coordenada x: 3
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 4
+
+Introduce la coordenada x: 2
+Introduce la coordenada y: 3
+
+Introduce la coordenada x: 4
+Introduce la coordenada y: 3
+
+Introduzca el numero de turnos: 6
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  X  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  X  X  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  X  X  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  X  ·  X  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+| ·  ·  ·  ·  · |
+
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ls
+celula.cpp  celula.h  celula.h.gch  main.cpp  tablero.cpp  tablero.h
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ c[Kcd ..
+]0;~/Practica 2[01;34m~/Practica 2[00m$ ls
+[0m[01;34minclude[0m  [01;34mlib[0m  [01;34msrc[0m
+]0;~/Practica 2[01;34m~/Practica 2[00m$ cd src/
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ cler[Kar
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+[0m[01;32ma.out[0m  celula.cpp  main.cpp  makefile.sagews  tablero.cpp
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ mn[Kv makefile.sagews makefile
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ clear
+[3J[H[2J]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ ls
+[0m[01;32ma.out[0m  celula.cpp  main.cpp  makefile  makefile.sagews  tablero.cpp
+]0;~/Practica 2/src[01;34m~/Practica 2/src[00m$ 

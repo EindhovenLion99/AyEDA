@@ -1,0 +1,832 @@
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ m[Ktablero.
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Ktablero.: No such file or directory
+[01m[Kg++:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:2:10:[m[K [01;31m[Kfatal error: [m[K/Practica \2/include/tablero.h: No such file or directory
+ #include [01;31m[K"/Practica \2/include/tablero.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:4:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ktablero[m[K’ does not name a type
+ [01;31m[Ktablero[m[K::tablero(int fila, int columna){
+ [01;31m[K^~~~~~~[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:13:32:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTablero[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+   Tablero(int fila, int columna[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Ktablero.h:13:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kint tablero::Tablero(int, int)[m[K’ conflicts with a previous declaration
+[01m[Ktablero.h:9:12:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kcelula** tablero::Tablero[m[K’
+   celula **[01;36m[KTablero[m[K;
+            [01;36m[K^~~~~~~[m[K
+[01m[Ktablero.h:14:11:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+   ~Tablero[01;31m[K([m[K);
+           [01;31m[K^[m[K
+[01m[Ktablero.cpp:5:1:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Ktablero::tablero(int, int)[m[K’ does not match any in class ‘[01m[Ktablero[m[K’
+ [01;31m[Ktablero[m[K::tablero(int fila, int columna){
+ [01;31m[K^~~~~~~[m[K
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:7:7:[m[K [01;31m[Kerror: [m[Kcandidates are: constexpr tablero::tablero(tablero&&)
+ class [01;31m[Ktablero[m[K {
+       [01;31m[K^~~~~~~[m[K
+[01m[Ktablero.h:7:7:[m[K [01;31m[Kerror: [m[K                constexpr tablero::tablero(const tablero&)
+[01m[Ktablero.h:7:7:[m[K [01;31m[Kerror: [m[K                tablero::tablero()
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:13:32:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTablero[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+   Tablero(int fila, int columna[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Ktablero.h:13:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kint tablero::Tablero(int, int)[m[K’ conflicts with a previous declaration
+[01m[Ktablero.h:9:12:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kcelula** tablero::Tablero[m[K’
+   celula **[01;36m[KTablero[m[K;
+            [01;36m[K^~~~~~~[m[K
+[01m[Ktablero.h:14:11:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+   ~Tablero[01;31m[K([m[K);
+           [01;31m[K^[m[K
+[01m[Ktablero.cpp:5:1:[m[K [01;31m[Kerror: [m[K‘[01m[KTablero[m[K’ does not name a type; did you mean ‘[01m[Ktablero[m[K’?
+ [01;31m[KTablero[m[K::Tablero(int fila, int columna){
+ [01;31m[K^~~~~~~[m[K
+ [32m[Ktablero[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:13:32:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTablero[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+   Tablero(int fila, int columna[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Ktablero.h:14:11:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+   ~Tablero[01;31m[K([m[K);
+           [01;31m[K^[m[K
+[01m[Ktablero.cpp:5:1:[m[K [01;31m[Kerror: [m[K‘[01m[KTablero[m[K’ does not name a type; did you mean ‘[01m[Ktablero[m[K’?
+ [01;31m[KTablero[m[K::Tablero(int fila, int columna){
+ [01;31m[K^~~~~~~[m[K
+ [32m[Ktablero[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:13:32:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTablero[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+   Tablero(int fila, int columna[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Ktablero.h:14:11:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+   ~Tablero[01;31m[K([m[K);
+           [01;31m[K^[m[K
+[01m[Ktablero.cpp:5:39:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTablero[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+ tablero::Tablero(int fila, int columna[01;31m[K)[m[K{
+                                       [01;31m[K^[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kint tablero::Tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:3:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kint tablero::Tablero(int, int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   [01;31m[KTablero[m[K.resize(n);
+   [01;31m[K^~~~~~~[m[K
+[01m[Ktablero.cpp:9:22:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kint tablero::Tablero(int, int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   for(int i = 0; i < [01;31m[KTablero[m[K.size(); i++){
+                      [01;31m[K^~~~~~~[m[K
+[01m[Ktablero.cpp:9:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ksize[m[K’
+   for(int i = 0; i < Tablero.[01;31m[Ksize[m[K(); i++){
+                              [01;31m[K^~~~[m[K
+[01m[Ktablero.cpp:9:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize[m[K’ was not declared in this scope
+[01m[Ktablero.cpp:9:30:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kdysize[m[K’
+   for(int i = 0; i < Tablero.[01;36m[Ksize[m[K(); i++){
+                              [01;36m[K^~~~[m[K
+                              [32m[Kdysize[m[K
+[01m[Ktablero.cpp:9:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   for(int i = 0; i < Tablero.size()[01;31m[K;[m[K i++){
+                                    [01;31m[K^[m[K
+[01m[Ktablero.cpp:9:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   for(int i = 0; i < Tablero.size(); [01;31m[Ki[m[K++){
+                                      [01;31m[K^[m[K
+[01m[Ktablero.cpp:14:16:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+       Tablero[i[01;31m[K][m[K[j] = 0;
+                [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp clear[Kg++ tablero.cpp 
+[01m[Ktablero.cpp:5:39:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTablero[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+ tablero::Tablero(int fila, int columna[01;31m[K)[m[K{
+                                       [01;31m[K^[m[K
+[01m[Ktablero.cpp:5:39:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kint tablero::Tablero(int, int)[m[K’ member function declared in class ‘[01m[Ktablero[m[K’
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTablero[m[K’ was not declared in this scope
+   [01;31m[KTablero[m[K.resize(n);
+   [01;31m[K^~~~~~~[m[K
+[01m[Ktablero.cpp:8:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktablero[m[K’
+   [01;36m[KTablero[m[K.resize(n);
+   [01;36m[K^~~~~~~[m[K
+   [32m[Ktablero[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresize[m[K’ in ‘[01m[K((tablero*)this)->tablero::Tab[m[K’, which is of non-class type ‘[01m[Kcelula**[m[K’
+   Tab.[01;31m[Kresize[m[K(n);
+       [01;31m[K^~~~~~[m[K
+[01m[Ktablero.cpp:9:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((tablero*)this)->tablero::Tab[m[K’, which is of non-class type ‘[01m[Kcelula**[m[K’
+   for(int i = 0; i < Tab.[01;31m[Ksize[m[K(); i++){
+                          [01;31m[K^~~~[m[K
+[01m[Ktablero.cpp:10:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresize[m[K’ in ‘[01m[K*(((tablero*)this)->tablero::Tab + ((sizetype)(((long unsigned int)i) * 8)))[m[K’, which is of pointer type ‘[01m[Kcelula*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+     Tab[i].[01;31m[Kresize[m[K(m);
+            [01;31m[K^~~~~~[m[K
+[01m[Ktablero.cpp:14:15:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass celula[m[K’
+       Tab[i][j[01;31m[K][m[K = 0;
+               [01;31m[K^[m[K
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:6:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass celula[m[K’
+ class [01;36m[Kcelula[m[K;
+       [01;36m[K^~~~~~[m[K
+[01m[Ktablero.cpp:14:15:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass celula[m[K’
+       [01;31m[KTab[i][j][m[K = 0;
+       [01;31m[K~~~~~~~~^[m[K
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:6:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass celula[m[K’
+ class [01;36m[Kcelula[m[K;
+       [01;36m[K^~~~~~[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcelula[m[K’ does not name a type
+   [01;31m[Kcelula[m[K **Tab;
+   [01;31m[K^~~~~~[m[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTab[m[K’ was not declared in this scope
+   [01;31m[KTab[m[K.resize(n);
+   [01;31m[K^~~[m[K
+[01m[Ktablero.cpp:8:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klabs[m[K’
+   [01;36m[KTab[m[K.resize(n);
+   [01;36m[K^~~[m[K
+   [32m[Klabs[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcelula[m[K’ does not name a type; did you mean ‘[01m[KCelula[m[K’?
+   [01;31m[Kcelula[m[K **Tab;
+   [01;31m[K^~~~~~[m[K
+   [32m[KCelula[m[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTab[m[K’ was not declared in this scope
+   [01;31m[KTab[m[K.resize(n);
+   [01;31m[K^~~[m[K
+[01m[Ktablero.cpp:8:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klabs[m[K’
+   [01;36m[KTab[m[K.resize(n);
+   [01;36m[K^~~[m[K
+   [32m[Klabs[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:18:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktablero[m[K’ does not name a type
+   int celulasVecinas(const [01;31m[Ktablero[m[K& tab);
+                            [01;31m[K^~~~~~~[m[K
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcelula[m[K’ does not name a type; did you mean ‘[01m[KCelula[m[K’?
+   [01;31m[Kcelula[m[K **Tab;
+   [01;31m[K^~~~~~[m[K
+   [32m[KCelula[m[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTab[m[K’ was not declared in this scope
+   [01;31m[KTab[m[K.resize(n);
+   [01;31m[K^~~[m[K
+[01m[Ktablero.cpp:8:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klabs[m[K’
+   [01;36m[KTab[m[K.resize(n);
+   [01;36m[K^~~[m[K
+   [32m[Klabs[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:18:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktablero[m[K’ does not name a type
+   int celulasVecinas(const [01;31m[Ktablero[m[K &tab);
+                            [01;31m[K^~~~~~~[m[K
+In file included from [01m[Ktablero.cpp:2:0[m[K:
+[01m[Ktablero.h:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcelula[m[K’ does not name a type; did you mean ‘[01m[KCelula[m[K’?
+   [01;31m[Kcelula[m[K **Tab;
+   [01;31m[K^~~~~~[m[K
+   [32m[KCelula[m[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[KTab[m[K’ was not declared in this scope
+   [01;31m[KTab[m[K.resize(n);
+   [01;31m[K^~~[m[K
+[01m[Ktablero.cpp:8:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klabs[m[K’
+   [01;36m[KTab[m[K.resize(n);
+   [01;36m[K^~~[m[K
+   [32m[Klabs[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:18:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktablero[m[K’ does not name a type
+   int celulasVecinas(const [01;31m[Ktablero[m[K &tab);
+                            [01;31m[K^~~~~~~[m[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:8:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresize[m[K’ in ‘[01m[K((tablero*)this)->tablero::Tab[m[K’, which is of non-class type ‘[01m[Kcelula**[m[K’
+   Tab.[01;31m[Kresize[m[K(n);
+       [01;31m[K^~~~~~[m[K
+[01m[Ktablero.cpp:9:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((tablero*)this)->tablero::Tab[m[K’, which is of non-class type ‘[01m[Kcelula**[m[K’
+   for(int i = 0; i < Tab.[01;31m[Ksize[m[K(); i++){
+                          [01;31m[K^~~~[m[K
+[01m[Ktablero.cpp:10:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresize[m[K’ in ‘[01m[K*(((tablero*)this)->tablero::Tab + ((sizetype)(((long unsigned int)i) * 8)))[m[K’, which is of pointer type ‘[01m[Kcelula*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+     Tab[i].[01;31m[Kresize[m[K(m);
+            [01;31m[K^~~~~~[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:18:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktablero[m[K’ does not name a type
+   int celulasVecinas(const [01;31m[Ktablero[m[K &tab);
+                            [01;31m[K^~~~~~~[m[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:11:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+       Tab[i] = new celula[m[01;31m[K][m[K;
+                            [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:13:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int)
+   [01;36m[Kcelula[m[K(int value);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:13:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kcelula.h:6:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:6:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:11:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+       Tab[i] = new celula[m[01;31m[K][m[K;
+                            [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:13:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int)
+   [01;36m[Kcelula[m[K(int value);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:13:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kcelula.h:6:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:6:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:11:29:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcelula**[m[K’ to ‘[01m[Kcelula*[m[K’ in assignment
+       Tab[i] = new celula*[m[01;31m[K][m[K;
+                             [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ tablero.cpp clear
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Kclear: No such file or directory
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ tablero.cpp clear[Kclear[Kclear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp clear
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Kclear: No such file or directory
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ tablero.cpp clearclear[Kg++ tablero.cpp clear[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:11:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+       Tab[i] = new celula[m[01;31m[K][m[K;
+                            [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:13:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int)
+   [01;36m[Kcelula[m[K(int value);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:13:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kcelula.h:6:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:6:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccTYSB2I.o: In function `tablero::tablero(int, int)':
+tablero.cpp:(.text+0xfa): undefined reference to `celula::celula()'
+tablero.cpp:(.text+0x16c): undefined reference to `celula::celula(int)'
+tablero.cpp:(.text+0x1b2): undefined reference to `celula::~celula()'
+tablero.cpp:(.text+0x1f8): undefined reference to `celula::~celula()'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ tablero.
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Ktablero.: No such file or directory
+[01m[Kg++:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ tablero.cpp 
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/cckgTNJs.o: In function `tablero::tablero(int, int)':
+tablero.cpp:(.text+0xdd): undefined reference to `celula::celula()'
+tablero.cpp:(.text+0x152): undefined reference to `celula::celula(int, int, int)'
+tablero.cpp:(.text+0x192): undefined reference to `celula::~celula()'
+tablero.cpp:(.text+0x1d2): undefined reference to `celula::~celula()'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccRx5292.o: In function `tablero::tablero(int, int)':
+tablero.cpp:(.text+0xdd): undefined reference to `celula::celula()'
+tablero.cpp:(.text+0x152): undefined reference to `celula::celula(int, int, int)'
+tablero.cpp:(.text+0x192): undefined reference to `celula::~celula()'
+tablero.cpp:(.text+0x1d2): undefined reference to `celula::~celula()'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ mai[K[K[K[K[K[K[Kclear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp clear[Kg++ tablero.cpp clear[Kg++ tablero.cpp clear[Kg++ tablero.cpp [K[K[K[K[K[K[K[K[K[K[K[Kmain.cpp tablero.cpp celula.cpp 
+[01m[Kmain.cpp:2:10:[m[K [01;31m[Kfatal error: [m[K/include/celula.h: No such file or directory
+ #include [01;31m[K"/include/celula.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:16:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   [01;31m[Kestado[m[K = value;
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:16:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado[m[K = value;
+   [01;36m[K^~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:20:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   return [01;31m[Kestado[m[K;
+          [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:20:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado[m[K;
+          [01;36m[K^~~~~~[m[K
+          [32m[KgetEstado[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ cleart[K
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp 
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Kmain.cpp:3[m[K:
+[01m[Kcelula.h:7:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass celula[m[K’
+ class [01;31m[Kcelula[m[K {
+       [01;31m[K^~~~~~[m[K
+In file included from [01m[Kmain.cpp:2:0[m[K:
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass celula[m[K’
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:16:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   [01;31m[Kestado[m[K = value;
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:16:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado[m[K = value;
+   [01;36m[K^~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:20:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   return [01;31m[Kestado[m[K;
+          [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:20:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado[m[K;
+          [01;36m[K^~~~~~[m[K
+          [32m[KgetEstado[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ls
+celula.cpp  celula.h  celula.h.gch  main.cpp  tablero.cpp  tablero.h
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp [K[K[K[K[K[K[K[K[Ktablero.cpp 
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccjT54Jv.o: In function `tablero::tablero(int, int)':
+tablero.cpp:(.text+0xdd): undefined reference to `celula::celula()'
+tablero.cpp:(.text+0x152): undefined reference to `celula::celula(int, int, int)'
+tablero.cpp:(.text+0x192): undefined reference to `celula::~celula()'
+tablero.cpp:(.text+0x1d2): undefined reference to `celula::~celula()'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:10:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+     Tab[i] = new celula[m[01;31m[K][m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int, int, int)
+   [01;36m[Kcelula[m[K(int estado, int x, int y);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ cler[Kar
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:10:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+     Tab[i] = new celula[m[01;31m[K][m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int, int, int)
+   [01;36m[Kcelula[m[K(int estado, int x, int y);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:10:27:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcelula**[m[K’ to ‘[01m[Kcelula*[m[K’ in assignment
+     Tab[i] = new celula*[m[01;31m[K][m[K;
+                           [01;31m[K^[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:10:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+     Tab[i] = new celula[m[01;31m[K][m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int, int, int)
+   [01;36m[Kcelula[m[K(int estado, int x, int y);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Ktablero.cpp:[m[K At global scope:
+[01m[Ktablero.cpp:19:33:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid tablero::actualizarTablero()[m[K’ member function declared in class ‘[01m[Ktablero[m[K’
+ void tablero::actualizarTablero([01;31m[K)[m[K{
+                                 [01;31m[K^[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::WriteTablero()[m[K’:
+[01m[Ktablero.cpp:26:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::WriteCel()[m[K’
+       Tab[i][j].WriteCel([01;31m[K)[m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:22:12:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& celula::WriteCel(std::ostream&) const
+   ostream& [01;36m[KWriteCel[m[K(ostream& os) const;
+            [01;36m[K^~~~~~~~[m[K
+[01m[Kcelula.h:22:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ cler[Kar
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ tablero.cpp clear[Kg++ tablero.cpp clear[Kg++ tablero.cpp clear[K[Kg++ main.cpp tablero.cpp celula.cpp 
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Kmain.cpp:3[m[K:
+[01m[Kcelula.h:7:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass celula[m[K’
+ class [01;31m[Kcelula[m[K {
+       [01;31m[K^~~~~~[m[K
+In file included from [01m[Kmain.cpp:2:0[m[K:
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass celula[m[K’
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:10:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+     Tab[i] = new celula[m[01;31m[K][m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int, int, int)
+   [01;36m[Kcelula[m[K(int estado, int x, int y);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:16:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Ktablero.cpp:[m[K At global scope:
+[01m[Ktablero.cpp:19:33:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid tablero::actualizarTablero()[m[K’ member function declared in class ‘[01m[Ktablero[m[K’
+ void tablero::actualizarTablero([01;31m[K)[m[K{
+                                 [01;31m[K^[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::WriteTablero()[m[K’:
+[01m[Ktablero.cpp:26:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::WriteCel()[m[K’
+       Tab[i][j].WriteCel([01;31m[K)[m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:22:12:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& celula::WriteCel(std::ostream&) const
+   ostream& [01;36m[KWriteCel[m[K(ostream& os) const;
+            [01;36m[K^~~~~~~~[m[K
+[01m[Kcelula.h:22:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[Ktablero.h:3:0[m[K,
+                 from [01m[Kcelula.cpp:3[m[K:
+[01m[Kcelula.h:7:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass celula[m[K’
+ class [01;31m[Kcelula[m[K {
+       [01;31m[K^~~~~~[m[K
+In file included from [01m[Kcelula.cpp:2:0[m[K:
+[01m[Kcelula.h:7:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass celula[m[K’
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.cpp:6:1:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kcelula::celula()[m[K’ does not match any in class ‘[01m[Kcelula[m[K’
+ [01;31m[Kcelula[m[K::celula() {
+ [01;31m[K^~~~~~[m[K
+In file included from [01m[Kcelula.cpp:2:0[m[K:
+[01m[Kcelula.h:7:7:[m[K [01;31m[Kerror: [m[Kcandidates are: constexpr celula::celula(const celula&)
+ class [01;31m[Kcelula[m[K {
+       [01;31m[K^~~~~~[m[K
+[01m[Kcelula.h:16:3:[m[K [01;31m[Kerror: [m[K                celula::celula(int, int, int)
+   [01;31m[Kcelula[m[K(int estado, int x, int y);
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   [01;31m[Kestado[m[K = value;
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado[m[K = value;
+   [01;36m[K^~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   return [01;31m[Kestado[m[K;
+          [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado[m[K;
+          [01;36m[K^~~~~~[m[K
+          [32m[KgetEstado[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:25:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class tablero[m[K’ has no member named ‘[01m[Kget_tab[m[K’
+   celula **mapa = Tab.[01;31m[Kget_tab[m[K();
+                       [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:28:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+   for(int i = posX - 1; i < [01;31m[K;[m[K i++){
+                             [01;31m[K^[m[K
+[01m[Kcelula.cpp:29:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j < ; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:29:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j < [01;31m[K;[m[K j++){
+                               [01;31m[K^[m[K
+[01m[Kcelula.cpp:29:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[01m[Kcelula.cpp:29:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j < ; [01;31m[Kj[m[K++){
+                                 [01;31m[K^[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kstd::ostream& celula::WriteCel(std::ostream&) const[m[K’:
+[01m[Kcelula.cpp:36:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   if ([01;31m[Kestado[m[K == 1) {
+       [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:36:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kestado_[m[K’
+   if ([01;36m[Kestado[m[K == 1) {
+       [01;36m[K^~~~~~[m[K
+       [32m[Kestado_[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp 
+[01m[Ktablero.cpp:[m[K In constructor ‘[01m[Ktablero::tablero(int, int)[m[K’:
+[01m[Ktablero.cpp:10:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::celula()[m[K’
+     Tab[i] = new celula[m[01;31m[K][m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:4:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:17:3:[m[K [01;36m[Knote: [m[Kcandidate: celula::celula(int, int, int)
+   [01;36m[Kcelula[m[K(int estado, int x, int y);
+   [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:17:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[Kcelula.h:8:7:[m[K [01;36m[Knote: [m[Kcandidate: constexpr celula::celula(const celula&)
+ class [01;36m[Kcelula[m[K {
+       [01;36m[K^~~~~~[m[K
+[01m[Kcelula.h:8:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Ktablero.cpp:[m[K At global scope:
+[01m[Ktablero.cpp:19:33:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid tablero::actualizarTablero()[m[K’ member function declared in class ‘[01m[Ktablero[m[K’
+ void tablero::actualizarTablero([01;31m[K)[m[K{
+                                 [01;31m[K^[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::WriteTablero()[m[K’:
+[01m[Ktablero.cpp:26:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::WriteCel()[m[K’
+       Tab[i][j].WriteCel([01;31m[K)[m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:4:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:23:12:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& celula::WriteCel(std::ostream&) const
+   ostream& [01;36m[KWriteCel[m[K(ostream& os) const;
+            [01;36m[K^~~~~~~~[m[K
+[01m[Kcelula.h:23:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[Kcelula.cpp:6:1:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kcelula::celula()[m[K’ does not match any in class ‘[01m[Kcelula[m[K’
+ [01;31m[Kcelula[m[K::celula() {
+ [01;31m[K^~~~~~[m[K
+In file included from [01m[Kcelula.cpp:2:0[m[K:
+[01m[Kcelula.h:8:7:[m[K [01;31m[Kerror: [m[Kcandidates are: constexpr celula::celula(const celula&)
+ class [01;31m[Kcelula[m[K {
+       [01;31m[K^~~~~~[m[K
+[01m[Kcelula.h:17:3:[m[K [01;31m[Kerror: [m[K                celula::celula(int, int, int)
+   [01;31m[Kcelula[m[K(int estado, int x, int y);
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   [01;31m[Kestado[m[K = value;
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado[m[K = value;
+   [01;36m[K^~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   return [01;31m[Kestado[m[K;
+          [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado[m[K;
+          [01;36m[K^~~~~~[m[K
+          [32m[KgetEstado[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kint celula::contarVecinas(const tablero&)[m[K’:
+[01m[Kcelula.cpp:25:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class tablero[m[K’ has no member named ‘[01m[Kget_tab[m[K’
+   celula **mapa = Tab.[01;31m[Kget_tab[m[K();
+                       [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:28:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+   for(int i = posX - 1; i < [01;31m[K;[m[K i++){
+                             [01;31m[K^[m[K
+[01m[Kcelula.cpp:29:15:[m[K [01;31m[Kerror: [m[Kinitializer in range-based ‘[01m[Kfor[m[K’ loop
+     for(int j [01;31m[K=[m[K posY - 1: j < ; j++){
+               [01;31m[K^[m[K
+[01m[Kcelula.cpp:29:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+     for(int j = posY - 1: j < [01;31m[K;[m[K j++){
+                               [01;31m[K^[m[K
+[01m[Kcelula.cpp:29:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[01m[Kcelula.cpp:29:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope
+     for(int j = posY - 1: j < ; [01;31m[Kj[m[K++){
+                                 [01;31m[K^[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kstd::ostream& celula::WriteCel(std::ostream&) const[m[K’:
+[01m[Kcelula.cpp:36:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   if ([01;31m[Kestado[m[K == 1) {
+       [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:36:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kestado_[m[K’
+   if ([01;36m[Kestado[m[K == 1) {
+       [01;36m[K^~~~~~[m[K
+       [32m[Kestado_[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp tablero.cpp celula.cpp [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K`ce[K[K[Kp celula.cpp tablero.cpp 
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   [01;31m[Kestado[m[K = value;
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado[m[K = value;
+   [01;36m[K^~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   return [01;31m[Kestado[m[K;
+          [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado[m[K;
+          [01;36m[K^~~~~~[m[K
+          [32m[KgetEstado[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kstd::ostream& celula::WriteCel(std::ostream&) const[m[K’:
+[01m[Kcelula.cpp:37:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   if ([01;31m[Kestado[m[K == 1) {
+       [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:37:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kestado_[m[K’
+   if ([01;36m[Kestado[m[K == 1) {
+       [01;36m[K^~~~~~[m[K
+       [32m[Kestado_[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::WriteTablero()[m[K’:
+[01m[Ktablero.cpp:23:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcelula::WriteCel()[m[K’
+       Tab[i][j].WriteCel([01;31m[K)[m[K;
+                          [01;31m[K^[m[K
+In file included from [01m[Ktablero.h:4:0[m[K,
+                 from [01m[Ktablero.cpp:2[m[K:
+[01m[Kcelula.h:23:12:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& celula::WriteCel(std::ostream&) const
+   ostream& [01;36m[KWriteCel[m[K(ostream& os) const;
+            [01;36m[K^~~~~~~~[m[K
+[01m[Kcelula.h:23:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp celula.cpp tablero.cpp 
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   [01;31m[Kestado[m[K = value;
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado[m[K = value;
+   [01;36m[K^~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   return [01;31m[Kestado[m[K;
+          [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado[m[K;
+          [01;36m[K^~~~~~[m[K
+          [32m[KgetEstado[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kstd::ostream& celula::WriteCel(std::ostream&) const[m[K’:
+[01m[Kcelula.cpp:37:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   if ([01;31m[Kestado[m[K == 1) {
+       [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:37:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kestado_[m[K’
+   if ([01;36m[Kestado[m[K == 1) {
+       [01;36m[K^~~~~~[m[K
+       [32m[Kestado_[m[K
+[01m[Ktablero.cpp:[m[K In member function ‘[01m[Kvoid tablero::WriteTablero()[m[K’:
+[01m[Ktablero.cpp:23:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kos[m[K’ was not declared in this scope
+       Tab[i][j].WriteCel([01;31m[Kos[m[K);
+                          [01;31m[K^~[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp celula.cpp tablero.cpp 
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   [01;31m[Kestado[m[K = value;
+   [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado[m[K = value;
+   [01;36m[K^~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   return [01;31m[Kestado[m[K;
+          [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado[m[K;
+          [01;36m[K^~~~~~[m[K
+          [32m[KgetEstado[m[K
+[01m[Kcelula.cpp:[m[K In member function ‘[01m[Kstd::ostream& celula::WriteCel(std::ostream&) const[m[K’:
+[01m[Kcelula.cpp:37:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado[m[K’ was not declared in this scope
+   if ([01;31m[Kestado[m[K == 1) {
+       [01;31m[K^~~~~~[m[K
+[01m[Kcelula.cpp:37:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kestado_[m[K’
+   if ([01;36m[Kestado[m[K == 1) {
+       [01;36m[K^~~~~~[m[K
+       [32m[Kestado_[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp celula.cpp tablero.cpp 
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint setEstado(int)[m[K’:
+[01m[Kcelula.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado_[m[K’ was not declared in this scope
+   [01;31m[Kestado_[m[K = value;
+   [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:17:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KsetEstado[m[K’
+   [01;36m[Kestado_[m[K = value;
+   [01;36m[K^~~~~~~[m[K
+   [32m[KsetEstado[m[K
+[01m[Kcelula.cpp:[m[K In function ‘[01m[Kint getEstado()[m[K’:
+[01m[Kcelula.cpp:21:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kestado_[m[K’ was not declared in this scope
+   return [01;31m[Kestado_[m[K;
+          [01;31m[K^~~~~~~[m[K
+[01m[Kcelula.cpp:21:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgetEstado[m[K’
+   return [01;36m[Kestado_[m[K;
+          [01;36m[K^~~~~~~[m[K
+          [32m[KgetEstado[m[K
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear[Kr
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clearg++ main.cpp celula.cpp tablero.cpp 
+/tmp/ccr8JHIK.o: In function `tablero::tablero(int, int)':
+tablero.cpp:(.text+0x192): undefined reference to `celula::~celula()'
+tablero.cpp:(.text+0x1d2): undefined reference to `celula::~celula()'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ cl[K[Kclearg++ main.cpp celula.cpp tablero.cpp 
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ ./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+ ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  · ]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [28@g++ main.cpp celula.cpp tablero.cpp[C
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp celula.cpp tablero.cpp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+ · 
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [28@g++ main.cpp celula.cpp tablero.cpp[C
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp celula.cpp tablero.cpp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+ ·  ·  ·  ·  ·  · 
+ ·  ·  ·  ·  ·  · 
+ ·  ·  ·  ·  ·  · 
+ ·  ·  ·  ·  ·  · 
+ ·  ·  ·  ·  ·  · 
+ ·  ·  ·  ·  ·  · 
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [28@g++ main.cpp celula.cpp tablero.cpp[C
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp celula.cpp tablero.cpp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+ ·  ·  ·  · 
+ ·  ·  ·  · 
+ ·  ·  ·  · 
+ ·  ·  ·  · 
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear./a.out [28@g++ main.cpp celula.cpp tablero.cpp[C
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ g++ main.cpp celula.cpp tablero.cpp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.out 
+Introduce el numero de filas: 4
+Introduce el numero de columnas: 4
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+| ·  ·  ·  · |
+]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ clear
+[3J[H[2J]0;~/Practica 2/include[01;34m~/Practica 2/include[00m$ 
