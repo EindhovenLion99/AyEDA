@@ -565,14 +565,14 @@ Por otro lado, es necesario conocer cuándo el espacio para un registro en una c
 
 La tabla vacía debe inicializarse con este valor en todos sus registros y no dejar en ellos los valores que pudieran haber al iniciar el programa.
 
-##### La Búsqueda 
+##### La Búsqueda 
 
 La búsqueda del registro correspondiente a un valor de la clave se efectúa de la siguiente manera:
 * Se empieza por la dirección que le corresponde según la función de dispersión que se esté aplicando.
 * Si el valor no se encuentra en ningún registro de dicha celda y queda aún espacio para almacenar el registro, la búsqueda finaliza en fracaso y se puede concluir que el elemento no está presente en la tabla.
 * Si el valor no se encuentra en ningún registro de dicha celda y la celda está completamente ocupada, se debe continuar la búsqueda por las direcciones en la que se habría almacenado siguiendo la estrategia de direccionamiento o exploración adoptada.
 
-##### La inserción
+##### La inserción
 
 Por ejemplo, si la tabla se gestiona con exploración lineal se recorren las celdas que vienen a continuación hasta encontrar el elemento buscado o una celda con espacio para el registro.
 * La tabla se considera que es circular por lo que si se llega al final de la misma se vuelve a empezar por el principio.
@@ -625,7 +625,7 @@ d = (h(x) + gi (x)) mod t donde t es el tamaño de la tabla.
 * En la exploración lineal, las direcciones de búsqueda vienen dadas por:
 d = (h(x) + i) mod t, para i = 0, 1, 2, ..., t–1.
 
-##### Clustering
+##### Clustering
 
 Sin embargo, con el método de exploración lineal se van llenando celdas muy cercanas.
 * Este fenómeno se denomina clustering y provoca ineficiencia en las operaciones de búsqueda posteriores.
@@ -642,14 +642,14 @@ Otra forma de resolver los desbordamientos es utilizando permutaciones del rango
 * Una forma sencilla de obtener permutaciones es mediante los recorridos sistemáticos de paso aleatorio.
 * * Es la técnica conocida como dispersión doble.
 
-##### Dispersión Doble
+##### Dispersión Doble
 
 En la técnica de dispersión doble, es una estrategia de exploración en la que, ante una colisión, se genera una amplitud de paso por medio de otra función de
 dispersión f(x) y se realiza una exploración del resto de la tabla con dicha amplitud de paso: gi(x) = i * f(x), para i = 0, 1, 2, ...,
 
 * Con la estrategia de exploración doble con las dos funciones de dispersión h(x) y f(x) se recorren las direcciones: d = h(x) + i * f(x) mod t, para i = 0, 1, 2, ...,
 
-##### Tamaño Primo de las Tablas
+##### Tamaño Primo de las Tablas
 
 Sin embargo, de esta forma no siempre se obtiene una permutación de todas las direcciones de la tabla:
 * Si el paso f(x) resulta un divisor del tamaño t de la tabla, se repiten direcciones antes de recorrerlas todas.
@@ -662,7 +662,7 @@ Sin embargo, de esta forma no siempre se obtiene una permutación de todas las d
 
 La técnica de redispersión o rehashing usa una familia de funciones de exploración gi, i = 0, 1, 2, ..., para examinar las direcciones, siendo cada gi una función de dispersión distinta, para cada i.
 
-##### Eficiencia
+##### Eficiencia
 
 La eficiencia del tratamiento de la tabla depende de la carga que soporte la tabla en cada momento.
 * Se llama densidad de carga al cociente entre el número de direcciones que se están utilizando y el número de direcciones posibles: 
@@ -673,7 +673,7 @@ Densidad = número de direcciones que se están utilizando / número de direccio
 
 Factor = número de registros almacenados / número de registros que es posible almacenar
 
-##### Ejemplo:
+##### Ejemplo:
 
 Supongamos que para los 200 alumnos del curso decidimos utilizar los dos últimos dígitos del DNI.
 * El conjunto de claves posibles son los números de 8 cifras y la función de dispersión se define de forma que los dos últimos dígitos asignan la dirección de memoria.
@@ -684,11 +684,11 @@ Supongamos que para los 200 alumnos del curso decidimos utilizar los dos último
 
 Si hemos insertado 120 registros usando 70 celdas. La densidad de carga es:
 
-70/100 = 0.7
+* 70/100 = 0.7
 
 El factor de carga es:
 
-120/300 = 0.4
+* 120/300 = 0.4
 
 Si al acabar con los 200 alumnos tuviéramos 80 celdas ocupadas, estos valores serían de 0.8 y 2/3.
 
