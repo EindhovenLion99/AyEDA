@@ -31,19 +31,20 @@ La tarea fundamental entre las operaciones de búsqueda es:
          tiene ese valor en el campo correspondiente
      ● O determinar que no existe, en caso contrario.
 
-•Búsqueda externa:
-▫ Si existen muchos registros puede ser necesario almacenarlos en archivos de disco externo a la memoria del computador.
+* Búsqueda externa:
+* * Si existen muchos registros puede ser necesario almacenarlos en archivos de disco externo a la memoria del computador.
 
-•Búsqueda interna:
-▫Los registros que se buscan están almacenados por completo dentro de la memoria del computador.
+* Búsqueda interna:
+* *Los registros que se buscan están almacenados por completo dentro de la memoria del computador.
+
 La búsqueda lineal
 
-• El algoritmo de búsqueda básico de un elemento en una lista, secuencia o vector con una clave dada, conocido como búsqueda lineal o búsqueda secuencial, consiste en:
+* El algoritmo de búsqueda básico de un elemento en una lista, secuencia o vector con una clave dada, conocido como búsqueda lineal o búsqueda secuencial, consiste en:
 
-▫ Recorrer sucesivamente los elementos de la secuencia hasta encontrar el elemento buscado o hasta llegar al final de la estructura.
+* * Recorrer sucesivamente los elementos de la secuencia hasta encontrar el elemento buscado o hasta llegar al final de la estructura.
 
-• Se llama búsqueda primaria si el algoritmo se detiene al encontrar el primer elemento con la característica buscada.
-• Se llama búsqueda secundaria si se detectan todos los elementos con la característica buscada.
+* Se llama búsqueda primaria si el algoritmo se detiene al encontrar el primer elemento con la característica buscada.
+* Se llama búsqueda secundaria si se detectan todos los elementos con la característica buscada.
 
 *****************************************************************
 ```
@@ -62,16 +63,16 @@ El algoritmo se detiene al encontrar el primer elemento con valor “x” y devu
 
 Considerando la cantidad de comparaciones realizadas:
 
-• Mejor caso:
+* Mejor caso:
   El elemento buscado está en la primera posición.
-  ▫ Se hace 1 comparación.
-• Peor caso:
+* * Se hace 1 comparación.
+* Peor caso:
   El elemento buscado está en la última posición.
-  ▫ Se hacen n comparaciones (n es el num. de elementos).
-• En promedio:
+* * Se hacen n comparaciones (n es el num. de elementos).
+* En promedio:
   Si el elemento buscado está en la posición i se hacen i+1 comparaciones; i=0, 1,...n-1.
   El promedio de i = 1, 2, ..., n es: (n+1)/2.
-  ▫ Se hacen un promedio de (n+1)/2 comparaciones de elementos.
+* * Se hacen un promedio de (n+1)/2 comparaciones de elementos.
 
 El tiempo de ejecución:
 Depende linealmente del tamaño n de la estructura: O(n)
@@ -124,7 +125,8 @@ La búsqueda secuencial se aplica a cualquier lista o secuencia de elementos
 * Se repite el proceso utilizando con la primera mitad o la segunda mitad de la lista; según corresponda.
 
 Ejemplo: Se desea buscar el registro de valor 120 en la secuencia de registros o datos siguiente.
-13 - 44 - 75 - 100 - 120 - 275 - 325 - 510
+
+*13 - 44 - 75 - 100 - 120 - 275 - 325 - 510*
 
 * Comparamos la clave buscada con la clave del elemento central de la secuencia:
 * * Posición central: 3 (7 / 2 = 3)
@@ -134,13 +136,14 @@ Ejemplo: Se desea buscar el registro de valor 120 en la secuencia de registros o
 
 Reducción de la secuencia original a 4-7:
 
-13 - 44 - 75 - 100 - 120 - 275 - 325 - 510
+*13 - 44 - 75 - 100 - 120 - 275 - 325 - 510*
 
 * Comparamos la clave buscada con la clave del elemento central de la secuencia:
 * * Posición central: 5
 * * Valor en la posición central: 275
 * La búsqueda se centra ahora en la secuencia [4-5] el tamaño se ha reducido a la mitad.
-13 - 44 - 75 - 100 - 120 - 275 - 325 - 510
+
+*13 - 44 - 75 - 100 - 120 - 275 - 325 - 510*
 
 * El proceso se itera hasta que no se pueda subdividir más la secuencia (secuencia de un elemento).
 
@@ -204,13 +207,13 @@ Considerando la cantidad de comparaciones:
 
 Números de elementos examinados:
 
-Tamaño                       Binaria  	 Secuencial
-1			 1 		1
-10 			4 		10
-1.000 			11 		1.000
-5.000 			14 		5.000
-100.000 		18 		100.000
-1.000.000 		21 		1.000.000
+Tamaño      Binaria  	 Secuencial
+1			      1       		1
+10 			    4 		      10
+1.000 			11 		      1.000
+5.000 			14 		      5.000
+100.000 		18 		      100.000
+1.000.000 	21 		      1.000.000
 
 Número de elementos a comparar en el peor de los casos.
 
@@ -222,8 +225,8 @@ Búsqueda mediante transformación de claves (hashing)
 
 * La búsqueda binaria proporciona un medio para reducir el tiempo de búsqueda pero exige que los datos estén ordenados.
 * Existen otros métodos que pueden reducir el tiempo de búsqueda sin necesidad de que los datos estén ordenados:
-        * Hashing: consiste en convertir la clave dada en una dirección (posición) dentro del vector.
-        * La correspondencia entre clave y dirección se establece por una función de conversión (la función hash).
+* Hashing: consiste en convertir la clave dada en una dirección (posición) dentro del vector.
+* La correspondencia entre clave y dirección se establece por una función de conversión (la función hash).
 
 
 #### Tabla Hash
@@ -342,7 +345,7 @@ h(41797876) = 41797876 % 997 = 645
 Función Suma
 
 Es muy frecuente que las claves estén formadas por cadenas de caracteres, como nombres o identificadores.
-• Una opción inmediata para estos casos es usar los valores ASCII de los caracteres para obtener una cantidad numérica, por ejemplo sumándolos, a la que se le aplica una operación aritmética.
+* Una opción inmediata para estos casos es usar los valores ASCII de los caracteres para obtener una cantidad numérica, por ejemplo sumándolos, a la que se le aplica una operación aritmética.
 
 ************************************************************************************
 ```
