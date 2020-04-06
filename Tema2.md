@@ -682,15 +682,15 @@ Supongamos que para los 200 alumnos del curso decidimos utilizar los dos último
 
 ![](Capturas/Cap6.png)
 
-Si hemos insertado 120 registros usando 70 celdas. La densidad de carga es:
+* Si hemos insertado 120 registros usando 70 celdas. La densidad de carga es:
 
-* 70/100 = 0.7
+* * 70/100 = 0.7
 
-El factor de carga es:
+* El factor de carga es:
 
-* 120/300 = 0.4
+* * 120/300 = 0.4
 
-Si al acabar con los 200 alumnos tuviéramos 80 celdas ocupadas, estos valores serían de 0.8 y 2/3.
+* Si al acabar con los 200 alumnos tuviéramos 80 celdas ocupadas, estos valores serían de 0.8 y 2/3.
 
 
 
