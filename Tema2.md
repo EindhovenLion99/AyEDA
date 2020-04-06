@@ -678,7 +678,7 @@ Factor = número de registros almacenados / número de registros que es posible 
 Supongamos que para los 200 alumnos del curso decidimos utilizar los dos últimos dígitos del DNI.
 * El conjunto de claves posibles son los números de 8 cifras y la función de dispersión se define de forma que los dos últimos dígitos asignan la dirección de memoria.
 
-* La tabla consta de 100 celdas de tres registros.
+* * La tabla consta de 100 celdas de tres registros.
 
 ![](Capturas/Cap6.png)
 
