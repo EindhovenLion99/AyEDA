@@ -256,7 +256,7 @@ número de alumnos no llegará a los 300.
 
 Esquema de tabla Hash
 
-// IMAGEN
+![](Capturas/Cap1.png)
 
 Función de Dispersión:
 
@@ -301,7 +301,7 @@ Ejemplo:
 * El conjunto de valores posibles son los números de hasta 8 cifras y la función de dispersión proporciona la dirección como un número de 0 a 999.
 * La aplicación con los números del DNI podría dar los siguientes resultados:
 
-
+![](Capturas/Cap2.png)
 
 Función Módulo:
 
@@ -365,6 +365,8 @@ int hash(int valor) {
 ************************************************************************************
 
 Función Suma, Ejemplo:
+
+![](Capturas/Cap3.png)
 
 Aplicando la función hash de tipo suma a los números del DNI con una tabla de tamaño 12 se podría obtener, por ejemplo, lo siguiente:
 
@@ -512,6 +514,8 @@ Dispersión abierta
 La dispersión abierta consiste en usar una lista con los elementos que se dispersan en cada dirección.
 * Cada celda de la tabla está compuesta por una clave y un puntero.
 * El puntero de una celda apunta a NULL si la celda está vacía.
+
+![](Capturas/Cap4.png)
 
 Dispersión cerrada:
 
