@@ -31,11 +31,11 @@ La tarea fundamental entre las operaciones de búsqueda es:
          tiene ese valor en el campo correspondiente
      ● O determinar que no existe, en caso contrario.
 
-* Búsqueda externa:
-* * Si existen muchos registros puede ser necesario almacenarlos en archivos de disco externo a la memoria del computador.
+Búsqueda externa:
+* Si existen muchos registros puede ser necesario almacenarlos en archivos de disco externo a la memoria del computador.
 
-* Búsqueda interna:
-* *Los registros que se buscan están almacenados por completo dentro de la memoria del computador.
+Búsqueda interna:
+* Los registros que se buscan están almacenados por completo dentro de la memoria del computador.
 
 La búsqueda lineal
 
@@ -166,7 +166,7 @@ int bus_binaria(Tdef x, TVector v, int ini, int fin) {
 ```
 *****************************************************************
 
-* Mejoras:
+Mejoras:
 
 * Una mejora práctica en la búsqueda binaria se consigue si se sale del bucle al coincidir uno de los extremos del intervalo de búsqueda con la clave buscada evitando las siguientes particiones.
 
@@ -207,13 +207,13 @@ Considerando la cantidad de comparaciones:
 
 Números de elementos examinados:
 
-Tamaño      Binaria  	 Secuencial
-1			      1       		1
-10 			    4 		      10
-1.000 			11 		      1.000
-5.000 			14 		      5.000
-100.000 		18 		      100.000
-1.000.000 	21 		      1.000.000
+Tamaño      Binaria  	 Secuencial  
+1			      1       		1  
+10 			    4 		      10  
+1.000 			11 		      1.000  
+5.000 			14 		      5.000  
+100.000 		18 		      100.000  
+1.000.000 	21 		      1.000.000  
 
 Número de elementos a comparar en el peor de los casos.
 
