@@ -617,7 +617,7 @@ El tratamiento adecuado del desbordamiento requiere usar una estrategia intelige
 
 Si en una tabla T la función de dispersión es h, para una clave x, se examinan las celdas:
 
-T[h(x)], T[h(x)+1], T[h(x)+2], ..., T[h(x)+i], ...
+* T[h(x)], T[h(x)+1], T[h(x)+2], ..., T[h(x)+i], ...
 
 * En general, la dirección de exploración se expresa por: d = h(x) + gi(x) donde h(x) es la función de dispersión y gi(x) es la función de exploración o de tratamiento de colisiones.
 * Al considerar la tabla siempre circular la dirección de exploración es: 
