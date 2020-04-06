@@ -207,13 +207,14 @@ Considerando la cantidad de comparaciones:
 
 Números de elementos examinados:
 
-Tamaño      Binaria  	 Secuencial  
-1           1           1  
-10          4           10  
-1.000       11          1.000  
-5.000       14          5.000  
-100.000     18          100.000  
-1.000.000   21          1.000.000  
+| Tamaño  | Binaria | Secuencial |
+|---------|---------|------------|
+| 1       | 1       | 1          |
+| 10      | 4       | 10         |
+| 1000    | 11      | 1000       |
+| 5000    | 14      | 5000       |
+| 100000  | 18      | 100000     |
+| 1000000 | 21      | 1000000    |
 
 Número de elementos a comparar en el peor de los casos.
 
