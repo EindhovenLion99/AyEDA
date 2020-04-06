@@ -669,7 +669,7 @@ La eficiencia del tratamiento de la tabla depende de la carga que soporte la tab
 
 Densidad = número de direcciones que se están utilizando / número de direcciones posibles
 
-* Se llama factor de carga al cociente entre el número de registros almacenados y el número de registros que es posible almacenar en la tabla:
+* * Se llama factor de carga al cociente entre el número de registros almacenados y el número de registros que es posible almacenar en la tabla:
 
 Factor = número de registros almacenados / número de registros que es posible almacenar
 
