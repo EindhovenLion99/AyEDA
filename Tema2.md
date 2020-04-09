@@ -5,7 +5,7 @@
    > * Búsqueda Binaria
    > * Tabla Hash
 
-### Búsqueda Secuencial
+# Búsqueda Secuencial
 
 La información se almacena en forma de listas o secuencias de datos o registros.
 
@@ -78,7 +78,7 @@ El tiempo de ejecución:
 Depende linealmente del tamaño n de la estructura: O(n)
 
 
-#### Búsquedas inteligentes
+## Búsquedas inteligentes
 
 * Si en las búsquedas secuenciales se accede más rápido a los elementos que están en las primeras posiciones: sería conveniente ubicar en las primeras posiciones aquellos elementos que más veces se van a buscar.
 
@@ -107,7 +107,7 @@ int bus_traspuesta(Tdef x, TVector v, int ini, int fin) {
 ```
 *****************************************************************
 
-#### Búsqueda Binaria
+# Búsqueda Binaria
 
 La búsqueda secuencial se aplica a cualquier lista o secuencia de elementos 
 
@@ -230,7 +230,7 @@ Búsqueda mediante transformación de claves (hashing)
 * La correspondencia entre clave y dirección se establece por una función de conversión (la función hash).
 
 
-#### Tabla Hash
+# Tabla Hash
 
 Una tabla de dispersión o tabla hash es un espacio de memoria donde se almacenan registros con información asociada a una serie de valores.
 
@@ -254,11 +254,11 @@ número de alumnos no llegará a los 300.
 * Bastaría con reservar memoria para 300, o a lo sumo para 500 fichas.
 * El problema de cómo establecer la ubicación de las fichas de datos correspondiente a cada posible valor para que su posterior gestión sea eficiente se resuelve con la implementación de una tabla de dispersión.
 
-##### Esquema de tabla Hash
+## Esquema de tabla Hash
 
 ![](Capturas/Cap1.png)
 
-##### Función de Dispersión:
+## Función de Dispersión:
 
 Una función de dispersión es una función que, aplicada al valor de referencia, proporciona la dirección donde se encuentra la información asociada a dicho valor.
 • Dado:
@@ -267,7 +267,7 @@ Una función de dispersión es una función que, aplicada al valor de referencia
 
 *h: X -> D*
 
-##### Colisiones:
+## Colisiones:
 
 En la práctica, el número de claves es mucho mayor que el de los datos que realmente se van a almacenar.
 * Por tanto, las funciones de transformación que se puedan utilizar serán siempre suprayectivas:
@@ -275,7 +275,7 @@ En la práctica, el número de claves es mucho mayor que el de los datos que rea
 * Si en una aplicación aparecen sinónimos se dice que se produce una colisión y, dado que no son totalmente inevitables, se tiene que disponer de una herramienta para tratar estas circunstancias de forma inteligente.
 
 
-##### Buenas funciones de dispersión
+## Buenas funciones de dispersión
 
 * Una buena función de transformación para una tabla de dispersión debe ser sencilla y rápida de computar.
 * Otro aspecto en selección de una función de dispersión es evitar las colisiones.
@@ -285,7 +285,7 @@ En la práctica, el número de claves es mucho mayor que el de los datos que rea
 * De ahí el uso del término inglés hashing (desmenuzar)
 
 
-##### Función de truncamiento:
+## Función de truncamiento:
 
 Se ignora parte de la clave y se utiliza la parte restante directamente como índice.
 * Ejemplo:
@@ -294,7 +294,7 @@ Se ignora parte de la clave y se utiliza la parte restante directamente como ín
 * * Por ejemplo, el elemento con clave 72.588.495 iría en la posición 895.
 * Este método es rápido pero no distribuye las claves de forma uniforme.
 
-##### Función módulo de truncamiento:
+## Función módulo de truncamiento:
 
 Ejemplo:
 * Supongamos que para los 300 alumnos del curso decidimos utilizar los tres últimos dígitos del DNI para obtener la dirección de memoria.
@@ -303,7 +303,7 @@ Ejemplo:
 
 ![](Capturas/Cap2.png)
 
-##### Función Módulo:
+## Función Módulo:
 
 La función de dispersión del ejemplo anterior se establece por la fórmula:
 
@@ -323,7 +323,7 @@ n mod m = n % m
 * La función de dispersión h(x) = x mod t da un valor entre 0 y t–1 para la dirección de memoria.
 * Si el espacio de direcciones de la tabla es de la forma 1, 2, ..., t hay que usar la función de dispersión: h(x) = 1 + (x-1) mod t.
 
-##### Tamaño de la tabla:
+## Tamaño de la tabla:
 
 * Para usar funciones de dispersión de este tipo hay que analizar la elección del tamaño t ya que se puede tener un gran desequilibrio.
 * Esto ocurre, por ejemplo, si las claves son frecuentemente números acabados en 0 y se toma t = 10.
@@ -342,7 +342,7 @@ h(29454362) = 29454362 % 997 = 988
 h(23865343) = 23865343 % 997 = 154
 h(41797876) = 41797876 % 997 = 645
 
-##### Función Suma
+## Función Suma
 
 Es muy frecuente que las claves estén formadas por cadenas de caracteres, como nombres o identificadores.
 * Una opción inmediata para estos casos es usar los valores ASCII de los caracteres para obtener una cantidad numérica, por ejemplo sumándolos, a la que se le aplica una operación aritmética.
@@ -363,7 +363,7 @@ int hash(int valor) {
 ```
 ************************************************************************************
 
-##### Función Suma, Ejemplo:
+## Función Suma, Ejemplo:
 
 ![](Capturas/Cap3.png)
 
@@ -374,7 +374,7 @@ Aplicando la función hash de tipo suma a los números del DNI con una tabla de 
 * Parece que el ejemplo está forzado para que aparezcan muchas colisiones (en este caso, 3 colisiones con 8 registros)
 * Sin embargo, las colisiones suelen ser más frecuentes de lo que uno espera.
 
-##### Función de Plegado:
+## Función de Plegado:
 
 Otro tipo de transformación corriente para claves consistentes en secuencias de caracteres es el de las transformaciones denominadas de plegado.
 * La idea consiste en dividir la clave en partes de tamaño similar y sumarlas.
@@ -408,7 +408,7 @@ Otra función de dispersión común para claves de tipo numérico consiste en to
 23452463 → 23452463^2 = 550018020766369 → 1
 33040132 → 33040132^2= 1091650322577424 → 916
 
-##### Numeros pseudo-aleatorios
+## Numeros pseudo-aleatorios
 
 Un tipo de funciones de dispersión con buenas propiedades son las funciones de dispersión o funciones hash pseudo-aleatorias que utilizan las técnicas de los
 generadores de números pseudo-aleatorios.
@@ -417,7 +417,7 @@ generadores de números pseudo-aleatorios.
 
 Semilla = ((multiplicador * semilla) + sumando ) mod máximo
 
-##### Generacion de numeros pseudo-aleatorios
+## Generacion de numeros pseudo-aleatorios
 
 En C++ se dispone de la función rand que proporciona un número entero entre 0 y RAND_MAX.
 * El valor de RAND_MAX viene definido en la librería <cstdlib> y suele ser 32767 o mayor.
@@ -433,7 +433,7 @@ r = rand() / máximo
 x = rand() % n
 ```
 
-##### Inicializar la semilla
+## Inicializar la semilla
 
 La semilla se puede iniciar en un valor concreto en la ejecución de un programa mediante una sentencia:
 
@@ -449,14 +449,14 @@ srand(time(NULL))
 * Esta sentencia que hace que los valores que proporciona rand() sean prácticamente irrepetibles.
 * Si siempre se proporciona el mismo valor semilla, se obtendrá siempre la misma secuencia de números.
 
-##### Función pseudo-aleatoria
+## Función pseudo-aleatoria
 
 Para construir una función hash o función de dispersión pseudo-aleatoria se hace intervenir la clave en la asignación de un valor a la semilla y luego se toma el módulo del tamaño de la tabla para llevarlo a su rango.
 * Si las claves de los elementos a insertar en la tabla son identificadores se deben obtener valores numéricos a partir de sus caracteres.
 * * Por ejemplo, se pueden transformar en enteros sumando los valores ASCII de algunas de sus letras (o de todas).
 * Entonces esta información numérica se utiliza para establecer el valor de la semilla.
 
-##### Código de la función pseudo-aleatoria
+## Código de la función pseudo-aleatoria
 
 Una implementación de la función hash o función de dispersión pseudo aleatoria es:
 ```
@@ -466,7 +466,7 @@ int hash(int valor) {           	No es conveniente usar semillas pares.
 }
 ```
 
-##### Implementación de las tablas
+## Implementación de las tablas
 
 El tipo de datos abstracto tabla hash constituye uno de los tipos de datos de mayor aplicación.
 * Este tipo de datos, denominado tabla, está compuesto de un número de pares consistentes en:
@@ -475,7 +475,7 @@ El tipo de datos abstracto tabla hash constituye uno de los tipos de datos de ma
 asociada a la clave.
 * La estructura de datos de la tabla hash está compuesta por un número fijo de celdas que pueden estar vacías o contener uno o varios pares.
 
-##### Sinónimos y colisiones:
+## Sinónimos y colisiones:
 
 A las celdas se accede mediante una dirección de memoria que resulta de aplicar una función hash, de transformación o de dispersión h() a la clave:
 
@@ -487,7 +487,7 @@ A las celdas se accede mediante una dirección de memoria que resulta de aplicar
 * * Siempre existe la posibilidad de que aparezcan sinónimos y, por tanto, de que se produzcan colisiones.
 * * Por tanto, hay que disponer de herramientas para tratar las colisiones de forma inteligente.
 
-##### Operaciones en las tablas
+## Operaciones en las tablas
 
 Sobre las tablas de dispersión se consideran las operaciones básicas siguientes:
 * La búsqueda es la operación más relevante y el objetivo fundamental de esta herramienta es hacerla muy eficiente.
@@ -496,7 +496,7 @@ Sobre las tablas de dispersión se consideran las operaciones básicas siguiente
 * Las tablas de dispersión son ineficientes para otras operaciones que requieran información sobre alguna ordenación de los datos:
 * Por ejemplo, para obtener un listado de los registros ordenados por su clave.
 
-##### Dispersión abierto o cerrada
+## Dispersión abierto o cerrada
 
 Las celdas de la tabla pueden tener capacidad para almacenar:
 * * un registro con su clave,
@@ -507,7 +507,7 @@ Las celdas de la tabla pueden tener capacidad para almacenar:
 * Para disponer de espacio para una cantidad arbitraria de registros se usan listas enlazadas mediante memoria dinámica:
 * * Dispersión (hashing) abierta, direccionamiento cerrado o encadenamiento separado.
 
-##### Dispersión abierta
+## Dispersión abierta
 
 La dispersión abierta consiste en usar una lista con los elementos que se dispersan en cada dirección.
 * Cada celda de la tabla está compuesta por una clave y un puntero.
@@ -515,7 +515,7 @@ La dispersión abierta consiste en usar una lista con los elementos que se dispe
 
 ![](Capturas/Cap4.png)
 
-##### Dispersión cerrada:
+## Dispersión cerrada:
 
 En la dispersión cerrada en cada dirección hay una celda que tiene espacio para una cantidad fija de registros (bloque).
 
@@ -524,21 +524,21 @@ En la dispersión cerrada en cada dirección hay una celda que tiene espacio par
 * Si las celdas sólo tienen capacidad para un registro, que es la implementación más sencilla, la colisión y el desbordamiento se producen a la vez.
 * * En este caso se habla de tablas simples, o con celdas simples.
 
-##### Tratamiento del desbordamiento
+## Tratamiento del desbordamiento
 
 El tratamiento del desbordamiento implica utilizar una estrategia para determinar un lugar alternativo donde ubicar la información correspondiente y luego poder acceder a ella eficientemente.
 
 * En la dispersión cerrada, si al tratar de insertar un elemento, la celda que le corresponde está llena (hay desbordamiento) se puede tratar de almacenar el elemento en otra celda con algún registro libre.
 * * Por ello, se habla de direccionamiento abierto.
 
-##### La exploración
+## La exploración
 
 El proceso para determinar qué otra celda se examina para tratar de insertar en ella el elemento se llama exploración.
 * La estrategia de exploración debe estar completamente determinada a partir de la clave para que el posterior proceso de búsqueda pueda encontrar eficientemente el mismo registro dada su clave.
 * La estrategia de exploración elemental es la exploración lineal:
 * * Consiste en probar en las celdas que vienen a continuación hasta encontrar una celda con un registro libre.
 
-##### Ejemplo de Exploración Lineal
+## Ejemplo de Exploración Lineal
 
 Ejemplo: Para los 200 alumnos del curso utilizamos los dos últimos dígitos del DNI.
 * El conjunto de claves posibles son los números de 8 cifras y la función de dispersión es la que toma los dos últimos dígitos:
@@ -557,7 +557,7 @@ Seguramente esto fue lo que ocurrió en las celdas 00 y 01:
 * Posteriormente se insertó el registro de clave 37566201.
 * Si ahora se tiene que insertar un elemento con clave 24874700 llevaría a buscarle ubicación en una celda más alejada.
 
-##### Celdas Vacías
+## Celdas Vacías
 
 Por otro lado, es necesario conocer cuándo el espacio para un registro en una celda está vacío y no confundir el valor que pueda estar presente previamente en la posición correspondiente a la clave con una clave de un elemento ya insertado.
 * Un valor especial de la clave (usualmente 0 o –1) indicará que el registro está vacío.
@@ -565,21 +565,21 @@ Por otro lado, es necesario conocer cuándo el espacio para un registro en una c
 
 La tabla vacía debe inicializarse con este valor en todos sus registros y no dejar en ellos los valores que pudieran haber al iniciar el programa.
 
-##### La Búsqueda 
+## La Búsqueda 
 
 La búsqueda del registro correspondiente a un valor de la clave se efectúa de la siguiente manera:
 * Se empieza por la dirección que le corresponde según la función de dispersión que se esté aplicando.
 * Si el valor no se encuentra en ningún registro de dicha celda y queda aún espacio para almacenar el registro, la búsqueda finaliza en fracaso y se puede concluir que el elemento no está presente en la tabla.
 * Si el valor no se encuentra en ningún registro de dicha celda y la celda está completamente ocupada, se debe continuar la búsqueda por las direcciones en la que se habría almacenado siguiendo la estrategia de direccionamiento o exploración adoptada.
 
-##### La inserción
+## La inserción
 
 Por ejemplo, si la tabla se gestiona con exploración lineal se recorren las celdas que vienen a continuación hasta encontrar el elemento buscado o una celda con espacio para el registro.
 * La tabla se considera que es circular por lo que si se llega al final de la misma se vuelve a empezar por el principio.
 * Sólo si la exploración acaba en una celda con espacio libre se podría concluir que el elemento buscado no está presente en la tabla.
 * Para insertar un nuevo elemento en la tabla, este proceso de búsqueda acaba en la celda con espacio disponible, en la que se puede insertar el registro.
 
-##### La eliminación 
+## La eliminación 
 
 Si se elimina algún elemento de la tabla se puede falsear el proceso de búsqueda de aquellos elementos para los que se exploró la celda de ese elemento al buscarle una posición en la que ubicarlo.
 Por ejemplo, si:
@@ -588,7 +588,7 @@ Por ejemplo, si:
 * cuando se vaya a buscar el elemento A y nos encontremos que la celda que le corresponde hay espacio libre para el registro,
 * entonces interpretaríamos erróneamente que A no está presente en la tabla.
 
-##### Tablas Contaminadas
+## Tablas Contaminadas
 
 Como remedio se pueden marcar las celdas de las que se ha eliminado algún elemento para que la exploración no se detenga en ellas.
 * Para ello se utiliza un valor de clave especial pero distinto al que corresponde a una celda vacía.
@@ -597,13 +597,13 @@ Como remedio se pueden marcar las celdas de las que se ha eliminado algún eleme
 * * el –1 para la que estuvo ocupada y vuelve a estar libre.
 * La presencia de celdas que estuvieron ocupadas provoca un esfuerzo adicional en los procesos de búsqueda que se vuelven más ineficientes y se dice que la tabla está contaminada.
 
-##### Reorganización de las tablas
+## Reorganización de las tablas
 
 Si el grado de contaminación de una tabla es alto es conveniente reorganizar de nuevo la tabla aplicando la estrategia de inserción a los elementos que forman parte de ella a la tabla vacía.
 * Incluso se puede usar información relativa a la frecuencia con la que se accede a determinados elementos para que sean los menos frecuentes los que se vean desplazados al producirse las colisiones.
 * Existen estrategias de reorganización que persiguen dinámicamente este objetivo.
 
-##### Tecnicas de Exploracion
+## Tecnicas de Exploracion
 
 El tratamiento adecuado del desbordamiento requiere usar una estrategia inteligente para determinar la celda alternativa donde ubicar el registro.
 * Estas estrategias se denominan técnicas de exploración y una de las más sencillas es la exploración lineal.
@@ -613,7 +613,7 @@ El tratamiento adecuado del desbordamiento requiere usar una estrategia intelige
 * * En la búsqueda, si no se encuentra el registro en la celda, se pasa a la siguiente hasta encontrarlo o alcanzar una celda que no esté llena.
 * * Al llegar al final de la tabla, se trata como una tabla circular y se reinicia la búsqueda por el principio.
 
-##### Función de exploración
+## Función de exploración
 
 Si en una tabla T la función de dispersión es h, para una clave x, se examinan las celdas:
 
@@ -625,7 +625,7 @@ d = (h(x) + gi (x)) mod t donde t es el tamaño de la tabla.
 * En la exploración lineal, las direcciones de búsqueda vienen dadas por:
 d = (h(x) + i) mod t, para i = 0, 1, 2, ..., t–1.
 
-##### Clustering
+## Clustering
 
 Sin embargo, con el método de exploración lineal se van llenando celdas muy cercanas.
 * Este fenómeno se denomina clustering y provoca ineficiencia en las operaciones de búsqueda posteriores.
@@ -634,7 +634,7 @@ gi (x) = i^2 , para i = 0, 1, 2, ...
 * Si el tamaño de la tabla toma un valor de la forma t = 4j + 3 entonces la versión de la exploración cuadrática que recorre las direcciones h(x), (h(x) + i^2) mod t, (h(x) – i^2) mod t, incluye todas sus direcciones si 1 <= i <= (t–1)/2.
 * Con esta estrategia se puede llegar a producir un fenómeno similar al clustering, denominado clustering secundario.
 
-##### Tecnicas de Exploracion
+## Tecnicas de Exploracion
 
 Otra forma de resolver los desbordamientos es utilizando permutaciones del rango de direcciones de la tabla asociadas a cada valor de la clave; es decir de la secuencia [ 0 . . t – 1].
 * La técnica de exploración por permutación consiste en obtener a partir de la clave x una permutación p(x) de las direcciones de la tabla en vez de una sola dirección.
@@ -642,14 +642,14 @@ Otra forma de resolver los desbordamientos es utilizando permutaciones del rango
 * Una forma sencilla de obtener permutaciones es mediante los recorridos sistemáticos de paso aleatorio.
 * * Es la técnica conocida como dispersión doble.
 
-##### Dispersión Doble
+## Dispersión Doble
 
 En la técnica de dispersión doble, es una estrategia de exploración en la que, ante una colisión, se genera una amplitud de paso por medio de otra función de
 dispersión f(x) y se realiza una exploración del resto de la tabla con dicha amplitud de paso: gi(x) = i * f(x), para i = 0, 1, 2, ...,
 
 * Con la estrategia de exploración doble con las dos funciones de dispersión h(x) y f(x) se recorren las direcciones: d = h(x) + i * f(x) mod t, para i = 0, 1, 2, ...,
 
-##### Tamaño Primo de las Tablas
+## Tamaño Primo de las Tablas
 
 Sin embargo, de esta forma no siempre se obtiene una permutación de todas las direcciones de la tabla:
 * Si el paso f(x) resulta un divisor del tamaño t de la tabla, se repiten direcciones antes de recorrerlas todas.
@@ -658,11 +658,11 @@ Sin embargo, de esta forma no siempre se obtiene una permutación de todas las d
 * Para la exploración doble es necesario elegir como tamaño de la tabla un número primo y así garantizar que no se repite ninguna celda ninguna celda antes de explorarlas todas dando lugar a un recorrido sobre una permutación de las direcciones de la tabla
 
 
-##### La Redispersión
+## La Redispersión
 
 La técnica de redispersión o rehashing usa una familia de funciones de exploración gi, i = 0, 1, 2, ..., para examinar las direcciones, siendo cada gi una función de dispersión distinta, para cada i.
 
-##### Eficiencia
+## Eficiencia
 
 La eficiencia del tratamiento de la tabla depende de la carga que soporte la tabla en cada momento.
 * Se llama densidad de carga al cociente entre el número de direcciones que se están utilizando y el número de direcciones posibles: 
@@ -673,7 +673,7 @@ Densidad = número de direcciones que se están utilizando / número de direccio
 
 Factor = número de registros almacenados / número de registros que es posible almacenar
 
-##### Ejemplo:
+## Ejemplo:
 
 Supongamos que para los 200 alumnos del curso decidimos utilizar los dos últimos dígitos del DNI.
 * El conjunto de claves posibles son los números de 8 cifras y la función de dispersión se define de forma que los dos últimos dígitos asignan la dirección de memoria.
@@ -691,29 +691,3 @@ Supongamos que para los 200 alumnos del curso decidimos utilizar los dos último
 * * 120/300 = 0.4
 
 * Si al acabar con los 200 alumnos tuviéramos 80 celdas ocupadas, estos valores serían de 0.8 y 2/3.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
