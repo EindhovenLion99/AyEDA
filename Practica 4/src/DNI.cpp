@@ -1,5 +1,8 @@
 #include "DNI.hpp"
+#include "contador.hpp"
 #include <iostream>
+
+contador DNI::cont;
 
 DNI::DNI()
 {
@@ -11,10 +14,13 @@ DNI::~DNI()
 
 DNI::operator unsigned long() const
 {
-    return valor;
+    return long_valor;
 }
 
-bool DNI::operator==(const DNI a) const
+int DNI::compara() { return DNI::cont.Get(); }
+void DNI::reset() { DNI::cont.Reset(); }
+
+bool DNI::operator==(DNI &a)
 {
     if (valor == a.valor)
     {
@@ -26,9 +32,9 @@ bool DNI::operator==(const DNI a) const
     }
 }
 
-bool DNI::operator>=(const DNI a) const
+bool DNI::operator>=(DNI &a)
 {
-    if (valor == a.valor)
+    if (valor >= a.val())
     {
         return true;
     }
@@ -38,9 +44,45 @@ bool DNI::operator>=(const DNI a) const
     }
 }
 
-bool DNI::operator<=(const DNI a) const
+bool DNI::operator<=(DNI &a)
 {
-    if (valor == a.valor)
+    if (valor <= a.val())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool DNI::operator>(DNI &a)
+{
+    if (valor > a.val())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool DNI::operator<(DNI &a)
+{
+    if (valor < a.val())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool DNI::operator<(DNI &a)
+{
+    if (valor < a.val())
     {
         return true;
     }

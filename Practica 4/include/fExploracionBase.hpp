@@ -4,5 +4,5 @@ template <class Clave>
 class fExploracionBase
 {
 public:
-    virtual int fExploracionBase<Clave>::operator()(const Clave &, int i) = 0;
+    virtual int operator()(const Clave &, int i) = 0;
 };

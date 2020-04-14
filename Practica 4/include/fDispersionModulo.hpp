@@ -5,8 +5,7 @@
 template <class Clave>
 class fDispersionModulo : public fDispersionBase<Clave>
 {
-
-    fDispersionModulo(int nCeldas) { ... }
-
-    int operator()(const Clave &) { ... }
+public:
+    fDispersionModulo(int nCeldas) {}
+    int operator()(const Clave &) {}
 };
