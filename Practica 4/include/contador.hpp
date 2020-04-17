@@ -1,15 +1,17 @@
 #pragma once
+#include <iostream>
 
-class contador
+class Contador
 {
+
 private:
-    int valor;
+    int Value_;
 
 public:
-    contador() : valor(0) {}
-    ~contador() {}
-    inline void Reset() { valor = 0; }
-    inline void Inc() { valor++; }
-    inline void Dec() { (valor > 0) ? valor-- : valor = 0; }
-    inline int Get() { return valor; }
+    Contador() : Value_(0) {}
+    inline void increment(void) { ++Value_; }
+    inline void reset(void) { Value_ = 0; }
+    inline void decrement(void) { Value_ > 0 ? Value_-- : Value_ = 0; }
+    inline int Get(void) { return Value_; }
+    void operator++() { ++Value_; }
 };

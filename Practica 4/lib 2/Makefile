@@ -1,4 +1,5 @@
 CXX		  := g++
+CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb
 
 BIN		:= bin
 SRC		:= src
@@ -16,7 +17,7 @@ run: clean all
 	./$(BIN)/$(EXECUTABLE)
 
 $(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
-	$(CXX) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
+	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
 
 clean:
 	-rm $(BIN)/*
