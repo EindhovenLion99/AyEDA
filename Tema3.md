@@ -278,6 +278,326 @@ pero el número máximo total de asignaciones realizadas es: **O(n^2).**
 * Para obtener una implementación del algoritmo de ordenación por inserción de complejidad O(n log n) debe hacerse uso de un *árbol binario de búsqueda* para mantener la parte ordenada de la secuencia.
 
 
+# Seleccion
+
+# Ordenación por selección
+
+En el método de ordenación por selección (igual que en el método de ordenación por inserción) se considera que, en una situación intermedia
+* los i primeros elementos **ya** están ordenados y
+* los n-i últimos **no** están ordenados.
+
+![](Capturas/Cap10.png)
+
+Sin embargo, en la iteración i,
+* se **selecciona** la posición j del elemento de **menor** clave, (entre los elementos que están de la posición i a la n-1)
+* se intercambian los elementos que están en las posiciones j e i.
+
+![](Capturas/Cap11.png)
+
+
+En la situación de partida:
+* no se asume la ordenación de ningún trozo; i = 0.
+
+![](Capturas/Cap12.png)
+
+En la primera iteración se selecciona el **menor** de **toda** la secuencia
+
+![](Capturas/Cap13.png)
+
+Se selecciona siempre el elemento de **menor** clave de los no ordenados;
+
+![](Capturas/Cap14.png)
+
+* por tanto, en la iteración i, los primeros i elementos, además de estar ordenados, ... **son los i elementos de menor clave**.
+
+# Ejemplo numérico:
+
+La ejecución de un paso:
+
+De la situación:
+
+0 -- 1 -----i-1 --- i ------------- j ---------- n-1
+
+**6** -- **12** ... **18** ---- 44 -- 55 ... 94 **42** 67 ... 84 **87**
+
+se pasa a la situación:
+
+0 - 1 ---- i-1 --- i ----------- j ---------- n-1
+
+**6** - **12** ... **18** --- **42** 55 ... 94 **44** 67 ... 84 **87**
+
+# El código
+
+* Similar al de ordenación por inserción, *reemplazando* el procedimiento de **inserción** por uno de **selección**:
+```c
+for (int i = 0; i < n-1; i++)
+     selecciona(sec,i);
+```
+
+* El procedimiento de selección tiene que elegir el elemento de **menor** clave de la parte no ordenada de la secuencia (desde la posición i hasta el final) e **intercambiarlos**.
+```c
+for (int i = 0; i < n-1; i++){
+     min = i;
+     for (int j = i+1; j < n; j++)
+          if sec[j] < sec[min]
+               min = j;
+     x = sec[min];
+     sec[min] = sec[i];
+     sec[i] = x;
+}
+```
+
+# Análisis del algoritmo
+
+* Tiene dos bucles **for** anidados: se trata de un algoritmo O(n^2).
+
+* Paralelamente al método de ordenación por inserción, se toma un
+elemento de la parte no ordenada y se añade a la parte ordenada.
+
+* Sin embargo, en el método de ordenación por inserción, la
+selección del elemento a incorporar es trivial mientras que el
+proceso inteligente es el de búsqueda de la posición de inserción.
+
+* En el método de selección, la posición de inserción en la parte
+ordenada se obtiene directamente y el esfuerzo computacional se
+hace en el proceso de selección del elemento a insertar.
+
+
+
+# Por Intercambio
+
+# Ordenación por Intercambio
+
+* **Método de la Burbuja**: BubbleSort
+
+* **Método de la Sacudida**: ShakeSort
+
+* En el método de **ordenación por intercambio** se recorre sucesivamente la secuencia **intercambiando** pares de elementos consecutivos desordenados.
+
+* Se van comparando los pares consecutivos de elementos desde el final hacia el principio.
+* Al proceso desde la comparación de los dos últimos elementos hasta los dos primeros se le llama **pasada**.
+* La secuencia se suele representar verticalmente y se denomina método de la **burbuja** porque parece que hay un elemento que sube como una burbuja.
+
+# Ejemplo
+
+En la primera pasada, que aquí mostramos con la secuencia orientada en vertical, el elemento burbuja es el 06.
+
+![](Capturas/Cap15.png)
+
+# Criterios de Parada
+
+* Si el elemento burbuja topa con uno de menor clave, éste elemento pasa a ser el nuevo elemento burbuja (que puede continuar subiendo) y su posición queda ocupada
+por el anterior.
+
+* En cada pasada del método queda colocado el último elemento burbuja.
+
+* El método se termina cuando en una pasada no se modifica la secuencia.
+
+# Las pasadas del ejemplo:
+
+En la segunda pasada del ejemplo, el elemento burbuja es
+inicialmente el elemento con clave 18 pero acaba siendo el
+elemento de clave 12.
+
+En la tercera pasada el elemento burbuja es el de clave 42
+
+Las siguientes pasadas (en horizontal) son:
+
+06 44 55 **12** 42 94 18 67
+
+06 **12** 44 55 **18** 42 94 67
+
+06 12 **18** 44 55 **42** 67 94
+
+06 12 18 **42** **44** 55 67 94
+
+06 12 18 42 **44** **55** 67 94 --- no cambia
+
+06 12 18 42 44 **55** **67** 94
+
+06 12 18 42 44 55 **67** **94**
+
+06 12 18 42 44 55 67 **94**
+
+# El Codigo
+```c
+for (int i = 1; i < n; i++){
+     for (int j = n-1; j >= i; j--)
+          if (sec[j] < sec[j-1]){
+               swap(sec[j-1],sec[j]) ;
+          }
+}
+```
+
+¿Podríamos ahorrar comprobaciones si en una pasada completa no se produce ningún intercambio de elementos?
+
+# Elementos pesados
+
+* Si al aplicar el método de la burbuja, sólo está mal colocado un elemento **ligero**, el método acaba rápidamente, aunque esté muy profundo.
+
+* Sin embargo, si sólo está mal colocado un elemento **pesado**, éste se hunde muy lentamente.
+
+# Burbujas y Piedras
+
+El único elemento ligero mal colocado (el 02) sube en una pasada.
+
+06 44 55 12 42 94 18 67 **02**
+
+**02** 06 44 55 12 42 94 18 67
+
+El elemento pesado (el 97) necesita 8 pasadas para colocarse:
+
+**97** 06 44 55 12 42 94 18 67
+
+06 **97** 12 44 55 18 42 94 67
+
+06 12 **97** 18 44 55 42 67 94
+
+06 12 18 **97** 42 44 55 67 94
+
+06 12 18 42 **97** 44 55 67 94
+
+06 12 18 42 44 **97** 55 67 94
+
+06 12 18 42 44 55 **97** 67 94
+
+06 12 18 42 44 55 67 **97** 94
+
+06 12 18 42 44 55 67 94 **97**
+
+# El método de La Sacudida
+
+* Por tanto, este caso se resolvería fácilmente realizando el recorrido en sentido descendente; como una piedra que se hunde en el agua.
+
+* El método de la sacudida evita este fenómeno haciendo recorridos ascendente y descendentes, alternativamente.
+
+* Además, los recorridos pueden empezar debajo del último elemento burbuja y encima del último elemento hundido, acortándose el recorrido.
+
+* A pesar de ello, el algoritmo de la burbuja y el de la sacudida son O(n^2).
+
+# Ejemplo de la Sacudida
+
+La sacudida aplicado al ejemplo anterior acaba en 4 pasadas.
+
+44 55 12 42 94 18 **06** 67
+
+-> *06* 44 55 12 42 **94** 18 67
+
+<- *06* 44 **12** 42 55 18 67 *94*
+
+-> *06 12* 44 **18** 42 55 67 *94*
+
+<- *06 12 18* 42 44 55 67 94
+
+06 12 18 42 44 55 67 94
+
+# El codigo
+```c
+ini = 1 ;
+fin = n-1 ;
+cam = n ;
+while (ini < fin){
+     for (int j = fin; j >= ini; j--)
+          if (sec[j] < sec[j-1]) {
+               swap(sec[j-1],sec[j]) ;
+               cam = j ;
+          }
+     ini = cam + 1 ;
+     for (int j = ini; j <= fin; j++)
+          if (sec[j] < sec[j-1]) {
+               swap(sec[j-1],sec[j]) ;
+               cam = j;
+          }
+     fin = cam – 1 ;
+}
+```
+
+# Algoritmos Logaritmicos de Ordenacion
+
+# Algoritmo HeapSort
+
+* Ordenación por selección: **SelSort**
+
+* Estructura de datos muy eficiente: **Heap o montón**
+
+* Ordenación por selección con Heap: **HeapSort**
+
+# Mejorando el algoritmo SelSort
+
+En el algoritmo de ordenación por selección:
+
+* En la iteración i = 0, 1, ..., n+2: se **selecciona** la posición j del elemento con **menor** clave, entre los elementos que están de la posición i+1 a la
+n-1, y se intercambian los elementos que están en las posiciones j e i+1.
+
+Es de esperar que, si se utiliza un método inteligente de selección del menor elemento de la parte no ordenada que resulte más eficiente se podría mejorar la complejidad del método de ordenación.
+
+Esta **mejora** significativa se consigue si la secuencia de elementos no ordenados se introducen previamente en un *montón, montículo o Heap* del que posteriormente se van extrayendo ordenadamente.
+
+Esto da lugar al denominado algoritmo **HeapSort** que es O(n log n).
+
+
+# Concepto de motón o Heap
+
+Se puede implementar de forma más natural con un árbol.
+
+La formalización de **Williams** se implementa en un array *que empieza en 1 en lugar de en 0*
+
+Es una estructura de datos basada en la relación padre/hijo:
+
+* Los hijos del elemento i son los elementos 2i y 2i+1 (si están presentes en el montón).
+
+* El padre del elemento i es i/2 = i / 2, si no es nulo. (el primer elemento es el único que no tiene padre)
+
+![](Capturas/Cap16.png)
+
+Los elementos posteriores a n/2 no tienen hijos:
+
+* Si n es par, el elemento n/2 tiene un sólo hijo; el elemento n.
+
+![](Capturas/Cap17.png)
+
+* Si n es impar, los hijos de n/2  son los elementos n-1 y n.
+
+![](Capturas/Cap18.png)
+
+* El único elemento que no tiene padre es el primero
+
+![](Capturas/Cap19.png)
+
+# Heap ordenado
+
+La noción de ordenación en la secuencia organizada cómo un montón o heap es menos exigente que la noción estándar.
+
+* Decimos que el montón está ordenado si ningún elemento tiene menor clave que su padre.
+
+![](Capturas/Cap20.png)
+
+* Equivalentemente, el montón está ordenado si ningún elemento tiene mayor clave que ninguno de sus dos hijos.
+
+* Una vez que se tiene una secuencia ya ordenada según un montón hasta la posición n, se inserta un nuevo elemento o se elimina un elemento del montón, manteniendo la ordenación.
+
+# Insertar un elemento
+
+El nuevo elemento se **inserta** siempre en la posición n+1 y si hace
+falta se sube para mantenerlo ordenado.
+
+![](Capturas/Cap21.png)
+
+Si el elemento queda mal colocado se **sube** intercambiándolo
+recursivamente con su padre, mientras haga falta (mientras tenga
+menor clave que su padre o se llegue a la raíz).
+
+![](Capturas/Cap22.png)
+
+La inserción de elementos implica **actualizar** el tamaño n del montón; n = n + 1
+
+
+
+
+
+
+
+
 
 
 
