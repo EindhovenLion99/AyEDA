@@ -11,7 +11,7 @@ void Burbuja(vector<Clave> &V, int sz)
         {
             if (V[j] > V[j + 1])
             {
-                V[j].swap(V[j + 1]);
+                Swap(V[j], V[j + 1]);
             }
         }
     }

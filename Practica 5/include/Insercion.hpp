@@ -5,11 +5,12 @@
 template <class Clave>
 void Insercion(vector<Clave> &V, int sz)
 {
-    for (int i = V.begin(); i != V.end(); i++)
+    for (int i = 0; i <= sz; i++)
     {
         int pos = i;
         Clave j = V[i];
-        while ((pos > V.begin()) && (j < V[pos - 1]))
+        int start = V[0];
+        while ((pos > start) && (j < V[pos - 1]))
         {
             V[pos] = V[pos - 1];
             pos--;
