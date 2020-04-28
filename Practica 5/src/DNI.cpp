@@ -7,12 +7,14 @@ DNI::DNI()
 {
     Valor_ = rand() % 100000000;
     longValue_ = Valor_;
+    Sz_ = to_string(Valor_).length();
 }
 
 DNI::DNI(int Semilla)
 {
     srand(Semilla);
     Valor_ = rand() % 100000000;
+    Sz_ = to_string(Valor_).length();
 }
 
 DNI::~DNI()
@@ -22,10 +24,46 @@ DNI::~DNI()
 int DNI::get_Cont() { return DNI::Cont_.get_Cont(); }
 void DNI::Reset() { DNI::Cont_.Reset(); }
 
-ostream &DNI::Print(ostream &os) const
+ostream &operator<<(ostream &os, DNI &dni)
 {
-    if (Valor_ != -1)
-        os << Valor_;
+    if (dni.get_DNI() != -1)
+    {
+        switch (dni.get_Sz())
+        {
+        case 0:
+            os << "00000000" << dni.get_DNI() << " ";
+            break;
+        case 1:
+            os << "0000000" << dni.get_DNI() << " ";
+            break;
+        case 2:
+            os << "000000" << dni.get_DNI() << " ";
+            break;
+        case 3:
+            os << "00000" << dni.get_DNI() << " ";
+            break;
+        case 4:
+            os << "0000" << dni.get_DNI() << " ";
+            break;
+        case 5:
+            os << "000" << dni.get_DNI() << " ";
+            break;
+        case 6:
+            os << "00" << dni.get_DNI() << " ";
+            break;
+        case 7:
+            os << "0" << dni.get_DNI() << " ";
+            break;
+        case 8:
+            os << dni.get_DNI() << " ";
+            break;
+
+        default:
+            os << "---------"
+               << " ";
+            break;
+        }
+    }
     else
         os << "-";
     return os;

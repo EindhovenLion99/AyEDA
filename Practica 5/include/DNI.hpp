@@ -25,7 +25,7 @@ public:
     inline void set_Empty() { Valor_ = -1; }
     inline int get_Sz() { return Sz_; }
 
-    ostream &Print(ostream &) const;
+    friend ostream &operator<<(ostream &os, DNI &dni);
 
     //int operator%(int n);
     bool operator==(DNI &Val);
