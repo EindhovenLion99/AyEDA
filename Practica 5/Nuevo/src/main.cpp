@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
+#include <iomanip>
 #include "DNI.hpp"
 #include "Insercion.hpp"
 #include "Burbuja.hpp"
 #include "Heap.hpp"
 #include "Quick.hpp"
 #include "Shell.hpp"
+#include "Contador.hpp"
 #include "termcolor.hpp"
+
+Contador DNI::Cont_;
 
 using namespace termcolor;
 
@@ -17,48 +21,105 @@ void Filling(vector<DNI> &V);
 int main()
 {
     bool sorted = false;
-    int opc;
+    int opc, pruebas, N, c;
 
-    std::cout << white << "Elige el metodo de ordenacion (1...5): ";
-    std::cin >> opc;
+    std::cout << yellow << "Introduce tamaño del vector: " << white;
+    std::cin >> N;
+    std::cout << yellow << "Introduce número de pruebas: " << white;
+    std::cin >> pruebas;
 
     std::cout << endl;
 
-    std::vector<DNI> Array(10);
-    Filling(Array);             // Lleno el array de DNI aleatorios
-    Print_Array(Array, sorted); // Imprimo el array
+    std::vector<DNI> Array;
+    Array.resize(N);
 
-    switch (opc)
+    std::cout << std::endl;
+
+    for (int i = 0; i < pruebas; i++)
     {
+        DNI::Cont_.start();
 
-    case 1:
+        Filling(Array);             // Lleno el array de DNI aleatorios
+        Print_Array(Array, sorted); // Imprimo el array
         Insercion(Array, Array.size());
         sorted = true;
         Print_Array(Array, sorted);
-        break;
-    case 2:
+
+        c = getchar();
+
+        DNI::Cont_.stop();
+        std::cout << red << "Número de comparaciones:\n\n";
+        std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
+        std::cout << "Insercion" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+
+        c = getchar();
+
+        DNI::Cont_.start();
+
+        sorted = false;
+        Filling(Array);             // Lleno el array de DNI aleatorios
+        Print_Array(Array, sorted); // Imprimo el array
         Burbuja(Array, Array.size());
         sorted = true;
         Print_Array(Array, sorted);
-        break;
-    case 3:
-        Quick(Array, 0, Array.size());
+
+        c = getchar();
+
+        DNI::Cont_.stop();
+        std::cout << red << "Número de comparaciones:\n\n";
+        std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
+        std::cout << "Insercion" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+
+        c = getchar();
+        DNI::Cont_.start();
+
+        sorted = false;
+        Filling(Array);             // Lleno el array de DNI aleatorios
+        Print_Array(Array, sorted); // Imprimo el array
+        Quick(Array, 0, Array.size() - 1);
         sorted = true;
         Print_Array(Array, sorted);
-        break;
-    case 4:
+
+        c = getchar();
+
+        DNI::Cont_.stop();
+        std::cout << red << "Número de comparaciones:\n\n";
+        std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
+        std::cout << "Insercion" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+
+        c = getchar();
+
+        DNI::Cont_.start();
+        sorted = false;
+        Filling(Array);             // Lleno el array de DNI aleatorios
+        Print_Array(Array, sorted); // Imprimo el array
         Heap(Array, Array.size());
         sorted = true;
         Print_Array(Array, sorted);
-        break;
-    case 5:
+
+        c = getchar();
+
+        DNI::Cont_.stop();
+        std::cout << red << "Número de comparaciones:\n\n";
+        std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
+        std::cout << "Insercion" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+
+        c = getchar();
+
+        DNI::Cont_.start();
+        sorted = false;
+        Filling(Array);             // Lleno el array de DNI aleatorios
+        Print_Array(Array, sorted); // Imprimo el array
         Shell(Array, Array.size());
         sorted = true;
         Print_Array(Array, sorted);
-        break;
 
-    default:
-        break;
+        c = getchar();
+
+        DNI::Cont_.stop();
+        std::cout << red << "Número de comparaciones:\n\n";
+        std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
+        std::cout << "Insercion" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
     }
 }
 

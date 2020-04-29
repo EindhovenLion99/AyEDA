@@ -34,10 +34,18 @@ void deltasort(std::vector<Clave> &V, int delta, int sz)
 template <class Clave>
 void Shell(std::vector<Clave> &V, int sz)
 {
+    std::cout << yellow << "\nSeleccione la constante de reduccion alfa entre 0 y 1: " << white;
+    float alfa;
+    std::cin >> alfa;
+    if (alfa < 0 || alfa > 1)
+    {
+        std::cout << red << "\n[!] Valor de alfa incorrecto\n";
+        exit(-1);
+    }
     int delta = sz;
     while (delta > 0)
     {
-        delta = delta / 2;
+        delta = delta * alfa;
         deltasort(V, delta, sz);
     }
 }

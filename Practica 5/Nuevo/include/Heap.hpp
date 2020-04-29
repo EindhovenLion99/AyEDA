@@ -35,16 +35,18 @@ void Baja(std::vector<Clave> &V, int sz, int pos)
     }
     for (int j = 0; j < V.size(); j++)
     {
-        if (j == 0)
-        {
-            getchar();
-        }
         if (j == sz || j == reg)
-            std::cout << "\033[1;31m";
-        if ((j > reg && j < sz))
-            std::cout << "\033[1;36m";
+        {
+            std::cout << "\33[1;31m"; // Aplicamos colores
+        }
+        else if ((j > reg && j < sz))
+        {
+            std::cout << "\33[1;36m"; // Aplicamos colores
+        }
         if (j == h)
-            std::cout << "\033[1;32m";
+        {
+            std::cout << "\33[1;32m"; // Aplicamos colores
+        }
         std::cout << "| [" << j << "]" << V[j];
         std::cout << "\033[1;0m";
     }

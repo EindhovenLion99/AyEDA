@@ -2,21 +2,21 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include "Contador.hpp"
 
 using namespace std;
 
-//class Contador;
 class DNI
 {
 private:
     int Valor_;
     unsigned long longValue_;
-    //static Contador Cont_;
 
 public:
     DNI();
     DNI(int Semilla);
     ~DNI();
+    static Contador Cont_;
 
     inline int get_DNI() const { return Valor_; }
     inline void set_DNI(int val) { Valor_ = val; }

@@ -20,5 +20,18 @@ void Insercion(std::vector<Clave> &V, int sz)
             j--;
         }
         V[j + 1] = x;
+        for (int z = 0; z < V.size(); z++)
+        {
+            if (V[z] == x)
+            {
+                std::cout << yellow << " [" << z << "]" << V[z];
+            }
+            else
+            {
+                std::cout << blue << " [" << z << "]" << V[z];
+            }
+        }
+        std::cout << blue << " \tPivote: " << x << std::endl
+                  << endl;
     }
 }

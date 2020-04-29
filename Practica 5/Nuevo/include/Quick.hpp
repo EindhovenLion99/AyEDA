@@ -4,12 +4,11 @@
 using namespace termcolor;
 
 template <class Clave>
-void Quick(vector<Clave> &V, int ini, int fin)
+void Quick(std::vector<Clave> &V, int ini, int fin)
 {
     int i = ini;
     int f = fin;
-    int p = V[(i + f) / 2];
-    int c;
+    Clave p = V[(i + f) / 2];
 
     for (int j = 0; j < V.size(); j++)
     {
@@ -25,8 +24,6 @@ void Quick(vector<Clave> &V, int ini, int fin)
     }
     std::cout << "\tPivote: " << p << std::endl;
 
-    //
-    c = getchar();
     while (i <= f)
     {
         while (V[i] < p)

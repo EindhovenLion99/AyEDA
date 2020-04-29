@@ -1,10 +1,8 @@
 #include "DNI.hpp"
-//#include "Contador.hpp"
-
-//Contador DNI::Cont_;
 
 DNI::DNI()
 {
+
     Valor_ = rand() % 100000000;
     longValue_ = Valor_;
 }
@@ -35,37 +33,37 @@ ostream &DNI::Print(std::ostream &os) const
 
 bool DNI::operator==(DNI &Val)
 {
-    //DNI::Cont_.Suma();
+    Cont_++;
     return get_DNI() == Val.get_DNI();
 }
 
 bool DNI::operator!=(DNI &Val)
 {
-    //DNI::Cont_.Suma();
+    Cont_++;
     return get_DNI() != Val.get_DNI();
 }
 
 bool DNI::operator>=(DNI &Val)
 {
-    //DNI::Cont_.Suma();
+    Cont_++;
     return get_DNI() == Val.get_DNI();
 }
 
 bool DNI::operator<=(DNI &Val)
 {
-    //DNI::Cont_.Suma();
+    Cont_++;
     return get_DNI() <= Val.get_DNI();
 }
 
 bool DNI::operator>(DNI &Val)
 {
-    //DNI::Cont_.Suma();
+    Cont_++;
     return get_DNI() > Val.get_DNI();
 }
 
 bool DNI::operator<(DNI &Val)
 {
-    //DNI::Cont_.Suma();
+    Cont_++;
     return get_DNI() < Val.get_DNI();
 }
 
@@ -73,9 +71,3 @@ DNI::operator unsigned long() const
 {
     return longValue_;
 }
-/*
-void DNI::Plus()
-{
-    Cont_.Suma();
-}
-*/
