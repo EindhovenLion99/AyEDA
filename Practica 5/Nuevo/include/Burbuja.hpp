@@ -32,7 +32,7 @@ void Burbuja(std::vector<Clave> &V, int sz)
 
             if (V[j] < V[j - 1])
             {
-                DNI aux = V[j];
+                Clave aux = V[j];
                 V[j] = V[j - 1];
                 V[j - 1] = aux;
             }

@@ -27,7 +27,7 @@ void Baja(std::vector<Clave> &V, int sz, int pos)
             break;
         else
         {
-            DNI aux = V[pos];
+            Clave aux = V[pos];
             V[pos] = V[h];
             V[h] = aux;
             pos = h;
@@ -70,7 +70,7 @@ void Heap(std::vector<Clave> &V, int sz)
 
     for (int i = sz - 1; i > 0; i--)
     {
-        DNI aux = V[0];
+        Clave aux = V[0];
         V[0] = V[i];
         V[i] = aux;
         Baja(V, i - 1, 0);

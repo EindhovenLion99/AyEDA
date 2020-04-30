@@ -9,14 +9,14 @@
 #include "Shell.hpp"
 #include "Contador.hpp"
 #include "termcolor.hpp"
+#include "ISBN.hpp"
 
-Contador DNI::Cont_;
+Contador ISBN::Cont_;
 
 using namespace termcolor;
 
-void Print_Array(vector<DNI> &V, bool sorted);
-void Print_Ar(vector<int> &V, bool sorted);
-void Filling(vector<DNI> &V);
+void Print_Array(vector<ISBN> &V, bool sorted);
+void Filling(vector<ISBN> &V);
 void Continue();
 
 int main()
@@ -31,7 +31,7 @@ int main()
 
     std::cout << endl;
 
-    std::vector<DNI> Array;
+    std::vector<ISBN> Array;
     Array.resize(N);
 
     std::cout << std::endl;
@@ -44,7 +44,7 @@ int main()
         Continue();
         int y = getchar();
 
-        DNI::Cont_.start();
+        ISBN::Cont_.start();
 
         Filling(Array);
         Print_Array(Array, sorted);
@@ -54,17 +54,17 @@ int main()
 
         Continue();
 
-        DNI::Cont_.stop();
+        ISBN::Cont_.stop();
         std::cout << red << "Número de comparaciones:\n\n";
         std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
-        std::cout << "Insercion" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+        std::cout << "Insercion" << white << std::setw(10) << ISBN::Cont_.getMin() << std::setw(9) << ISBN::Cont_.getMedia() << std::setw(9) << ISBN::Cont_.getMax() << "\n";
 
         Continue();
 
-        DNI::Cont_.start();
+        ISBN::Cont_.start();
 
         sorted = false;
-        Filling(Array);             // Lleno el array de DNI aleatorios
+        Filling(Array);             // Lleno el array de ISBN aleatorios
         Print_Array(Array, sorted); // Imprimo el array
         Burbuja(Array, Array.size());
         sorted = true;
@@ -72,14 +72,14 @@ int main()
 
         Continue();
 
-        DNI::Cont_.stop();
+        ISBN::Cont_.stop();
         std::cout << red << "Número de comparaciones:\n\n";
         std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
-        std::cout << "Burbuja" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+        std::cout << "Burbuja" << white << std::setw(10) << ISBN::Cont_.getMin() << std::setw(9) << ISBN::Cont_.getMedia() << std::setw(9) << ISBN::Cont_.getMax() << "\n";
 
         Continue();
 
-        DNI::Cont_.start();
+        ISBN::Cont_.start();
 
         sorted = false;
         Filling(Array);             // Lleno el array de DNI aleatorios
@@ -90,14 +90,14 @@ int main()
 
         Continue();
 
-        DNI::Cont_.stop();
+        ISBN::Cont_.stop();
         std::cout << red << "Número de comparaciones:\n\n";
         std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
-        std::cout << "QuickSort" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+        std::cout << "QuickSort" << white << std::setw(10) << ISBN::Cont_.getMin() << std::setw(9) << ISBN::Cont_.getMedia() << std::setw(9) << ISBN::Cont_.getMax() << "\n";
 
         Continue();
 
-        DNI::Cont_.start();
+        ISBN::Cont_.start();
         sorted = false;
         Filling(Array);             // Lleno el array de DNI aleatorios
         Print_Array(Array, sorted); // Imprimo el array
@@ -107,14 +107,14 @@ int main()
 
         Continue();
 
-        DNI::Cont_.stop();
+        ISBN::Cont_.stop();
         std::cout << red << "Número de comparaciones:\n\n";
         std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
-        std::cout << "HeapSort" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+        std::cout << "HeapSort" << white << std::setw(10) << ISBN::Cont_.getMin() << std::setw(9) << ISBN::Cont_.getMedia() << std::setw(9) << ISBN::Cont_.getMax() << "\n";
 
         Continue();
 
-        DNI::Cont_.start();
+        ISBN::Cont_.start();
         sorted = false;
         Filling(Array);             // Lleno el array de DNI aleatorios
         Print_Array(Array, sorted); // Imprimo el array
@@ -125,10 +125,10 @@ int main()
         Continue();
         int g = getchar();
 
-        DNI::Cont_.stop();
+        ISBN::Cont_.stop();
         std::cout << red << "Número de comparaciones:\n\n";
         std::cout << yellow << std::setw(20) << "Mínimo" << std::setw(10) << "Medio" << std::setw(10) << "Máximo\n";
-        std::cout << "ShellSort" << white << std::setw(10) << DNI::Cont_.getMin() << std::setw(9) << DNI::Cont_.getMedia() << std::setw(9) << DNI::Cont_.getMax() << "\n";
+        std::cout << "ShellSort" << white << std::setw(10) << ISBN::Cont_.getMin() << std::setw(9) << ISBN::Cont_.getMedia() << std::setw(9) << ISBN::Cont_.getMax() << "\n";
     }
 }
 
@@ -138,7 +138,7 @@ void Continue()
     int c = getchar();
 }
 
-void Print_Array(vector<DNI> &V, bool sorted)
+void Print_Array(vector<ISBN> &V, bool sorted)
 {
 
     if (sorted)
@@ -157,12 +157,12 @@ void Print_Array(vector<DNI> &V, bool sorted)
               << endl;
 }
 
-void Filling(vector<DNI> &V)
+void Filling(vector<ISBN> &V)
 {
     srand(time(NULL));
     for (int i = 0; i < V.size(); i++)
     {
-        DNI Num;
+        ISBN Num;
         V[i] = Num;
     }
 }
