@@ -1,45 +1,51 @@
-#pragma once
-#include "vector_t.hpp"
+#include <iostream>
 #include "termcolor.hpp"
 
 using namespace termcolor;
-using namespace std;
 
 template <class Clave>
-void Shell(Vector_T<Clave> &V, int sz)
+void deltasort(std::vector<Clave> &V, int delta, int sz)
 {
-    int delta = sz;
-    while (delta > V.start())
-    {
-        delta = delta / 2;
-        deltasort(delta, V, sz);
-    }
-}
-
-template <class Clave>
-void deltasort(int delta, Vector_T<Clave> &V, int sz)
-{
-    cout << "δ: " << delta << endl;
-    int j;
+    std::cout << "δ: " << delta << std::endl
+              << std::endl;
     Clave aux;
-    for (int i = delta; i <= sz; i++)
+    for (int i = delta; i < V.size(); i++)
     {
         aux = V[i];
-        j = i;
-        while ((j - V.start() >= delta) && (aux < V[j - delta]))
+        int j = i;
+        while ((j - 0 >= delta) && (aux < V[j - delta]))
         {
             V[j] = V[j - delta];
             j = j - delta;
         }
         V[j] = aux;
-        for (int k = V.start(); k <= V.end(); k++)
+        for (int k = 0; k < V.size(); k++)
         {
-            if (V[k] == V[i] || (V[k] == V[i - delta + V.start()]))
-                cout << yellow << " | [" << k << "]" << V[k];
+            if (V[k] == V[i] || (V[k] == V[i - delta + 1]))
+                std::cout << yellow << " | [" << k << "]" << V[k];
             else
-                cout << blue << " | [" << k << "]" << V[k];
+                std::cout << blue << " | [" << k << "]" << V[k];
         }
-        cout << endl
-             << endl;
+        std::cout << std::endl
+                  << std::endl;
+    }
+}
+
+template <class Clave>
+void Shell(std::vector<Clave> &V, int sz)
+{
+    std::cout << yellow << "\nSeleccione la constante de reduccion alfa entre 0 y 1: " << white;
+    float alfa;
+    std::cin >> alfa;
+    if (alfa < 0 || alfa > 1)
+    {
+        std::cout << red << "\n[!] Valor de alfa incorrecto\n";
+        exit(-1);
+    }
+    int delta = sz;
+    while (delta > 0)
+    {
+        delta = delta * alfa;
+        deltasort(V, delta, sz);
     }
 }

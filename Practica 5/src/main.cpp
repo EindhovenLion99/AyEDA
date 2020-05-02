@@ -17,7 +17,6 @@ void Filling(Vector_T<DNI> &V);
 
 int main()
 {
-    srand(time(NULL));
 
     bool sorted = false;
     int opc;
@@ -46,46 +45,48 @@ int main()
     Ar[14] = 6;
 
     Filling(Array);
+
     cout << endl;
     Print_Array(Array, sorted);
 
     switch (opc)
     {
+
     case 1:
-        //Insercion<DNI>(Array, Array.start(), Array.end());
+        Insercion<DNI>(Array, Array.size());
         sorted = true;
+        cout << "OK" << endl;
         Print_Array(Array, sorted);
         break;
     case 2:
-        //Burbuja<DNI>(Array, Array.start(), Array.end());
+
+        Burbuja<DNI>(Array, Array.size());
         sorted = true;
         Print_Array(Array, sorted);
         break;
     case 3:
+
         Quick<DNI>(Array, Array.start(), Array.end());
         sorted = true;
         Print_Array(Array, sorted);
         break;
+
     case 4:
-        //Heap<DNI>(Array, Array.start(), Array.end());
+        Heap<DNI>(Array, Array.size());
         sorted = true;
         Print_Array(Array, sorted);
         break;
     case 5:
-
         Shell<DNI>(Array, Array.size());
         sorted = true;
         Print_Array(Array, sorted);
-        break;
-
-    /*
         sorted = false;
         Print_Ar(Ar, sorted);
         Shell(Ar, Ar.size());
         sorted = true;
         Print_Ar(Ar, sorted);
         break;
-    */
+
     default:
         break;
     }
@@ -131,6 +132,7 @@ void Print_Ar(Vector_T<int> &V, bool sorted)
 
 void Filling(Vector_T<DNI> &V)
 {
+    srand(time(NULL));
     for (int i = V.start(); i <= V.end(); i++)
     {
         DNI Num;

@@ -1,16 +1,37 @@
 #pragma once
+#include <limits>
 
 class Contador
 {
 private:
-    int Valor_;
+    int accum;
+    int max;
+    int min;
+    int localAccum;
 
 public:
-    Contador() : Valor_(0) {}
-    ~Contador() {}
+    Contador(){};
+    void start()
+    {
+        localAccum = 0;
+        max = 0;
+        min = 100000000;
+        accum = 0;
+    };
+    void stop()
+    {
+        min = localAccum < min ? localAccum : min;
+        max = localAccum > max ? localAccum : max;
+        accum += localAccum;
+    };
+    Contador &operator++(int)
+    {
+        localAccum++;
+        return *this;
+    };
 
-    inline int get_Cont() { return Valor_; }
-    inline void Suma() { Valor_++; }
-    inline void Resta() { (Valor_ > 0) ? Valor_-- : Valor_ = 0; }
-    inline void Reset() { Valor_ = 0; }
+    int getAccum() { return accum; };
+    int getMax() { return max; };
+    int getMin() { return min; };
+    int getMedia() { return ((max + min) / 2); };
 };

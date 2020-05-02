@@ -1,17 +1,16 @@
 #include <iostream>
-#include "vector_t.hpp"
 #include "termcolor.hpp"
 
 using namespace termcolor;
 
 template <class Clave>
-void Quick(Vector_T<Clave> &V, int ini, int fin)
+void Quick(std::vector<Clave> &V, int ini, int fin)
 {
     int i = ini;
     int f = fin;
-    int p = V[(i + f) / 2];
+    Clave p = V[(i + f) / 2];
 
-    for (int j = V.start(); j <= V.end(); j++)
+    for (int j = 0; j < V.size(); j++)
     {
 
         if (V[j] == p)
@@ -24,8 +23,6 @@ void Quick(Vector_T<Clave> &V, int ini, int fin)
             std::cout << " [" << j << "]" << V[j];
     }
     std::cout << "\tPivote: " << p << std::endl;
-    int c;
-    c = getchar();
 
     while (i <= f)
     {
@@ -35,7 +32,7 @@ void Quick(Vector_T<Clave> &V, int ini, int fin)
             f--;
         if (i <= f)
         {
-            Swap(V[i], V[f]);
+            Swap_Q(V[i], V[f]);
             i++;
             f--;
         }
@@ -44,4 +41,12 @@ void Quick(Vector_T<Clave> &V, int ini, int fin)
         Quick(V, ini, f);
     if (i < fin)
         Quick(V, i, fin);
-}
+};
+
+template <class Clave>
+void Swap_Q(Clave &P, Clave &N)
+{
+    Clave aux = P;
+    P = N;
+    N = aux;
+};
