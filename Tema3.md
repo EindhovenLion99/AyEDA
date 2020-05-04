@@ -591,6 +591,264 @@ menor clave que su padre o se llegue a la raíz).
 
 La inserción de elementos implica **actualizar** el tamaño n del montón; n = n + 1
 
+# Eliminar un elemento
+
+Para eliminar un elemento de un montón ordenado, se intercambia con el último elemento; y
+
+![](Capturas/Cap23.png)
+
+si éste queda mal colocado se sube o se baja, según haga falta (es decir,
+hasta que no tenga hijos o de tenerlos, ninguno tenga menor clave).
+
+Para **bajar** un elemento mal colocado se intercambia recursivamente
+con el hijo de menor clave, mientras haga falta.
+
+![](Capturas/Cap24.png)
+
+La eliminación de elementos implica **actualizar** el tamaño n del montón. n = n - 1
+
+# Ordenar un Heap
+
+En un montón ordenado el elemento **mínimo** (el de menor clave) está siempre en la primera posición.
+
+![](Capturas/Cap25.png)
+
+Para **ordenar** los elementos de una secuencia por el método de ordenación
+por selección con el uso de un *heap* o montón, en una primera fase, se
+ordena la secuencia como un montón incorporando al montón los
+elementos uno a uno recolocándolo si hace falta.
+
+![](Capturas/Cap26.png)
+
+Luego, en la *segunda* fase, se va seleccionando iterativamente el elemento
+de menor clave que será siempre el que está en la raíz o primera posición.
+
+![](Capturas/Cap27.png)
+
+Se reemplaza por el último que, si hace falta se baja
+
+# Ejemplo
+
+En este ejemplo se muestra, en primer lugar, cómo se realiza la fase de introducción de los elementos en el heap.
+
+Se denota por m al elemento que se incorpora al montón y por p al padre del elemento i.
+
+En la segunda fase de extracción, para sacar los elementos del montón en la secuencia ordenada se va extrayendo el primer elemento de forma iterativa, intercambiándose con el último y, si hace falta, se baja.
+
+Se rebaja el tamaño n del montón y se denota por h el hijo del elemento i de menor clave.
+
+------- | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+
+m=1 --- **44** 55 12 42 94 18 06 67 -------- i=1 p=0 => colocado
+
+m=2 --- 44 **55** 12 42 94 18 06 67 -------- i=2 p=1 55>=44 => colocado
+
+m=3 --- 44 55 **12** 42 94 18 06 67 -------- i=3 p=1 12<44 => sube
+
+-------- **12** 55 44 42 94 18 06 67 -------- i=1 p=0 => colocado
+
+m=4 --- 12 55 44 **42** 94 18 06 67 -------- i=4 p=2 42<55 => sube
+
+-------- 12 **42** 44 55 94 18 06 67 -------- i=2 p=1 42>=12 => colocado
+
+m=5 --- 12 42 44 55 **94** 18 06 67 -------- i=5 p=2 94>=42 => colocado
+
+m=6 --- 12 42 44 55 94 **18** 06 67 -------- i=6 p=3 18<44 => sube
+
+-------- 12 42 **18** 55 94 44 06 67 -------- i=3 p=1 18>=12 => colocado
+
+m=7 --- 12 42 18 55 94 44 **06** 67 -------- i=7 p=3 06<18 => sube
+
+-------- 12 42 **06** 55 94 44 18 67 -------- i=3 p=1 06<12 => sube
+
+-------- **06** 42 12 55 94 44 18 67 -------- i=1 p=0 => colocado
+
+m=8 --- 06 42 12 55 94 44 18 **67** -------- i=8 p=4 67>=55 => colocado
+
+# Extracciones (I)
+
+------ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+
+n=8 -- **06** 42 12 55 94 44 18 67
+
+n=7 -- **67** 42 12 55 94 44 18 06 ------ i=1 h=2,3 67>12 => baja
+
+------- 12 42 **67** 55 94 44 18 06 ----- i=3 h=6,7 67>18 => baja
+
+------- 12 42 18 55 94 44 67 06 ----- i=7 h=O (14>n=7) colocado
+
+------- 12 42 18 55 94 44 67 06
+
+n=6 -- **67** 42 18 55 94 44 12 06 ----- i=1 h=2,3 67>18 => baja
+
+------- 18 42 **67** 55 94 44 12 06 ---- i=3 h=6 67>44 => baja
+
+------- 18 42 44 55 94 **67** 12 06 ---- i=6 h=O (12>n=6) colocado
+
+------- **18** 42 44 55 94 67 12 06
+
+n=5 -- **67** 42 44 55 94 18 12 06 ----- i=1 h=2,3 67>42 => baja
+
+------- 42 **67** 44 55 94 18 12 06 ---- i=2 h=4,5 67>55 => baja
+
+------- 42 55 44 67 94 18 12 06 ---- i=4 h=O (8>n=5) colocado
+
+------- **42** 55 44 67 94 18 12 06
+
+# Extracciones (II)
+
+------ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+
+------- 42 55 44 67 94 18 12 06
+
+n=4 -- 94 55 44 67 42 18 12 06 ----- i=1 h=2,3 94 >44 => baja
+
+------- 44 55 94 67 42 18 12 06 ---- i=3 h=O (6>n=4) colocado
+
+------- 44 55 94 67 42 18 12 06
+
+n=3 -- 67 55 94 44 42 18 12 06 ----- i=1 h=2,3 67>55 => baja
+
+------- 55 67 94 44 42 18 12 06 ----- i=3 h=O (6>n=3) colocado
+
+------- 55 67 94 44 42 18 12 06
+
+n=2 -- 94 67 55 44 42 18 12 06 ----- i=1 h=2 94>67 => baja
+
+-------67 94 55 44 42 18 12 06 ------ i=2 h=O (4>n=2) colocado
+
+------- 67 94 55 44 42 18 12 06
+
+n=1 -- 94 67 55 44 42 18 12 06 ------ i=1 h=O (2>n=1) colocado
+
+# Inconvenientes
+
+**Inconvenientes** que podrían solventarse:
+
+* En primer lugar, la secuencia queda al final ordenada en *sentido contrario* y hay que invertirla.
+* *  Esto se soluciona considerando el orden dentro del montón o heap en sentido inverso; de mayor a menor.
+
+* En segundo lugar, la parte que se considera que inicialmente ya está ordenada es **sólo** la raíz del montón porque no tiene padre.
+* * Se puede también empezar suponiendo que los elementos del *final de la secuencia* los que está inicialmente bien ordenados porque no tienen hijos.
+
+
+# Método de Floyd (HeapSort)
+
+Se parte de que los elementos bien colocados inicialmente son los de **la mitad final** que son padres de elementos que estarían fuera de la secuencia.
+
+El montón se completa incorporando cada vez un elemento a la derecha que es recolocado **bajándolo** si hace falta. De esta forma, tanto al incorporar como al excluir elementos del montón nunca es necesario subir un elemento, sólo bajarlo.
+
+Finalmente, en la segunda fase del método, es siempre un elemento del final del heap (sin hijos) el que se coloca en la primera posición para ser bajado *una y otra vez*. Para solventar esta cuestión no se ha realizado una propuesta satisfactoria.
+
+
+# Heap ordenado para HeapSort
+
+* El Heap o montón está **ordenado** si ningún elemento: tiene mayor clave que su padre.
+* El Heap o montón está **ordenado** si ningún elemento: tiene menor clave que ninguno de sus dos hijos.
+
+Un elemento mal colocado se recoloca bajándolo o subiéndolo recursivamente mientras haga falta:
+
+* Se **baja** intercambiándolo *recursivamente* con su hijo de mayor clave,
+* Se **sube** intercambiándolo *recursivamentecon* su padre.
+
+
+# Insertar y Eliminar
+
+Dada la secuencia ya ordenada según un montón desde la posición i+1 hasta la posición n, se *inserta* el nuevo elemento de la *posición i* y, para mantener la ordenación, se baja mientras haga falta (es decir; hasta que no tenga hijos o, de tenerlos, ninguno tenga menor clave).
+
+Para **eliminar** el primer elemento del montón ordenado, se intercambia con el último elemento; y si queda mal colocado se baja mientras haga falta..
+
+La eliminación de elementos implica **actualizar** el tamaño n del montón.
+
+
+# Ordenar con Heap
+
+Para **ordenar** los elementos de una secuencia por el método de ordenación por selección con el uso de un **heap**:
+En una **primera** fase,
+* se ordena la secuencia como un montón
+* incorporando al montón los elementos uno a uno
+* bajándolo si hace falta.
+En la **segunda** fase,
+* se va seleccionando iterativamente
+* el elemento de mayor clave
+* que será siempre el que está en la raíz o primera posición.
+Reordenando el montón tras cada eliminación
+
+# Ejemplo de HeapSort
+
+Inserciones:
+
+| 1 | 2 | 3 | 4 | 5 | 6 | 7| 8 |
+
+44 55 12 42 94 18 06 67
+
+44 55 12 **67** 94 18 06 **42**
+
+44 55 **18** 67 94 **12** 06 42
+
+44 **94** 18 67 **55** 12 06 42
+
+**94** **67** 18 **44** 55 12 06 42
+
+Extracciones:
+
+| 1 | 2 | 3 | 4 | 5 | 6 | 7| 8 | ------------ | 1 | 2 | 3 | 4 | 5 | 6 | 7| 8 |
+
+**42** 67 18 44 55 12 06 **94** ------------> **67** **55** 18 44 **42** 12 06 94
+
+**06** 55 18 44 42 12 **67** 94 ------------> **55** **44** 18 **06** 42 12 67 94
+
+**12** 44 18 06 42 **55** 67 94 ------------> **44** **42** 18 06 **12** 55 67 94
+
+**12** 42 18 06 **44** 55 67 94 ------------> **42** **12** 18 06 44 55 67 94
+
+**06** 12 18 **42** 44 55 67 94 ------------> **18** 12 **06** 42 44 55 67 94
+
+**06** 12 **18** 42 44 55 67 94 ------------> **12** **06** 18 42 44 55 67 94
+
+**06** **12** 18 42 44 55 67 94 ------------> 06 12 18 42 44 55 67 94
+
+# Análisis del Algoritmo
+
+El algoritmo **HeapSort**, que implementa el método de ordenación por selección con heap o montón siguiendo la propuesta de Floyd, es **O(n log n)**.
+
+* Sólo se utiliza el procedimiento **baja**, que es O(log n).
+
+* El **número de veces** que se baja un elemento en cada fase es;
+n/2 en la primera fase y n en la segunda fase, por tanto en O(n) veces en total.
+
+# El código de baja (Floyd )
+```c
+void baja(int i; Tvector &sec; int n) {
+     while (2*i <= n){
+          h1 = 2*i;
+          h2 = h1 + 1;
+          if (h1 == n)
+               h = h1;
+          else if (sec[h1] > sec[h2])
+               h = h1;
+              else h = h2;
+          if (sec[h] <= sec[i])
+               break;
+          else {
+               swap(sec[i],sec[h]);
+               i = h;
+          }
+     }
+}
+```
+
+# El código de HeapSort (Floyd )
+```c
+void heapsort(Tvector sec; int n) {
+     for (int i = n/2; i > 0; i--)
+          baja(i, sec, n);
+     for (int i = n; i > 1; i--) {
+          swap(sec[1],sec[i]);
+          baja(1,sec,i-1) ;
+     }
+}
+```
 
 
 
