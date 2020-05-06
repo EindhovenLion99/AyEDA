@@ -16,6 +16,7 @@ private:
 
 public:
     // Cosntructor
+    nodoBB(){};
     nodoBB(Clave dato)
     {
         Dato = dato;
@@ -28,9 +29,6 @@ public:
     Clave Get_Dato() { return Dato; }
     void Print_Dato() { Dato.Print(cout); }
 
-    void Set_Izq(nodoBB *N) { Izq = N; }
-    void Set_Der(nodoBB *N) { Der = N; }
-
-    nodoBB Get_Izq(nodoBB *N) { return Izq; }
-    nodoBB Get_Der(nodoBB *N) { return Der; }
+    nodoBB *Get_Izq() { return Izq; }
+    nodoBB *Get_Der() { return Der; }
 };
