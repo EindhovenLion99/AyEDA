@@ -23,6 +23,7 @@ public:
     inline void set_DNI(int val) { Valor_ = val; }
 
     inline void set_Empty() { Valor_ = -1; }
+    DNI &operator=(DNI &);
 
     ostream &Print(ostream &) const;
 

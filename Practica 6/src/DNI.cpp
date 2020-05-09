@@ -62,6 +62,12 @@ ostream &DNI::Print(ostream &os) const
     return os;
 }
 
+DNI &DNI::operator=(DNI &Val)
+{
+    Valor_ = Val.Valor_;
+    return *this;
+}
+
 bool DNI::operator==(const DNI &Val)
 {
     return get_DNI() == Val.get_DNI();
