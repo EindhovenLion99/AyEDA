@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <cmath>
 #include "nodoB.hpp"
 #include "termcolor.hpp"
 
@@ -9,21 +11,21 @@ using namespace termcolor;
 template <class Clave>
 class AB
 {
-protected:
+private:
     nodoB<Clave> *Raiz;
 
 public:
     AB()
     {
-        Raiz = NULL;
+        Raiz = nullptr;
     }
     ~AB(){};
 
     bool Buscar(Clave Valor) { return BuscarRama(Valor, Raiz); }
-    void Insertar(Clave Valor) { return InsertarRama(Valor, Raiz); }
-    void Eliminar(Clave Valor) { return EliminarRama(Valor, Raiz); }
+    void Insertar(Clave Valor) { InsertarRama(Valor, Raiz); }
+    void Eliminar(Clave Valor) { EliminarRama(Valor, Raiz); }
 
-    bool BuscarRama(Clave Valor, nodoB<Clave> *Nodo)
+    bool BuscarRama(Clave Valor, nodoB<Clave> *&Nodo)
     {
         if (Nodo == NULL)
             return false;
@@ -31,36 +33,28 @@ public:
             return true;
         if (Nodo->Dato < Valor)
         {
-            //nodoBB<Clave> *Izq_;
-            //Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
             BuscarRama(Valor, Nodo->Get_Izq());
         }
-        //nodoBB<Clave> *Der_;
-        //Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
         BuscarRama(Valor, Nodo->Get_Der());
     }
 
-    void InsertarRama(Clave Valor, nodoB<Clave> *Nodo)
+    void InsertarRama(Clave Valor, nodoB<Clave> *&Nodo)
     {
-        if (Nodo == NULL)
+        if (Nodo == nullptr)
         {
             Nodo = new nodoB<Clave>(Valor);
         }
         else if (Valor < Nodo->Get_Dato())
         {
-            //nodoBB<Clave> *Izq_;
-            //Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-            InsertarRama(Valor, Nodo->Get_Izq());
+            InsertarRama(Valor, Nodo->Izq);
         }
         else
         {
-            //nodoBB<Clave> *Der_;
-            //Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-            InsertarRama(Valor, Nodo->Get_Der());
+            InsertarRama(Valor, Nodo->Der);
         }
         //cout << "Valor: " << Valor.get_DNI() << endl;
     }
-    void EliminarRama(Clave Valor, nodoB<Clave> *Nodo)
+    void EliminarRama(Clave Valor, nodoB<Clave> *&Nodo)
     {
         if (Nodo == NULL)
             return;
@@ -92,7 +86,7 @@ public:
         }
     }
 
-    void Sustituye(nodoB<Clave> *Eliminado, nodoB<Clave> *Sustituto)
+    void Sustituye(nodoB<Clave> *&Eliminado, nodoB<Clave> *&Sustituto)
     {
         //nodoBB<Clave> *Der_, *Izq_;
         //Der_ = new nodoBB<Clave>(Sustituto->Der->Dato);
@@ -111,31 +105,33 @@ public:
     {
         if (Raiz == NULL)
         {
-            os << "Arbol vacio:\n [.] \n";
+            os << red << "Arbol vacio:\nNivel 0: [.]" << white << endl;
         }
         else
         {
             nodoB<Clave> *Nodo = Raiz;
             int i = 0;
-            Recorrer(os, Nodo, i);
+            Recorrer(os, Nodo, i++);
         }
     }
 
     void Recorrer(std::ostream &os, nodoB<Clave> *Nodo, int i)
     {
-        //nodoBB<Clave> *Der_, *Izq_;
-        //Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-        //Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-        os << "Nivel " << i << ": [" << Nodo->Get_Dato() << "] ";
+
+        os << "Nivel " << i << ": [" << Nodo->Get_Dato() << "] " << endl;
+        if (i == 0)
+        {
+        }
+        os << "Nivel " << i++ << ": [.] [.] " << endl;
 
         if (Nodo->Get_Izq() != NULL)
         {
-            Recorrer(os, Nodo->Get_Izq(), i++);
+            Recorrer(os, Nodo->Get_Izq(), ++i);
         }
 
         if (Nodo->Get_Der() != NULL)
         {
-            Recorrer(os, Nodo->Get_Der(), i++);
+            Recorrer(os, Nodo->Get_Der(), ++i);
         }
     }
 };

@@ -8,7 +8,7 @@ using namespace termcolor;
 template <class Clave>
 class nodoB
 {
-protected:
+public:
     // Atributos
     Clave Dato;
     nodoB<Clave> *Izq;
@@ -16,11 +16,11 @@ protected:
 
 public:
     // Cosntructor
-    nodoB(Clave dato)
+    nodoB(Clave dato, nodoB *Iz = nullptr, nodoB *De = nullptr)
     {
         Dato = dato;
-        Izq = NULL;
-        Der = NULL;
+        Izq = Iz;
+        Der = De;
     };
     // Destructor
     ~nodoB(){};
@@ -29,8 +29,8 @@ public:
     virtual void Print_Dato() { Dato.Print(cout); }
     virtual void Set_Dato(Clave dato) { Dato = dato; }
 
-    virtual nodoB *Get_Izq() { return Izq; }
-    virtual nodoB *Get_Der() { return Der; }
+    nodoB *Get_Izq() { return Izq; }
+    nodoB *Get_Der() { return Der; }
 };
 
 template <class Clave>

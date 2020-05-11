@@ -16,7 +16,8 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         DNI Num;
+
         Arbol.Insertar(Num);
-        Arbol.Write(cout);
     }
+    Arbol.Write(cout);
 }
