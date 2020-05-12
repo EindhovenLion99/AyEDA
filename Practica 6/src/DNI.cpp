@@ -62,6 +62,11 @@ ostream &DNI::Print(ostream &os) const
     return os;
 }
 
+void DNI::Set_Valor(int Valor)
+{
+    Valor_ = Valor;
+}
+
 DNI &DNI::operator=(DNI &Val)
 {
     Valor_ = Val.Valor_;

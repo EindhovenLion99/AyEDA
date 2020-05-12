@@ -21,6 +21,13 @@ public:
     }
     ~AB(){};
 
+    bool isNull()
+    {
+        if (Raiz == nullptr)
+            return true;
+        return false;
+    }
+
     bool Buscar(Clave Valor) { return BuscarRama(Valor, Raiz); }
     void Insertar(Clave Valor) { InsertarRama(Valor, Raiz); }
     void Eliminar(Clave Valor) { EliminarRama(Valor, Raiz); }
@@ -33,9 +40,9 @@ public:
             return true;
         if (Nodo->Dato < Valor)
         {
-            BuscarRama(Valor, Nodo->Get_Izq());
+            BuscarRama(Valor, Nodo->Izq);
         }
-        BuscarRama(Valor, Nodo->Get_Der());
+        BuscarRama(Valor, Nodo->Der);
     }
 
     void InsertarRama(Clave Valor, nodoB<Clave> *&Nodo)
@@ -121,8 +128,8 @@ public:
         os << "Nivel " << i << ": [" << Nodo->Get_Dato() << "] " << endl;
         if (i == 0)
         {
+            os << "Nivel " << ++i << ": [.] [.] " << endl;
         }
-        os << "Nivel " << i++ << ": [.] [.] " << endl;
 
         if (Nodo->Get_Izq() != NULL)
         {

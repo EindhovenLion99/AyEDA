@@ -26,6 +26,7 @@ public:
     DNI &operator=(DNI &);
 
     ostream &Print(ostream &) const;
+    void Set_Valor(int Valor);
 
     bool operator==(const DNI &Val);
     bool operator>(const DNI &Val);
