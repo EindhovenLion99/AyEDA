@@ -24,13 +24,6 @@ public:
     };
     // Destructor
     ~nodoB(){};
-
-    virtual Clave Get_Dato() { return Dato; }
-    virtual void Print_Dato() { Dato.Print(cout); }
-    virtual void Set_Dato(Clave dato) { Dato = dato; }
-
-    nodoB *Get_Izq() { return Izq; }
-    nodoB *Get_Der() { return Der; }
 };
 
 template <class Clave>

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <deque>
 #include "nodoB.hpp"
 #include "termcolor.hpp"
 
@@ -29,7 +30,14 @@ public:
     }
 
     bool Buscar(Clave Valor) { return BuscarRama(Valor, Raiz); }
-    void Insertar(Clave Valor) { InsertarRama(Valor, Raiz); }
+    void Insertar(Clave Valor)
+    {
+        if (!Buscar(Valor))
+            InsertarRama(Valor, Raiz);
+        else
+            cout << red << " ** Valor ya insertado **\n"
+                 << white << endl;
+    }
     void Eliminar(Clave Valor) { EliminarRama(Valor, Raiz); }
 
     bool BuscarRama(Clave Valor, nodoB<Clave> *&Nodo)
@@ -47,98 +55,101 @@ public:
 
     void InsertarRama(Clave Valor, nodoB<Clave> *&Nodo)
     {
-        if (Nodo == nullptr)
+
+        if (Nodo == NULL)
         {
             Nodo = new nodoB<Clave>(Valor);
         }
-        else if (Valor < Nodo->Get_Dato())
+        else if (Valor < Nodo->Dato)
         {
             InsertarRama(Valor, Nodo->Izq);
         }
-        else
+        else if (Valor > Nodo->Dato)
         {
             InsertarRama(Valor, Nodo->Der);
         }
-        //cout << "Valor: " << Valor.get_DNI() << endl;
     }
+
     void EliminarRama(Clave Valor, nodoB<Clave> *&Nodo)
     {
         if (Nodo == NULL)
             return;
-        if (Valor < Nodo->Get_Dato())
+        if (Valor < Nodo->Dato)
         {
-            //nodoBB<Clave> *Izq_;
-            //Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-            EliminarRama(Valor, Nodo->Get_Izq());
+            EliminarRama(Valor, Nodo->Izq);
         }
         else if (Valor > Nodo->Dato)
         {
-            //nodoBB<Clave> *Der_;
-            //Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-            EliminarRama(Valor, Nodo->Get_Der());
+            EliminarRama(Valor, Nodo->Der);
         }
         else
         {
-            nodoBB<Clave> *Eliminado = Nodo;
-            //nodoBB<Clave> *Der_, *Izq_;
-            //Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-            //Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-            if (Nodo->Get_Der() == NULL)
-                Nodo = Nodo->Get_Izq();
-            else if (Nodo->Get_Izq() == NULL)
-                Nodo = Nodo->Get_Der();
+            nodoB<Clave> *Eliminado = Nodo;
+            if (Nodo->Der == NULL)
+                Nodo = Nodo->Izq;
+            else if (Nodo->Izq == NULL)
+                Nodo = Nodo->Der;
             else
-                Sustituye(Eliminado, Nodo->Get_Izq());
+                Sustituye(Eliminado, Nodo->Izq);
             delete (Eliminado);
         }
     }
 
     void Sustituye(nodoB<Clave> *&Eliminado, nodoB<Clave> *&Sustituto)
     {
-        //nodoBB<Clave> *Der_, *Izq_;
-        //Der_ = new nodoBB<Clave>(Sustituto->Der->Dato);
-        //Izq_ = new nodoBB<Clave>(Sustituto->Izq->Dato);
-        if (Sustituto->Get_Der() != NULL)
-            Sustituye(Eliminado, Sustituto->Get_Der());
+        if (Sustituto->Der != NULL)
+            Sustituye(Eliminado, Sustituto->Der);
         else
         {
             // Eliminado->Get_Dato() = Sustituto->Get_Dato();
             Eliminado = Sustituto;
-            Sustituto = Sustituto->Get_Izq();
+            Sustituto = Sustituto->Izq;
         }
     }
 
     void Write(ostream &os)
     {
-        if (Raiz == NULL)
-        {
-            os << red << "Arbol vacio:\nNivel 0: [.]" << white << endl;
-        }
-        else
-        {
-            nodoB<Clave> *Nodo = Raiz;
-            int i = 0;
-            Recorrer(os, Nodo, i++);
-        }
+        RecorrerN(Raiz);
     }
 
-    void Recorrer(std::ostream &os, nodoB<Clave> *Nodo, int i)
+    void RecorrerN(nodoB<Clave> *Nodo)
     {
+        deque<pair<nodoB<Clave> *, int>> Q;              // Cola para guardar los nodos por niveles
+        nodoB<Clave> *aux;                               // Nodo auxiliar
+        int Nivel = 0;                                   // Nivel auxiliar
+        int Nivel_Actual = 0;                            // Nivel actual
+        Q.push_back(pair<nodoB<Clave> *, int>(Nodo, 0)); // Se inserta el primer nodo y nivel (nodo raíz y nivel 0)
+        cout << "Nivel 0: ";
 
-        os << "Nivel " << i << ": [" << Nodo->Get_Dato() << "] " << endl;
-        if (i == 0)
+        while (!Q.empty())
         {
-            os << "Nivel " << ++i << ": [.] [.] " << endl;
+            aux = Q.front().first;
+            Nivel = Q.front().second;
+            Q.pop_front();
+            if (Nivel > Nivel_Actual)
+            {
+                Nivel_Actual = Nivel;
+                cout << "\nNivel " << Nivel_Actual << ": ";
+            }
+            Imprimir(aux);
+            if (aux != nullptr)
+            {
+                Q.push_back(pair<nodoB<Clave> *, int>(aux->Izq, Nivel + 1));
+                Q.push_back(pair<nodoB<Clave> *, int>(aux->Der, Nivel + 1));
+            }
         }
+        cout << endl;
+    }
 
-        if (Nodo->Get_Izq() != NULL)
+    void Imprimir(nodoB<Clave> *Nodo)
+    {
+        if (Nodo == nullptr)
+            cout << "[.]";
+        else
         {
-            Recorrer(os, Nodo->Get_Izq(), ++i);
-        }
-
-        if (Nodo->Get_Der() != NULL)
-        {
-            Recorrer(os, Nodo->Get_Der(), ++i);
+            cout << "[";
+            Nodo->Dato.Print(cout);
+            cout << "]";
         }
     }
 };
@@ -151,129 +162,4 @@ public:
     {
     }
     ~ABB(){};
-
-    //bool Buscar(Clave Valor) { return BuscarRama(Raiz, Valor); }
-    //void Insertar(Clave Valor) { InsertarRama(Raiz, Valor); }
-    //void Eliminar(Clave Valor) { EliminarRama(Raiz, Valor); }
-
-    /*
-    void write(ostream &os)
-    {
-        if (Raiz == NULL)
-        {
-            os << "Arbol vacio:\n [.] \n";
-        }
-        else
-        {
-            nodoBB<Clave> *Nodo = Raiz;
-            int i = 0;
-            Recorrer(os, Nodo, i);
-        }
-    }
-
-public:
-    bool buscarRama(nodoBB<Clave> *Nodo, Clave Valor)
-    {
-        if (Nodo == NULL)
-            return false;
-        if (Nodo->Dato == Valor)
-            return true;
-        if (Nodo->Dato < Valor)
-        {
-            nodoBB<Clave> *Izq_;
-            Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-            BuscarRama(Izq_, Valor);
-        }
-        nodoBB<Clave> *Der_;
-        Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-        BuscarRama(Der_, Valor);
-    }
-
-    void insertarRama(nodoBB<Clave> *Nodo, Clave Valor)
-    {
-
-        if (Nodo == NULL)
-        {
-            Nodo = new nodoBB<Clave>(Valor);
-        }
-        else if (Valor < Nodo->Dato)
-        {
-            nodoBB<Clave> *Izq_;
-            Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-            InsertarRama(Izq_, Valor);
-        }
-        else
-        {
-            nodoBB<Clave> *Der_;
-            Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-            InsertarRama(Der_, Valor);
-        }
-        cout << "Valor: " << Valor.get_DNI() << endl;
-    }
-
-    void eliminarRama(nodoBB<Clave> *Nodo, Clave Valor)
-    {
-        if (Nodo == NULL)
-            return;
-        if (Valor < Nodo->Dato)
-        {
-            nodoBB<Clave> *Izq_;
-            Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-            EliminarRama(Izq_, Valor);
-        }
-        else if (Valor > Nodo->Dato)
-        {
-            nodoBB<Clave> *Der_;
-            Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-            EliminarRama(Der_, Valor);
-        }
-        else
-        {
-            nodoBB<Clave> *Eliminado = Nodo;
-            nodoBB<Clave> *Der_, *Izq_;
-            Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-            Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-            if (Der_ == NULL)
-                Nodo = Izq_;
-            else if (Izq_ == NULL)
-                Nodo = Der_;
-            else
-                Sustituye(Eliminado, Izq_);
-            delete (Eliminado);
-        }
-    }
-
-    void sustituye(nodoBB<Clave> *Eliminado, nodoBB<Clave> *Sustituto)
-    {
-        nodoBB<Clave> *Der_, *Izq_;
-        Der_ = new nodoBB<Clave>(Sustituto->Der->Dato);
-        Izq_ = new nodoBB<Clave>(Sustituto->Izq->Dato);
-        if (Der_ != NULL)
-            Sustituye(Eliminado, Der_);
-        else
-        {
-            // Eliminado->Get_Dato() = Sustituto->Get_Dato();
-            Eliminado = Sustituto;
-            Sustituto = Izq_;
-        }
-    }
-
-    void recorrer(std::ostream &os, nodoBB<Clave> *Nodo, int i)
-    {
-        nodoBB<Clave> *Der_, *Izq_;
-        Der_ = new nodoBB<Clave>(Nodo->Der->Dato);
-        Izq_ = new nodoBB<Clave>(Nodo->Izq->Dato);
-        os << "Nivel " << i << ": [" << Nodo->Dato << "] ";
-
-        if (Izq_ != NULL)
-        {
-            Recorrer(os, Izq_, i++);
-        }
-
-        if (Der_ != NULL)
-        {
-            Recorrer(os, Der_, i++);
-        }
-    }
-    */
 };

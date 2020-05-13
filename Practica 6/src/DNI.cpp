@@ -1,13 +1,18 @@
 #include "DNI.hpp"
 #include "Contador.hpp"
 
-Contador DNI::Cont_;
+Contador DNI::Cont;
 
 DNI::DNI()
 {
     Valor_ = rand() % 99999999;
     longValue_ = Valor_;
-    Sz_ = to_string(Valor_).length();
+}
+
+DNI::DNI(int Num)
+{
+    Valor_ = Num;
+    longValue_ = Valor_;
 }
 
 DNI::~DNI()
@@ -21,39 +26,46 @@ ostream &DNI::Print(ostream &os) const
 {
     if (get_DNI() != -1)
     {
-        switch (get_Sz())
+        int SZ = to_string(Valor_).length();
+        switch (SZ)
         {
         case 0:
-            os << "00000000" << get_DNI() << " ";
+            os << "0000000" << get_DNI();
             break;
         case 1:
-            os << "0000000" << get_DNI() << " ";
+            os << "0000000" << get_DNI();
             break;
+
         case 2:
-            os << "000000" << get_DNI() << " ";
+            os << "000000" << get_DNI();
             break;
+
         case 3:
-            os << "00000" << get_DNI() << " ";
+            os << "00000" << get_DNI();
             break;
+
         case 4:
-            os << "0000" << get_DNI() << " ";
+            os << "0000" << get_DNI();
             break;
+
         case 5:
-            os << "000" << get_DNI() << " ";
+            os << "000" << get_DNI();
             break;
+
         case 6:
-            os << "00" << get_DNI() << " ";
+            os << "00" << get_DNI();
             break;
+
         case 7:
-            os << "0" << get_DNI() << " ";
+            os << "0" << get_DNI();
             break;
+
         case 8:
-            os << get_DNI() << " ";
+            os << get_DNI();
             break;
 
         default:
-            os << "---------"
-               << " ";
+            os << " XXXXXXXX ";
             break;
         }
     }
@@ -64,6 +76,7 @@ ostream &DNI::Print(ostream &os) const
 
 void DNI::Set_Valor(int Valor)
 {
+    cout << "Valor = " << Valor << endl;
     Valor_ = Valor;
 }
 
@@ -75,17 +88,20 @@ DNI &DNI::operator=(DNI &Val)
 
 bool DNI::operator==(const DNI &Val)
 {
+    ++Cont;
     return get_DNI() == Val.get_DNI();
 }
 
 bool DNI::operator>(const DNI &Val)
 {
-    return get_DNI() == Val.get_DNI();
+    ++Cont;
+    return get_DNI() > Val.get_DNI();
 }
 
 bool DNI::operator<(const DNI &Val)
 {
-    return get_DNI() == Val.get_DNI();
+    ++Cont;
+    return get_DNI() < Val.get_DNI();
 }
 
 DNI::operator unsigned long() const
