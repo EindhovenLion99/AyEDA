@@ -39,6 +39,7 @@ public:
                  << white << endl;
     }
     void Eliminar(Clave Valor) { EliminarRama(Valor, Raiz); }
+    const bool Equilibrado() { return EquilibrioRama(Raiz); }
 
     bool BuscarRama(Clave Valor, nodoBB<Clave> *&Nodo)
     {
@@ -150,6 +151,30 @@ public:
             cout << "[";
             Nodo->Dato.Print(cout);
             cout << "]";
+        }
+    }
+
+    const int TamRama(nodoBB<Clave> *Nodo)
+    {
+        if (Nodo == nullptr)
+            return 0;
+        return (1 + TamRama(Nodo->Izq) + TamRama(Nodo->Der));
+    }
+
+    const bool EquilibrioRama(nodoBB<Clave> *Nodo)
+    {
+        if (Nodo == nullptr)
+            return true;
+        int eq = (TamRama(Nodo->Izq) - TamRama(Nodo->Der));
+        switch (eq)
+        {
+        case -1:
+        case 0:
+        case 1:
+            return EquilibrioRama(Nodo->Izq) &&
+                   EquilibrioRama(Nodo->Der);
+        default:
+            return false;
         }
     }
 };

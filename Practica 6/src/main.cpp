@@ -22,6 +22,7 @@ void ModoDemo(ABB<Clave> Arbol)
              << blue << "Salir (0)" << endl;
         cout << "Insertar (1)" << endl;
         cout << "Eliminar (2)" << endl;
+        cout << "Comprobar equilibrado (3)" << endl;
         cout << "Selecciona una opcion: ";
         cin >> Opc;
         switch (Opc)
@@ -46,6 +47,24 @@ void ModoDemo(ABB<Clave> Arbol)
             DNI Num(Valor);
             Arbol.Eliminar(Num);
             Arbol.Write(cout);
+            break;
+        }
+        case 3:
+        {
+            if (Arbol.Equilibrado())
+            {
+                cout << endl;
+                Arbol.Write(cout);
+                cout << white << endl
+                     << "El arbol esta equilibrado" << endl;
+            }
+            else
+            {
+                cout << endl;
+                Arbol.Write(cout);
+                cout << white << endl
+                     << "El arbol no esta equilibrado" << endl;
+            }
             break;
         }
         case 0:
