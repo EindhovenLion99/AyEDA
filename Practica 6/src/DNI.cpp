@@ -19,9 +19,6 @@ DNI::~DNI()
 {
 }
 
-// int DNI::get_Cont() { return DNI::Cont_.get_Cont(); }
-// void DNI::Reset() { DNI::Cont_.Reset(); }
-
 ostream &DNI::Print(ostream &os) const
 {
     if (get_DNI() != -1)
@@ -72,12 +69,6 @@ ostream &DNI::Print(ostream &os) const
     else
         os << "-";
     return os;
-}
-
-void DNI::Set_Valor(int Valor)
-{
-    cout << "Valor = " << Valor << endl;
-    Valor_ = Valor;
 }
 
 DNI &DNI::operator=(DNI &Val)

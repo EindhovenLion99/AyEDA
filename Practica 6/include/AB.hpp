@@ -13,7 +13,7 @@ template <class Clave>
 class AB
 {
 private:
-    nodoB<Clave> *Raiz;
+    nodoBB<Clave> *Raiz;
 
 public:
     AB()
@@ -40,7 +40,7 @@ public:
     }
     void Eliminar(Clave Valor) { EliminarRama(Valor, Raiz); }
 
-    bool BuscarRama(Clave Valor, nodoB<Clave> *&Nodo)
+    bool BuscarRama(Clave Valor, nodoBB<Clave> *&Nodo)
     {
         if (Nodo == NULL)
             return false;
@@ -53,12 +53,12 @@ public:
         BuscarRama(Valor, Nodo->Der);
     }
 
-    void InsertarRama(Clave Valor, nodoB<Clave> *&Nodo)
+    void InsertarRama(Clave Valor, nodoBB<Clave> *&Nodo)
     {
 
         if (Nodo == NULL)
         {
-            Nodo = new nodoB<Clave>(Valor);
+            Nodo = new nodoBB<Clave>(Valor);
         }
         else if (Valor < Nodo->Dato)
         {
@@ -70,7 +70,7 @@ public:
         }
     }
 
-    void EliminarRama(Clave Valor, nodoB<Clave> *&Nodo)
+    void EliminarRama(Clave Valor, nodoBB<Clave> *&Nodo)
     {
         if (Nodo == NULL)
             return;
@@ -84,7 +84,7 @@ public:
         }
         else
         {
-            nodoB<Clave> *Eliminado = Nodo;
+            nodoBB<Clave> *Eliminado = Nodo;
             if (Nodo->Der == NULL)
                 Nodo = Nodo->Izq;
             else if (Nodo->Izq == NULL)
@@ -95,13 +95,13 @@ public:
         }
     }
 
-    void Sustituye(nodoB<Clave> *&Eliminado, nodoB<Clave> *&Sustituto)
+    void Sustituye(nodoBB<Clave> *&Eliminado, nodoBB<Clave> *&Sustituto)
     {
         if (Sustituto->Der != NULL)
             Sustituye(Eliminado, Sustituto->Der);
         else
         {
-            // Eliminado->Get_Dato() = Sustituto->Get_Dato();
+            Eliminado->Dato = Sustituto->Dato;
             Eliminado = Sustituto;
             Sustituto = Sustituto->Izq;
         }
@@ -112,13 +112,13 @@ public:
         RecorrerN(Raiz);
     }
 
-    void RecorrerN(nodoB<Clave> *Nodo)
+    void RecorrerN(nodoBB<Clave> *Nodo)
     {
-        deque<pair<nodoB<Clave> *, int>> Q;              // Cola para guardar los nodos por niveles
-        nodoB<Clave> *aux;                               // Nodo auxiliar
-        int Nivel = 0;                                   // Nivel auxiliar
-        int Nivel_Actual = 0;                            // Nivel actual
-        Q.push_back(pair<nodoB<Clave> *, int>(Nodo, 0)); // Se inserta el primer nodo y nivel (nodo raíz y nivel 0)
+        deque<pair<nodoBB<Clave> *, int>> Q;              // Cola para guardar los nodos por niveles
+        nodoBB<Clave> *aux;                               // Nodo auxiliar
+        int Nivel = 0;                                    // Nivel auxiliar
+        int Nivel_Actual = 0;                             // Nivel actual
+        Q.push_back(pair<nodoBB<Clave> *, int>(Nodo, 0)); // Se inserta el primer nodo y nivel (nodo raíz y nivel 0)
         cout << "Nivel 0: ";
 
         while (!Q.empty())
@@ -134,14 +134,14 @@ public:
             Imprimir(aux);
             if (aux != nullptr)
             {
-                Q.push_back(pair<nodoB<Clave> *, int>(aux->Izq, Nivel + 1));
-                Q.push_back(pair<nodoB<Clave> *, int>(aux->Der, Nivel + 1));
+                Q.push_back(pair<nodoBB<Clave> *, int>(aux->Izq, Nivel + 1));
+                Q.push_back(pair<nodoBB<Clave> *, int>(aux->Der, Nivel + 1));
             }
         }
         cout << endl;
     }
 
-    void Imprimir(nodoB<Clave> *Nodo)
+    void Imprimir(nodoBB<Clave> *Nodo)
     {
         if (Nodo == nullptr)
             cout << "[.]";

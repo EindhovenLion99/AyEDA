@@ -9,30 +9,32 @@ template <class Clave>
 class nodoB
 {
 public:
-    // Atributos
     Clave Dato;
     nodoB<Clave> *Izq;
     nodoB<Clave> *Der;
 
 public:
-    // Cosntructor
-    nodoB(Clave dato, nodoB *Iz = nullptr, nodoB *De = nullptr)
+    nodoB(Clave dato)
     {
         Dato = dato;
-        Izq = Iz;
-        Der = De;
+        Izq = nullptr;
+        Der = nullptr;
     };
-    // Destructor
     ~nodoB(){};
 };
 
 template <class Clave>
 class nodoBB : public nodoB<Clave>
 {
+public:
+    nodoBB<Clave> *Izq;
+    nodoBB<Clave> *Der;
 
 public:
-    // nodoBB(Clave dato) : Dato(dato) {}
     nodoBB(Clave dato) : nodoB<Clave>(dato)
     {
+        Izq = NULL;
+        Der = NULL;
     }
+    ~nodoBB(){};
 };

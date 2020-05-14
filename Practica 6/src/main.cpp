@@ -8,11 +8,6 @@
 using namespace std;
 using namespace termcolor;
 
-// Funciones
-
-template <class Clave>
-void Buscar(ABB<Clave> Arbol);
-
 // Modos
 
 template <class Clave>
@@ -157,30 +152,3 @@ int main()
         }
     }
 }
-
-/*
-template <class Clave>
-void Buscar(AB<Clave> Arbol)
-{
-    if (Arbol.isNull())
-    {
-        cout << "El arbol esta vacio" << endl;
-    }
-    else
-    {
-        int Valor;
-        DNI Num;
-        cout << "Inserte el valor a buscar: ";
-        cin >> Valor;
-        Num = Valor;
-        if (Arbol.Buscar(Num))
-        {
-            cout << "El valor " << Valor << " se ha encontrado" << endl;
-        }
-        else
-        {
-            cout << "El valor " << Valor << " no se ha encontrado" << endl;
-        }
-    }
-}
-*/
