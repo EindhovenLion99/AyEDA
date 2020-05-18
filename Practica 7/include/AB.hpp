@@ -30,6 +30,7 @@ public:
     }
 
     bool Buscar(Clave Valor) { return BuscarRama(Valor, Raiz); }
+
     void Insertar(Clave Valor)
     {
         if (!Buscar(Valor))
@@ -38,7 +39,152 @@ public:
             cout << red << " ** Valor ya insertado **\n"
                  << white << endl;
     }
-    void Eliminar(Clave Valor) { EliminarRama(Valor, Raiz); }
+
+    void InsertarAVL(Clave Valor)
+    {
+        nodoAVL<Clave> Nuevo = nodoAVL<Clave>(Valor);
+        bool Crece = false;
+        Inserta_Bal(Raiz, Nuevo, Crece);
+    }
+
+    void Inserta_Bal(nodoAVL<Clave> *&Nodo, nodoAVL<Clave> *Nuevo, bool &Crece)
+    {
+        if (Nodo == nullptr)
+        {
+            Nodo = Nuevo;
+            Crece = true;
+        }
+        else if (Nuevo->Dato < Nodo->Dato)
+        {
+            Inserta_Bal(Nodo->Izq, Nuevo, Crece);
+            if (Crece)
+                Insert_Re_Balancea_Izq(Nodo);
+        }
+        else
+        {
+            Inserta_Bal(Nodo->Der, Nuevo, Crece);
+            if (Crece)
+                Insert_Re_Balancea_Der(Nodo);
+        }
+    }
+
+    void Insert_Re_Balancea_Izq(nodoAVL<Clave> *&Nodo)
+    {
+        switch (Nodo->Bal)
+        {
+        case -1:
+            Nodo->Bal = 0;
+            Crece = false;
+            break;
+        case 0:
+            Nodo->Bal = 1;
+            break;
+        case 1:
+            nodoAVL *Nodo1 = Nodo->Izq;
+            if (Nodo1->Bal == 1)
+                RotacionII(Nodo);
+            else
+                RotacionID(Nodo);
+            Crece = false;
+            break;
+        default:
+            cout << "Switch fail" << endl;
+            break;
+        }
+    }
+
+    void Insert_Re_Balancea_Der(nodoAVL<Clave> *&Nodo)
+    {
+        switch (Nodo->Bal)
+        {
+        case -1:
+            Nodo->Bal = 0;
+            Crece = false;
+            break;
+        case 0:
+            Nodo->Bal = -1;
+            break;
+        case 1:
+            nodoAVL *Nodo1 = Nodo->Der;
+            if (Nodo1->Bal == -1)
+                RotacionDD(Nodo);
+            else
+                RotacionDI(Nodo);
+            Crece = false;
+            break;
+        default:
+            cout << "Switch fail" << endl;
+            break;
+        }
+    }
+
+    void Eliminar(Clave Valor)
+    {
+        EliminarRama(Valor, Raiz);
+    }
+
+    void EliminarAVL(Clave Valor)
+    {
+        bool Decrece = false;
+        Eliminar_Rebal(Raiz, Valor, Decrece);
+    }
+
+    void Eliminar_Rebal(nodoAVL<Clave> *&Nodo, Clave Valor, bool &Decrece)
+    {
+        if (Nodo == nullptr)
+            return;
+        if (Valor < Nodo->Dato)
+        {
+            Eliminar_Rebal(Nodo->Izq, Valor, Decrece);
+            if (Decrece)
+                Eliminar_Re_Balancea_Izq(Nodo, Decrece);
+        }
+        else if (Valor > Nodo->Dato)
+        {
+            Eliminar_Rebal(Nodo->Dato, Valor, Decrece);
+            if (Decrece)
+                Eliminar_Re_Balancea_Der(Nodo, Decrece);
+        }
+        else
+        {
+            nodoAVL<Clave> *Eliminado = Nodo;
+            if (Nodo->Izq == nullptr)
+            {
+                Nodo = Nodo->Der;
+                Decrece = true;
+            }
+            else if (Nodo->Der == nullptr)
+            {
+                Nodo = Nodo->Izq;
+                Decrece = true;
+            }
+            else
+            {
+                SustituyeAVL(Eliminado, Nodo->Izq, Decrece);
+                if (Decrece)
+                    Eliminar_Re_Balancea_Izq(Nodo, Decrece);
+            }
+            delete Eliminado;
+        }
+    }
+
+    void SustituyeAVL(nodoAVL<Clave> *&Eliminado, nodoAVL<Clave> *&Sustituto, bool &Decrece)
+    {
+        if (Sustituto->Der != NULL)
+        {
+            Sustituye(Eliminado, Sustituto->Der, Decrece);
+            if (Decrece)
+                Eliminar_Re_Balancea_Der(Sustituto, Decrece);
+        }
+        else
+        {
+            Eliminado->Dato = Sustituto->Dato;
+            Eliminado = Sustituto;
+            Sustituto = Sustituto->Izq;
+            Decrece = true;
+        }
+    }
+
     const bool Equilibrado() { return EquilibrioRama(Raiz); }
 
     bool BuscarRama(Clave Valor, nodoAVL<Clave> *&Nodo)
@@ -180,7 +326,7 @@ public:
 
     void RotacionII(nodoAVL<Clave> *&Nodo)
     {
-        nodoAVL Nodo1 = Nodo->Izq;
+        nodoAVL<Clave> Nodo1 = Nodo->Izq;
         Nodo->Izq = Nodo1->Der;
         Nodo1->Der = Nodo;
         if (Nodo1->Bal == 1)
@@ -198,9 +344,9 @@ public:
 
     void RotacionDD(nodoAVL<Clave> *&Nodo)
     {
-        nodoAVL Nodo1 = Nodo->Der;
+        nodoAVL<Clave> Nodo1 = Nodo->Der;
         Nodo->Der = Nodo1->Izq;
-        Nodo1->Izq = nodo;
+        Nodo1->Izq = Nodo;
         if (Nodo1->Bal == -1)
         {
             Nodo->Bal = 0;
@@ -216,8 +362,8 @@ public:
 
     void RotacionID(nodoAVL<Clave> *&Nodo)
     {
-        nodoAVL *Nodo1 = Nodo->Izq;
-        nodoAVL *Nodo2 = Nodo1->Der;
+        nodoAVL<Clave> *Nodo1 = Nodo->Izq;
+        nodoAVL<Clave> *Nodo2 = Nodo1->Der;
         Nodo->Izq = Nodo2->Der;
         Nodo2->Der = Nodo;
         Nodo1->Der = Nodo2->Izq;
@@ -227,15 +373,17 @@ public:
         else
             Nodo1->Bal = 0;
         if (Nodo2->Bal == 1)
-            Nodo->Bal = -1 else Nodo->Bal = 0;
+            Nodo->Bal = -1;
+        else
+            Nodo->Bal = 0;
         Nodo2->Bal = 0;
         Nodo = Nodo2;
     }
 
     void RotacionDI(nodoAVL<Clave> *&Nodo)
     {
-        nodoAVL *Nodo1 = Nodo->Der;
-        nodoAVL *Nodo2 = Nodo1->Izq;
+        nodoAVL<Clave> *Nodo1 = Nodo->Der;
+        nodoAVL<Clave> *Nodo2 = Nodo1->Izq;
         Nodo->Der = Nodo2->Izq;
         Nodo2->Izq = Nodo;
         Nodo1->Izq = Nodo2->Der;
@@ -245,16 +393,11 @@ public:
         else
             Nodo1->Bal = 0;
         if (Nodo2->Bal == -1)
-            Nodo->Bal = 1 else Nodo->Bal = 0;
+            Nodo->Bal = 1;
+        else
+            Nodo->Bal = 0;
         Nodo2->Bal = 0;
         Nodo = Nodo2;
-    }
-
-    void InsertarAVL(Clave Valor)
-    {
-        nodoAVL Nuevo = nodoAVL(Valor);
-        bool Crece = false;
-        Inserta_Bal(Raiz, Nuevo, Crece);
     }
 
     void Inserta_Bal(nodoAVL<Clave> *&Nodo, nodoAVL<Clave> *Nuevo, bool &Crece)
@@ -273,7 +416,7 @@ public:
         else
         {
             Inserta_Bal(Nodo->Der, Nuevo, Crece);
-            if (crece)
+            if (Crece)
                 Insert_ReBalanceaDer(Nodo);
         }
     }

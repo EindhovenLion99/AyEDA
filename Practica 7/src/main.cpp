@@ -141,7 +141,7 @@ void ModoEstad()
 
 int main()
 {
-    cout << yellow << "Practica 6: Arbol Binario de Busqueda" << white << endl;
+    cout << yellow << "Practica 7: Arbol AVL" << white << endl;
     ABB<DNI> Arbol;
 
     int Opc = 1;
