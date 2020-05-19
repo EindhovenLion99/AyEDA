@@ -47,7 +47,7 @@ public:
         Inserta_Bal(Raiz, Nuevo, Crece);
     }
 
-    void Inserta_Bal(nodoAVL<Clave> *&Nodo, nodoAVL<Clave> *Nuevo, bool &Crece)
+    void Inserta_Bal(nodoAVL<Clave> *&Nodo, nodoAVL<Clave> *&Nuevo, bool &Crece)
     {
         if (Nodo == nullptr)
         {
@@ -58,60 +58,75 @@ public:
         {
             Inserta_Bal(Nodo->Izq, Nuevo, Crece);
             if (Crece)
-                Insert_Re_Balancea_Izq(Nodo);
+                Insert_Re_Balancea_Izq(Nodo, Crece);
         }
         else
         {
             Inserta_Bal(Nodo->Der, Nuevo, Crece);
             if (Crece)
-                Insert_Re_Balancea_Der(Nodo);
+                Insert_Re_Balancea_Der(Nodo, Crece);
         }
     }
 
-    void Insert_Re_Balancea_Izq(nodoAVL<Clave> *&Nodo)
+    void Insert_Re_Balancea_Izq(nodoAVL<Clave> *&Nodo, bool &Crece)
     {
         switch (Nodo->Bal)
         {
         case -1:
+        {
+
             Nodo->Bal = 0;
             Crece = false;
             break;
+        }
         case 0:
+        {
             Nodo->Bal = 1;
             break;
+        }
         case 1:
-            nodoAVL *Nodo1 = Nodo->Izq;
+        {
+            nodoAVL<Clave> *Nodo1 = Nodo->Izq;
             if (Nodo1->Bal == 1)
                 RotacionII(Nodo);
             else
                 RotacionID(Nodo);
             Crece = false;
             break;
+        }
         default:
             cout << "Switch fail" << endl;
             break;
         }
     }
 
-    void Insert_Re_Balancea_Der(nodoAVL<Clave> *&Nodo)
+    void Insert_Re_Balancea_Der(nodoAVL<Clave> *&Nodo, bool &Crece)
     {
         switch (Nodo->Bal)
         {
         case -1:
+        {
+
             Nodo->Bal = 0;
             Crece = false;
             break;
+        }
         case 0:
+        {
             Nodo->Bal = -1;
             break;
+        }
         case 1:
-            nodoAVL *Nodo1 = Nodo->Der;
+        {
+
+            nodoAVL<Clave> *Nodo1 = Nodo->Der;
             if (Nodo1->Bal == -1)
                 RotacionDD(Nodo);
             else
                 RotacionDI(Nodo);
             Crece = false;
             break;
+        }
         default:
             cout << "Switch fail" << endl;
             break;
@@ -141,7 +156,7 @@ public:
         }
         else if (Valor > Nodo->Dato)
         {
-            Eliminar_Rebal(Nodo->Dato, Valor, Decrece);
+            Eliminar_Rebal(Nodo->Der, Valor, Decrece);
             if (Decrece)
                 Eliminar_Re_Balancea_Der(Nodo, Decrece);
         }
@@ -172,7 +187,7 @@ public:
     {
         if (Sustituto->Der != NULL)
         {
-            Sustituye(Eliminado, Sustituto->Der, Decrece);
+            SustituyeAVL(Eliminado, Sustituto->Der, Decrece);
             if (Decrece)
                 Eliminar_Re_Balancea_Der(Sustituto, Decrece);
         }
@@ -182,6 +197,70 @@ public:
             Eliminado = Sustituto;
             Sustituto = Sustituto->Izq;
             Decrece = true;
+        }
+    }
+
+    void Eliminar_Re_Balancea_Izq(nodoAVL<Clave> *&Nodo, bool &Decrece)
+    {
+        switch (Nodo->Bal)
+        {
+        case -1:
+        {
+
+            nodoAVL<Clave> *Nodo1 = Nodo->Der;
+            if (Nodo1->Bal > 0)
+                RotacionDI(Nodo);
+            else
+            {
+                if (Nodo1->Bal == 0)
+                    Decrece = false;
+                RotacionDD(Nodo);
+            }
+            break;
+        }
+        case 0:
+        {
+
+            Nodo->Bal = -1;
+            Decrece = false;
+            break;
+        }
+        case 1:
+        {
+            Nodo->Bal = 0;
+        }
+        }
+    }
+
+    void Eliminar_Re_Balancea_Der(nodoAVL<Clave> *&Nodo, bool &Decrece)
+    {
+        switch (Nodo->Bal)
+        {
+        case -1:
+        {
+
+            nodoAVL<Clave> *Nodo1 = Nodo->Izq;
+            if (Nodo1->Bal < 0)
+                RotacionID(Nodo);
+            else
+            {
+                if (Nodo1->Bal == 0)
+                    Decrece = false;
+                RotacionII(Nodo);
+            }
+            break;
+        }
+        case 0:
+        {
+
+            Nodo->Bal = 1;
+            Decrece = false;
+            break;
+        }
+        case 1:
+        {
+            Nodo->Bal = 0;
+        }
         }
     }
 
@@ -254,7 +333,7 @@ public:
         }
     }
 
-    void Write(ostream &os)
+    void Write()
     {
         RecorrerN(Raiz);
     }
@@ -326,7 +405,7 @@ public:
 
     void RotacionII(nodoAVL<Clave> *&Nodo)
     {
-        nodoAVL<Clave> Nodo1 = Nodo->Izq;
+        nodoAVL<Clave> *Nodo1 = Nodo->Izq;
         Nodo->Izq = Nodo1->Der;
         Nodo1->Der = Nodo;
         if (Nodo1->Bal == 1)
@@ -344,7 +423,7 @@ public:
 
     void RotacionDD(nodoAVL<Clave> *&Nodo)
     {
-        nodoAVL<Clave> Nodo1 = Nodo->Der;
+        nodoAVL<Clave> *Nodo1 = Nodo->Der;
         Nodo->Der = Nodo1->Izq;
         Nodo1->Izq = Nodo;
         if (Nodo1->Bal == -1)
@@ -387,7 +466,7 @@ public:
         Nodo->Der = Nodo2->Izq;
         Nodo2->Izq = Nodo;
         Nodo1->Izq = Nodo2->Der;
-        Nodo2->dcho = Nodo1;
+        Nodo2->Der = Nodo1;
         if (Nodo2->Bal == 1)
             Nodo1->Bal = -1;
         else
@@ -398,27 +477,6 @@ public:
             Nodo->Bal = 0;
         Nodo2->Bal = 0;
         Nodo = Nodo2;
-    }
-
-    void Inserta_Bal(nodoAVL<Clave> *&Nodo, nodoAVL<Clave> *Nuevo, bool &Crece)
-    {
-        if (Nodo == NULL)
-        {
-            Nodo = Nuevo;
-            Crece = true;
-        }
-        else if (Nuevo->Dato < Nodo->Dato)
-        {
-            Inserta_Bal(Nodo->Izq, Nuevo, Crece);
-            if (Crece)
-                Insert_ReBalanceaIzq(Nodo);
-        }
-        else
-        {
-            Inserta_Bal(Nodo->Der, Nuevo, Crece);
-            if (Crece)
-                Insert_ReBalanceaDer(Nodo);
-        }
     }
 };
 

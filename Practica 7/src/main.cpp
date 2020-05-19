@@ -11,7 +11,7 @@ using namespace termcolor;
 // Modos
 
 template <class Clave>
-void ModoDemo(ABB<Clave> Arbol)
+void ModoDemo(AVL<Clave> Arbol)
 {
     int Opc = 1;
     int Valor = 0;
@@ -34,8 +34,8 @@ void ModoDemo(ABB<Clave> Arbol)
             cin >> Valor;
             cout << endl;
             DNI Num(Valor);
-            Arbol.Insertar(Num);
-            Arbol.Write(cout);
+            Arbol.InsertarAVL(Num);
+            Arbol.Write();
             break;
         }
         case 2:
@@ -45,8 +45,8 @@ void ModoDemo(ABB<Clave> Arbol)
             cin >> Valor;
             cout << endl;
             DNI Num(Valor);
-            Arbol.Eliminar(Num);
-            Arbol.Write(cout);
+            Arbol.EliminarAVL(Num);
+            Arbol.Write();
             break;
         }
         case 3:
@@ -54,14 +54,14 @@ void ModoDemo(ABB<Clave> Arbol)
             if (Arbol.Equilibrado())
             {
                 cout << endl;
-                Arbol.Write(cout);
+                Arbol.Write();
                 cout << white << endl
                      << "El arbol esta equilibrado" << endl;
             }
             else
             {
                 cout << endl;
-                Arbol.Write(cout);
+                Arbol.Write();
                 cout << white << endl
                      << "El arbol no esta equilibrado" << endl;
             }
@@ -98,21 +98,21 @@ void ModoEstad()
     else
     {
         vector<DNI> Banco;
-        ABB<DNI> Arbol;
-        for (unsigned j = 0; j < 2 * N; j++)
+        AVL<DNI> Arbol;
+        for (int j = 0; j < 2 * N; j++)
         {
             DNI X;
             Banco.push_back(X);
         }
-        for (unsigned i = 0; i < N; i++)
+        for (int i = 0; i < N; i++)
         {
-            Arbol.Insertar(Banco[i]);
+            Arbol.InsertarAVL(Banco[i]);
         }
         cout << "\n\t\tN\tnPruebas\tMínimo\tMedio\tMáximo" << endl;
 
         DNI::Cont.Reset();
 
-        for (unsigned i = 0; i < N; i++)
+        for (int i = 0; i < N; i++)
         {
             DNI::Cont.Start();
             Arbol.Buscar(Banco[i]);
@@ -125,7 +125,7 @@ void ModoEstad()
 
         DNI::Cont.Reset();
 
-        for (unsigned i = N; i < 2 * N; i++)
+        for (int i = N; i < 2 * N; i++)
         {
             DNI::Cont.Start();
             Arbol.Buscar(Banco[i]);
@@ -142,7 +142,7 @@ void ModoEstad()
 int main()
 {
     cout << yellow << "Practica 7: Arbol AVL" << white << endl;
-    ABB<DNI> Arbol;
+    AVL<DNI> Arbol;
 
     int Opc = 1;
 
