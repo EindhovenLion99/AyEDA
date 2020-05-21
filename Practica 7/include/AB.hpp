@@ -42,7 +42,8 @@ public:
 
     void InsertarAVL(Clave Valor)
     {
-        nodoAVL<Clave> Nuevo = nodoAVL<Clave>(Valor);
+        nodoAVL<Clave> *Nuevo;
+        Nuevo = new nodoAVL<Clave>(Valor);
         bool Crece = false;
         Inserta_Bal(Raiz, Nuevo, Crece);
     }

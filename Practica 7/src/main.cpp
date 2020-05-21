@@ -18,6 +18,7 @@ void ModoDemo(AVL<Clave> Arbol)
 
     while (Opc != 0)
     {
+        cout << "Traza AVL: Noah Sanchez" << endl;
         cout << endl
              << blue << "Salir (0)" << endl;
         cout << "Insertar (1)" << endl;
